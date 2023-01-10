@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Migración: Sistema de gestión eficiente | Medinet</title>
+
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+</head>
+
+<body>
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide bg-white" data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+          }'>
+    
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="../" aria-label="Medinet">
+          <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo-Medinet">
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <ul class="navbar-nav">
+              <!-- Landings -->
+              <li class="hs-has-mega-menu nav-item">
+                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" aria-current="page" href="#" role="button" aria-expanded="false">Soluciones</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                  <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block">
+                      <!-- Banner Image -->
+                      <div class="navbar-dropdown-menu-banner" style="background-image: url(./assets/svg/components/shape-3.svg);">
+                        <div class="navbar-dropdown-menu-banner-content">
+                          <div class="mb-4">
+                            <span class="h2 d-block">Moderniza tu centro</span>
+                            <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si tienes dudas, contáctanos</p>
+                          </div>
+                          <a class="btn btn-primary btn-transition" href="#">Contáctanos <i class="bi-chevron-right small"></i></a>
+                        </div>
+                      </div>
+                      <!-- End Banner Image -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-lg-6">
+                      <div class="navbar-dropdown-menu-inner">
+                        <div class="row">
+                          <div class="col-sm mb-3 mb-sm-0">
+                            <span class="dropdown-header">Módulos</span>
+                            <a class="dropdown-item " href="./landing-classic-corporate.html">Agenda médica</a>
+                            <a class="dropdown-item " href="./landing-classic-analytics.html">Expediente clínico</a>
+                            <a class="dropdown-item " href="./landing-classic-studio.html">Recaudación y cobranza</a>
+                            <a class="dropdown-item " href="./landing-classic-marketing.html">Seguimiento de cuentas médicas</a>
+                            <a class="dropdown-item " href="./landing-classic-advertisement.html">Gestión de quirófano</a>
+                            <a class="dropdown-item " href="./landing-classic-consulting.html">Gestión de camas</a>
+                            <a class="dropdown-item active" href="./landing-classic-portfolio.html">Adquisición y dispensación</a>
+                            <a class="dropdown-item " href="./landing-classic-software.html">Reportes</a>
+                            <a class="dropdown-item disabled" href="./landing-classic-business.html">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-sm">
+                            <div class="mb-3">
+                              <span class="dropdown-header">Roles</span>
+                              <a class="dropdown-item " href="./account-overview.html">Director médico</a>
+                              <a class="dropdown-item " href="./account-security.html">Gerente general (CEO)</a>
+                              <a class="dropdown-item " href="./account-notifications.html">Gerente de finanzas (CFO)</a>
+                              <a class="dropdown-item " href="./account-preferences.html">Gerente de operaciones (COO)</a>
+                            </div>
+
+                            <span class="dropdown-header">Clientes</span>
+                            <a class="dropdown-item " href="./landing-app-workflow.html">Clínicas</a>
+                            <a class="dropdown-item " href="./landing-app-tool.html">Hospitales</a>
+                            <a class="dropdown-item disabled" href="./landing-app-payment.html">Consultas médicas <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                        </div>
+                          <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                      </div>
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Landings -->
+
+              <!-- Company -->
+              <li class="hs-has-sub-menu nav-item">
+                <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Especialidades</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item " href="./page-about.html">Oftalmología</a>
+                  <a class="dropdown-item " href="./page-services.html">Psiquiatría</a>
+                  <a class="dropdown-item " href="./page-customer-stories.html">Bariátrica</a>
+                  <a class="dropdown-item " href="./page-customer-story.html">Estética</a>
+                  <a class="dropdown-item " href="./page-careers.html">Multi-especialidad</a>
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Company -->
+
+               <!-- Pages -->
+               <li class="hs-has-sub-menu nav-item">
+                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Características</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item " href="./page-faq.html">Implementación</a>
+                  <a class="dropdown-item " href="./page-terms.html">Integraciones</a>
+                  <a class="dropdown-item " href="./page-privacy.html">Migración de datos</a>
+                  <a class="dropdown-item " href="./page-coming-soon.html">Soporte</a>
+                  <a class="dropdown-item " href="./page-coming-soon-simple.html">Seguridad</a>
+
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Pages -->
+
+
+              <!-- Blog -->
+              <li class="hs-has-sub-menu nav-item">
+                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Recursos</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="./blog-journal.html">Nosotros</a>
+                  <a class="dropdown-item disabled" href="./blog-metro.html">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                  <a class="dropdown-item disabled" href="./blog-metro.html">Trabajo <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="./blog-article.html">Blog <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                  <a class="dropdown-item disabled" href="./blog-author-profile.html">Recursos <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Blog -->
+
+              <!-- Button -->
+              <li class="nav-item">
+                <a class="btn btn-primary btn-transition" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Contáctanos</a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" role="main">
+
+  <!-- Atención -->
+  <div class="position-relative bg-img-center content-space-1 gradient-x-overlay-sm-dark" style="background-image: url(../assets/svg/img/cover/oftalmologia-cover.jpg);">
+    <div class="container content-space-t-2 content-space-t-md-3 content-space-3 content-space-b-lg-5">
+      <div class="w-lg-50">
+        <h1 class="display-5 text-white">Migración</h1>
+      </div>
+    </div>
+    <!-- Shape -->
+    <div class="shape shape-bottom zi-1" style="margin-bottom: -.125rem">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+        <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+      </svg>
+    </div>
+    <!-- End Shape -->
+  </div>
+  <div class="container position-relative zi-2">
+    <div class="row justify-content-center mt-n5">
+      <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n10">
+        <!-- Logo -->
+        <div class="avatar avatar-xl avatar-circle shadow-sm p-4 mx-auto">
+          <img class="avatar-img" src="../assets/svg/img/icons-sin-fondo/reportes-sin-fondo.svg" alt="Image Description">
+        </div>
+        <!-- End Logo -->
+      </div>
+  
+      <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n8">
+        <!-- Logo -->
+        <div class="avatar avatar-xxl avatar-circle shadow-sm p-4 mx-auto">
+          <img class="avatar-img" src="../assets/svg/img/icons-sin-fondo/ficha-sin-fondo.svg" alt="Image Description">
+        </div>
+        <!-- End Logo -->
+      </div>
+  
+      <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n4">
+        <!-- Logo -->
+        <div class="avatar avatar-xl avatar-circle shadow-sm p-4 mx-auto">
+          <img class="avatar-img" src="../assets/svg/img//icons-sin-fondo/recaudacion-sin-fondo.svg" alt="Image Description">
+        </div>
+        <!-- End Logo -->
+      </div>
+  
+      <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n7">
+        <!-- Logo -->
+        <div class="avatar avatar-xl avatar-circle shadow-sm p-4 mx-auto">
+          <img class="avatar-img" src="../assets/svg/img/icons-sin-fondo/adquisicion-sin-fondo.svg" alt="Image Description">
+        </div>
+        <!-- End Logo -->
+      </div>
+  
+      <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n10">
+        <!-- Logo -->
+        <div class="avatar avatar-xxl avatar-circle shadow-sm p-4 mx-auto">
+          <img class="avatar-img" src="../assets/svg/img/icons-sin-fondo/quirofano-sin-fondo.svg" alt="Image Description">
+        </div>
+        <!-- End Logo -->
+      </div>
+  
+      <div class="col-3 col-lg-2 d-none d-sm-inline-block">
+        <!-- Logo -->
+        <div class="avatar avatar-xl avatar-circle shadow-sm p-4 mx-auto">
+          <img class="avatar-img" src="../assets/svg/img/icons-sin-fondo/reportes-sin-fondo.svg" alt="Image Description">
+        </div>
+        <!-- End Logo -->
+      </div>
+    </div>
+  </div>
+  <!-- Atención -->
+  
+  <!-- Icon Blocks -->
+  <div class="overflow-hidden">
+    <div class="container position-relative content-space-2">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="text-cap">Características</span>
+        <h2>Características oftalmológicas</h2>
+      </div>
+      <!-- End Heading -->
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
+          <!-- Icon Blocks -->
+          <div class="pe-lg-6">
+            <span class="svg-icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z" fill="#035A4B"></path>
+                <path d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z" fill="#035A4B"></path>
+              </svg>     
+            </span>
+
+            <h4>More creativity</h4>
+            <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
+          <!-- Icon Blocks -->
+          <div class="pe-lg-6">
+            <span class="svg-icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z" fill="#035A4B"></path>
+                <path d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z" fill="#035A4B"></path>
+              </svg>     
+            </span>
+
+            <h4>Scale budgets efficiently</h4>
+            <p>Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
+          <!-- Icon Blocks -->
+          <div class="pe-lg-6">
+            <span class="svg-icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z" fill="#035A4B"></path>
+                <path d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z" fill="#035A4B"></path>
+              </svg>     
+            </span>
+
+            <h4>Smart Dashboards</h4>
+            <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
+          <!-- Icon Blocks -->
+          <div class="pe-lg-6">
+            <span class="svg-icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z" fill="#035A4B"></path>
+                <path d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z" fill="#035A4B"></path>
+              </svg>     
+            </span>
+
+            <h4>Control Center</h4>
+            <p>Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0">
+          <!-- Icon Blocks -->
+          <div class="pe-lg-6">
+            <span class="svg-icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z" fill="#035A4B"></path>
+                <path d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z" fill="#035A4B"></path>
+              </svg>     
+            </span>
+
+            <h4>Email Reports</h4>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4">
+          <!-- Icon Blocks -->
+          <div class="pe-lg-6">
+            <span class="svg-icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z" fill="#035A4B"></path>
+                <path d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z" fill="#035A4B"></path>
+              </svg>     
+            </span>
+
+            <h4>Forecasting</h4>
+            <p>Staying focused allows us to turn every project we complete into something we love.</p>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+  </div>
+  <!-- End Icon Blocks -->
+
+  <!-- FAQ -->
+  <div class="container content-space-2">
+    <!-- Heading -->
+    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <!-- End Heading -->
+
+    <div class="w-lg-65 mx-lg-auto">
+      <!-- Accordion -->
+      <div class="accordion accordion-flush accordion-lg" id="accordionFAQ">
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingCuriousOne">
+            <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Pregunta frecuente
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingCuriousOne" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam provident necessitatibus neque iusto. Non vero officia est maiores facere laborum, et qui ipsam culpa optio, similique ullam impedit harum unde.
+            </div>
+          </div>
+        </div>
+        <!-- End Accordion Item -->
+
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingCuriousTwo">
+            <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Pregunta frecuente
+            </a>
+          </div>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingCuriousTwo" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam provident necessitatibus neque iusto. Non vero officia est maiores facere laborum, et qui ipsam culpa optio, similique ullam impedit harum unde.              </div>
+          </div>
+        </div>
+        <!-- End Accordion Item -->
+
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingCuriousThree">
+            <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Pregunta frecuente
+            </a>
+          </div>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingCuriousThree" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam provident necessitatibus neque iusto. Non vero officia est maiores facere laborum, et qui ipsam culpa optio, similique ullam impedit harum unde.              </div>
+          </div>
+        </div>
+        <!-- End Accordion Item -->
+
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingCuriousFour">
+            <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Pregunta frecuente
+            </a>
+          </div>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingCuriousFour" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam provident necessitatibus neque iusto. Non vero officia est maiores facere laborum, et qui ipsam culpa optio, similique ullam impedit harum unde.              </div>
+          </div>
+        </div>
+        <!-- End Accordion Item -->
+      </div>
+      <!-- End Accordion -->
+    </div>
+  </div>
+  <!-- FAQ -->
+          
+  <div class="bg-light">
+    <div class="container content-space-2">
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+        <div class="row justify-content-lg-between">
+          <!-- Heading -->
+          <div class="mb-5">
+            <span class="text-cap">Noticias y artículos</span>
+            <h2>Entérate de las novedades</h2>
+          </div>
+          <!-- End Heading -->
+
+          <form>
+            <!-- Input Card -->
+            <div class="input-card input-card-pill input-card-sm border mb-3">
+              <div class="input-card-form">
+                <label for="subscribeFormEg2" class="form-label visually-hidden">Enter email</label>
+                <input type="text" class="form-control form-control-lg" id="subscribeFormEg2" placeholder="Ingresar email" aria-label="Enter email">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg rounded-pill">Suscribirme</button>
+            </div>
+            <!-- End Input Card -->
+          </form>
+
+          <p class="small">Puedes cancelar la suscripción en cualquier momento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Subscribe -->
+
+  </main>
+
+<footer>
+    <div class="container pb-1 pb-lg-7">
+      <div class="row content-space-t-2">
+        <div class="col-12 col-lg-3 mb-7 mb-lg-0">
+          <!-- Logo -->
+          <div class="mb-5">
+            <a class="navbar-brand" href="../index.html" aria-label="Medinet">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo-Medinet">
+            </a>
+          </div>
+          <!-- End Logo -->
+  
+          <!-- List -->
+          <ul class="list-unstyled list-py-1">
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i> José Miguel de La Barra 480, Oficina 501</a></li>
+            <li><a class="link-sm link-secondary" href="tel:1-062-109-9222"><i class="bi-envelope me-1"></i> contacto@medinetapp.com</a></li>
+          </ul>
+          <!-- End List -->
+  
+        </div>
+        <!-- End Col -->
+  
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="mb-3">Soluciones</h5>
+  
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li> <a class="link-sm link-secondary" href="./landing-classic-corporate.html">Agenda médica</a></li>
+            <li><a class="link-sm link-secondary" href="./landing-classic-analytics.html">Expediente clínico</a></li>
+            <li><a class="link-sm link-secondary" href="./landing-classic-studio.html">Recaudación y cobranza</a></li>
+            <li><a class="link-sm link-secondary" href="./landing-classic-marketing.html">Seguimiento de cuentas médicas</a></li> 
+            <li><a class="link-sm link-secondary" href="./landing-classic-advertisement.html">Gestión de quirófano</a></li> 
+            <li><a class="link-sm link-secondary" href="./landing-classic-consulting.html">Gestión de camas</a></li> 
+            <li><a class="link-sm link-secondary" href="./landing-classic-portfolio.html">Adquisición y dispensación</a></li> 
+            <li><a class="link-sm link-secondary" href="./landing-classic-software.html">Reportes</a></li>
+            <li><a class="link-sm link-secondary disabled" href="./landing-classic-business.html">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a></li>    
+
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+  
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="mb-3">Especialidades</h5>
+  
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-secondary" href="#">Oftalmología <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+            <li><a class="link-sm link-secondary" href="#">Psiquiatría</a></li>
+            <li><a class="link-sm link-secondary" href="#">Bariátrica</a></li>
+            <li><a class="link-sm link-secondary" href="#">Estética</a></li>
+            <li><a class="link-sm link-secondary" href="#">Multi-especialidad</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+  
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="mb-3">Características</h5>
+  
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-secondary" href="#">Implementación</a></li>
+            <li><a class="link-sm link-secondary" href="#">Integraciones</a></li>
+            <li><a class="link-sm link-secondary" href="#">Migración de datos</a></li>
+            <li><a class="link-sm link-secondary" href="#">Soporte</a></li>
+            <li><a class="link-sm link-secondary" href="#">Seguridad</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+  
+        <div class="col-6 col-sm">
+          <h5 class="mb-3">Recursos</h5>
+  
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-5">
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-question-circle-fill me-1"></i>Nosotros</a></li>
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-person-circle me-1"></i> Partners</a></li>
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-question-circle-fill me-1"></i>Trabajo</a></li>
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-person-circle me-1"></i> Blog</a></li>
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-question-circle-fill me-1"></i>Guías</a></li>
+
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+  
+      <div class="border-top my-7"></div>
+  
+      <div class="row align-items-center">
+        <div class="col">
+          <p class="small mb-0">© Medinet. 2023 Todos los derechos reservados.</p>
+        </div>
+        <!-- End Col -->
+  
+        <div class="col-auto">
+          <!-- Socials -->
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-primary btn-sm btn-icon" href="#">
+                <i class="bi-facebook"></i>
+              </a>
+            </li>
+  
+            <li class="list-inline-item">
+              <a class="btn btn-primary btn-sm btn-icon" href="#">
+                <i class="bi-google"></i>
+              </a>
+            </li>
+  
+            <li class="list-inline-item">
+              <a class="btn btn-primary btn-sm btn-icon" href="#">
+                <i class="bi-twitter"></i>
+              </a>
+            </li>
+  
+            <li class="list-inline-item">
+              <a class="btn btn-primary btn-sm btn-icon" href="#">
+                <i class="bi-github"></i>
+              </a>
+            </li>
+  
+            <li class="list-inline-item">
+              <a class="btn btn-primary btn-sm btn-icon" href="#">
+                <i class="bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- End Socials -->
+        </div>
+        <!-- End Col -->
+      </div>
+  
+    
+    </div>
+</footer>
+
+ <!-- JS Implementing Plugins -->
+ <script src="../assets/js/vendor.min.js"></script>
+ <script src="../assets/vendor/aos/dist/aos.js"></script>
+
+ <!-- JS Front -->
+ <script src="/assets/js/theme.min.js"></script>
+
+ <!-- JS Plugins Init. -->
+ <script>
+   (function() {
+     // INITIALIZATION OF HEADER
+     // =======================================================
+     new HSHeader('#header').init()
+
+
+     // INITIALIZATION OF MEGA MENU
+     // =======================================================
+     new HSMegaMenu('.js-mega-menu', {
+         desktop: {
+           position: 'left'
+         }
+       })
+
+
+     // INITIALIZATION OF SHOW ANIMATIONS
+     // =======================================================
+     new HSShowAnimation('.js-animation-link')
+
+
+     // INITIALIZATION OF BOOTSTRAP VALIDATION
+     // =======================================================
+     HSBsValidation.init('.js-validate', {
+       onSubmit: data => {
+         data.event.preventDefault()
+         alert('Submited')
+       }
+     })
+
+
+     // INITIALIZATION OF AOS
+     // =======================================================
+     AOS.init({
+       duration: 650,
+       once: true
+     });
+
+
+     // INITIALIZATION OF NAV SCROLLER
+     // =======================================================
+     new HsNavScroller('.js-nav-scroller')
+   })()
+ </script>
+
+</body>
+</html>
