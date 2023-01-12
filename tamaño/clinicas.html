@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Agenda Médica para Clínicas y Centros de Salud | Medinet</title>
+  <title>Clínica | Medinet</title>
 
   <link rel="shortcut icon" href="../assets/svg/logos/favicon-medinet.png">
 
@@ -12,169 +12,163 @@
 
   <link rel="stylesheet" href="../assets/css/theme.min.css">
   <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
 </head>
 
 <body>
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
-    "fixMoment": 1000,
-    "fixEffect": "slide"
-  }'>
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+          }'>
+    
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="../" aria-label="Medinet">
+          <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo-Medinet">
+        </a>
+        <!-- End Default Logo -->
 
-<div class="container">
-<nav class="js-mega-menu navbar-nav-wrap">
-<!-- Default Logo -->
-<a class="navbar-brand" href="../" aria-label="Medinet">
-  <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo-Medinet">
-</a>
-<!-- End Default Logo -->
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
 
-<!-- Toggler -->
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-default">
-    <i class="bi-list"></i>
-  </span>
-  <span class="navbar-toggler-toggled">
-    <i class="bi-x"></i>
-  </span>
-</button>
-<!-- End Toggler -->
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <ul class="navbar-nav">
+              <!-- Landings -->
+              <li class="hs-has-mega-menu nav-item">
+                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" aria-current="page" href="#" role="button" aria-expanded="false">Soluciones</a>
 
-<!-- Collapse -->
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
-  <div class="navbar-absolute-top-scroller">
-    <ul class="navbar-nav">
-      <!-- Landings -->
-      <li class="hs-has-mega-menu nav-item">
-        <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" aria-current="page" href="#" role="button" aria-expanded="false">Soluciones</a>
-
-        <!-- Mega Menu -->
-        <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
-          <div class="row">
-            <div class="col-lg-6 d-none d-lg-block">
-              <!-- Banner Image -->
-              <div class="navbar-dropdown-menu-banner" style="background-image: url(./assets/svg/components/shape-3.svg);">
-                <div class="navbar-dropdown-menu-banner-content">
-                  <div class="mb-4">
-                    <span class="h2 d-block">Moderniza tu centro</span>
-                    <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si tienes dudas, contáctanos</p>
-                  </div>
-                  <a class="btn btn-primary btn-transition" href="#">Contáctanos <i class="bi-chevron-right small"></i></a>
-                </div>
-              </div>
-              <!-- End Banner Image -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-lg-6">
-              <div class="navbar-dropdown-menu-inner">
-                <div class="row">
-                  <div class="col-sm mb-3 mb-sm-0">
-                    <span class="dropdown-header">Módulos</span>
-                    <a class="dropdown-item active" href="../soluciones/agenda-medica">Agenda médica</a>
-                    <a class="dropdown-item " href="../soluciones/ficha-clinica-electronica">Ficha clínica</a>
-                    <a class="dropdown-item " href="../soluciones/recaudacion-y-cobranza">Recaudación y cobranza</a>
-                    <a class="dropdown-item " href="../soluciones/gestion-pabellon">Gestión de pabellón</a>
-                    <a class="dropdown-item " href="../soluciones/gestion-camas">Gestión de camas</a>
-                    <a class="dropdown-item " href="../soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a>
-                    <a class="dropdown-item disabled" href="#">Reportes</a>
-                    <a class="dropdown-item disabled" href="#">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-                  </div>
-                  <!-- End Col -->
-
-                  <div class="col-sm">
-                    <div class="mb-3">
-                      <span class="dropdown-header">Roles</span>
-                      <a class="dropdown-item " href="../roles/director-medico">Director médico</a>
-                      <a class="dropdown-item " href="../roles/gerente-general">Gerente general (CEO)</a>
-                      <a class="dropdown-item " href="../roles/gerente-finanzas">Gerente de finanzas (CFO)</a>
-                      <a class="dropdown-item " href="../roles/gerente-operaciones">Gerente de operaciones (COO)</a>
+                <!-- Mega Menu -->
+                <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                  <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block">
+                      <!-- Banner Image -->
+                      <div class="navbar-dropdown-menu-banner" style="background-image: url(./assets/svg/components/shape-3.svg);">
+                        <div class="navbar-dropdown-menu-banner-content">
+                          <div class="mb-4">
+                            <span class="h2 d-block">Moderniza tu centro</span>
+                            <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si tienes dudas, contáctanos</p>
+                          </div>
+                          <a class="btn btn-primary btn-transition" href="#">Contáctanos <i class="bi-chevron-right small"></i></a>
+                        </div>
+                      </div>
+                      <!-- End Banner Image -->
                     </div>
+                    <!-- End Col -->
 
-                    
-                    <span class="dropdown-header">Tipo de centro</span>
-                    <a class="dropdown-item " href="../tamaño/clinicas">Clínicas</a>
-                    <a class="dropdown-item " href="../tamaño/hospitales">Hospitales</a>
-                    <a class="dropdown-item disabled" href="../tamaño/consultas-medicas">Consultas médicas <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                    <div class="col-lg-6">
+                      <div class="navbar-dropdown-menu-inner">
+                        <div class="row">
+                          <div class="col-sm mb-3 mb-sm-0">
+                            <span class="dropdown-header">Módulos</span>
+                            <a class="dropdown-item " href="../soluciones/agenda-medica">Agenda médica</a>
+                            <a class="dropdown-item " href="../soluciones/ficha-clinica-electronica">Ficha clínica</a>
+                            <a class="dropdown-item " href="../soluciones/recaudacion-y-cobranza">Recaudación y cobranza</a>
+                            <a class="dropdown-item " href="../soluciones/gestion-pabellon">Gestión de pabellón</a>
+                            <a class="dropdown-item " href="../soluciones/gestion-camas">Gestión de camas</a>
+                            <a class="dropdown-item active" href="../soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a>
+                            <a class="dropdown-item disabled" href="#">Reportes</a>
+                            <a class="dropdown-item disabled" href="#">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                          </div>
+                          <!-- End Col -->
 
+                          <div class="col-sm">
+                            <div class="mb-3">
+                              <span class="dropdown-header">Roles</span>
+                              <a class="dropdown-item " href="../roles/director-medico">Director médico</a>
+                              <a class="dropdown-item " href="../roles/gerente-general">Gerente general (CEO)</a>
+                              <a class="dropdown-item " href="../roles/gerente-finanzas">Gerente de finanzas (CFO)</a>
+                              <a class="dropdown-item " href="../roles/gerente-operaciones">Gerente de operaciones (COO)</a>
+                            </div>
+
+                        </div>
+                          <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                      </div>
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Landings -->
+
+              <!-- Company -->
+              <li class="hs-has-sub-menu nav-item">
+                <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Especialidades</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item " href="../especialidades/oftalmologia">Oftalmología</a>
+                  <a class="dropdown-item " href="../especialidades/estetica.html">Estética</a>
+                  <a class="dropdown-item " href="../especialidades/psiquiatria">Psiquiatría</a>
+                  <a class="dropdown-item " href="../especialidades/bariatrica">Oncología</a>
+                  <a class="dropdown-item " href="../especialidades/bariatrica">Bariátrica</a>
+                  <a class="dropdown-item " href="../especialidades/medicina-general">Medicina general</a>
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Company -->
+
+               <!-- Pages -->
+               <li class="hs-has-sub-menu nav-item">
+                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Metodología</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item " href="../metodología/implementacion">Implementación</a>
+                  <a class="dropdown-item " href="../metodología/integraciones">Integraciones</a>
+                  <a class="dropdown-item " href="../metodología/migracion-de-datos">Migración de datos</a>
+                  <a class="dropdown-item " href="../metodología/soporte">Soporte</a>
+                  <a class="dropdown-item " href="../metodología/seguridad">Seguridad</a>
 
                 </div>
-                  <!-- End Col -->
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Pages -->
+
+
+              <!-- Blog -->
+              <li class="hs-has-sub-menu nav-item">
+                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Recursos</a>
+
+                <!-- Mega Menu -->
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">Nosotros</a>
+                  <a class="dropdown-item disabled" href="#">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                  <a class="dropdown-item disabled" href="#">Trabajo <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Blog <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                  <a class="dropdown-item disabled" href="#">Recursos <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
                 </div>
-                <!-- End Row -->
-              </div>
-            </div>
-            <!-- End Col -->
+                <!-- End Mega Menu -->
+              </li>
+              <!-- End Blog -->
+
+              <!-- Button -->
+              <li class="nav-item">
+                <a class="btn btn-primary btn-transition" href="#">Contáctanos</a>
+              </li>
+              <!-- End Button -->
+            </ul>
           </div>
-          <!-- End Row -->
         </div>
-        <!-- End Mega Menu -->
-      </li>
-      <!-- End Landings -->
-
-      <!-- Company -->
-      <li class="hs-has-sub-menu nav-item">
-        <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Especialidades</a>
-
-        <!-- Mega Menu -->
-        <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item " href="../especialidades/oftalmologia">Oftalmología</a>
-          <a class="dropdown-item " href="../especialidades/estetica">Estética</a>
-          <a class="dropdown-item " href="../especialidades/psiquiatria">Psiquiatría</a>
-          <a class="dropdown-item " href="../especialidades/bariatrica">Oncología</a>
-          <a class="dropdown-item " href="../especialidades/bariatrica">Bariátrica</a>
-          <a class="dropdown-item " href="../especialidades/medicina-general">Medicina general</a>
-        </div>
-        <!-- End Mega Menu -->
-      </li>
-      <!-- End Company -->
-
-       <!-- Pages -->
-       <li class="hs-has-sub-menu nav-item">
-        <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Metodología</a>
-
-        <!-- Mega Menu -->
-        <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item " href="../metodología/implementacion">Implementación</a>
-          <a class="dropdown-item " href="../metodología/integraciones">Integraciones</a>
-          <a class="dropdown-item " href="../metodología/migracion-de-datos">Migración de datos</a>
-          <a class="dropdown-item " href="../metodología/soporte">Soporte</a>
-          <a class="dropdown-item " href="../metodología/seguridad">Seguridad</a>
-
-        </div>
-        <!-- End Mega Menu -->
-      </li>
-      <!-- End Pages -->
-
-
-      <!-- Blog -->
-      <li class="hs-has-sub-menu nav-item">
-        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Recursos</a>
-
-        <!-- Mega Menu -->
-        <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item" href="#">Nosotros</a>
-          <a class="dropdown-item disabled" href="#">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <a class="dropdown-item disabled" href="#">Trabajo <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="#">Blog <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <a class="dropdown-item disabled" href="#">Recursos <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-        </div>
-        <!-- End Mega Menu -->
-      </li>
-      <!-- End Blog -->
-
-      <!-- Button -->
-      <li class="nav-item">
-        <a class="btn btn-primary btn-transition" href="#">Contáctanos</a>
-      </li>
-      <!-- End Button -->
-    </ul>
-  </div>
-</div>
-<!-- End Collapse -->
-</nav>
-</div>
-</header>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
 
   <main id="content" role="main">
 
@@ -184,9 +178,9 @@
       <div class="row justify-content-lg-between align-items-lg-center mb-10">
         <div class="col-md-6 col-lg-5">
           <div class="mb-5">
-            <span class="badge bg-soft-success rounded-pill text-primary mb-3">Agenda médica</span>
-            <h1 class="display-5">Agenda médica integrada a los procesos clínicos</h1>
-            <p>Unifica la agenda de pacientes, profesionales, equipos o incluso quirófanos, todo en un sólo lugar. </p>
+            <span class="badge bg-success rounded-pill mb-3">Adquisición y dispensación</span>
+            <h1 class="display-5">Gestión eficiente de bodegas y farmacias</h1>
+            <p>Unifica y controla la entrada y salida de insumos en todo el ciclo de vida. Evita errores y quiebres de stock con Medinet.</p>
           </div>
 
           <div class="d-grid d-sm-flex gap-3">
@@ -259,8 +253,8 @@
 
     <div class="container  content-space-t-lg-3">
       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-        <span class="text-cap"></span>
-        <h2 class="display-6">Administración compleja de agendas</h2>
+        <span class="text-cap">Inventario, adquisiciones y dispensación</span>
+        <h2 class="display-6">Eficiencia y trazabilidad</h2>
       </div>
 
   <div class="row mb-5 mb-md-9">
@@ -277,12 +271,12 @@
         </div>
 
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Agenda pacientes</h4>
+          <h4 class="mb-0">Bodegas y farmacias</h4>
         </div>
       </div>
       <!-- End Icon Block -->
 
-      <p>Desde múltiples sucursales o comparte un link para un agendamiento online.</p>
+      <p>Controla stock desde la adquisición hasta la dispensación.</p>
     </div>
     <!-- End Col -->
 
@@ -299,12 +293,12 @@
         </div>
 
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Portal exámenes</h4>
+          <h4 class="mb-0">Proveedores</h4>
         </div>
       </div>
       <!-- End Icon Block -->
 
-      <p>Permite a tus pacientes revisar los resultados en línea y evitar trámites.</p>
+      <p>Crea y controla proveedores desde Medinet y compra de manera organizada.</p>
     </div>
     <!-- End Col -->
 
@@ -321,12 +315,12 @@
         </div>
 
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Agenda profesionales o recursos</h4>
+          <h4 class="mb-0">Dispensación</h4>
         </div>
       </div>
       <!-- End Icon Block -->
 
-      <p>Permite asignar horarios a los activos de tu centro de salud, todo en un sólo lugar.</p>
+      <p>De medicamentos con cargo automático a la cuenta de pacientes.</p>
     </div>
     <!-- End Col -->
 
@@ -343,12 +337,12 @@
         </div>
 
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Recordatorios automatizados</h4>
+          <h4 class="mb-0">Control de stock</h4>
         </div>
       </div>
       <!-- End Icon Block -->
 
-      <p>Mejora la experiencia de pacientes e impulsa la confirmación de citas para reducir ausentismo.</p>
+      <p>Sistema de alertas para reposición automática, control de stock mínimo, crítico y máximo.</p>
     </div>
     <!-- End Col -->
 
@@ -365,12 +359,12 @@
         </div>
 
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Vista diaria, semanal y mensual </h4>
+          <h4 class="mb-0">Órdenes de compra</h4>
         </div>
       </div>
       <!-- End Icon Block -->
 
-      <p>Permite filtrar por vistas e incluso compartir el listado de citas a cada profesional.</p>
+      <p>Creación de OC desde bodega y recepciones totales o parciales.</p>
     </div>
     <!-- End Col -->
 
@@ -396,137 +390,134 @@
     </div>
     <!-- End Col -->
   </div>
-
- 
     </div>
 
     <!-- Deseo -->
-    <div class="bg">
-      <div class="overflow-hidden">
-        <div class="container content-space-2">
-          <div class="row justify-content-lg-between align-items-lg-center">
-            <div class="col-lg-5 mb-9 mb-lg-0">
-              <!-- Heading -->
-              <div class="mb-5">
-                <h2 class="display-6">Administra alto volumen de citas más eficiente</h2>
-              </div>
-              <!-- End Heading -->
-              <div class="mb-4">
-                <p>Medinet permite una gestión eficiente de consultas médicas, pabellones quirúrgicos y toma de exámenes con control de acceso y uso creando perfiles administrativos y/o clínicos.</p>
-              </div>
-      
-              <a class="link" href="#">Contáctanos<i class="bi-chevron-right small ms-1"></i></a>
+    <div class="overflow-hidden">
+      <div class="container content-space-2">
+        <div class="row justify-content-lg-between align-items-lg-center">
+          <div class="col-lg-5 mb-9 mb-lg-0">
+            <!-- Heading -->
+            <div class="mb-5">
+              <h2 class="display-6">Cargo automático a la cuenta del paciente</h2>
+            </div>
+            <!-- End Heading -->
+            <div class="mb-4">
+              <p>Medinet permite optimizar la gestión de insumos o farmacos para mantener la cuenta médica actualizada de manera automática e integrada a los procesos clínicos.</p>
             </div>
 
-            <div class="col-lg-6">
-              <div class="position-relative mx-auto" data-aos="fade-up">
-                <!-- Mobile Device -->
-                <figure class="">
-                  <div class="">
-                    <img class="device-mobile-img" src="../assets/svg/ficha-clinica-electronica-medinet.svg" alt="Image Description">
-                  </div>
-                </figure>
-                <!-- End Mobile Device -->
-
-                <!-- SVG Shape -->
-                <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
-                  <img class="img-fluid" src="../assets/svg/components/shape-2.svg" alt="SVG">
-                </div>
-                <!-- End SVG Shape -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="overflow-hidden">
-        <div class="container content-space-2">
-          <div class="row justify-content-lg-between align-items-lg-center">
-            <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
-              <!-- Heading -->
-              <div class="mb-5">
-                <h2 class="display-6">Agenda online y portal de exámenes</h2>
-                <p>Reduce trámites y mejora la experiencia de pacientes. Siempre con un control total de los horarios y recursos.</p>
-              </div>
-              <!-- End Heading -->
-
-              <ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
-                <li class="list-checked-item">Agenda online para compartir en sitio web y redes sociales</li>
-                <li class="list-checked-item">Portal de exámenes para pacientes</li>
-                <li class="list-checked-item">Recordatorios automatizados por Whatsapp, SMS y correo electrónico</li>
-              </ul>
-            </div>
-            <!-- End Col -->
-
-            <div class="col-lg-6 order-lg-1">
-              <div class="position-relative mx-auto" data-aos="fade-up">
-                <!-- Mobile Device -->
-                <figure class="">
-                  <div class="">
-                    <img class="device-mobile-img" src="../assets/svg/ficha-clinica-electronica-medinet.svg" alt="Image Description">
-                  </div>
-                </figure>
-                <!-- End Mobile Device -->
-
-                <!-- SVG Shape -->
-                <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
-                  <img class="img-fluid" src="../assets/svg/components/shape-1.svg" alt="SVG">
-                </div>
-                <!-- End SVG Shape -->
-              </div>
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-        </div>
-      </div>
-
-      <div class="overflow-hidden">
-        <div class="container content-space-2">
-          <div class="row justify-content-lg-between align-items-lg-center">
-            <div class="col-lg-5 mb-9 mb-lg-0">
-              <!-- Heading -->
-              <div class="mb-4">
-                <h2 class="display-6">Obtén reportes un 60% más rápido y en línea</h2>
-                <p>Medinet permite reducir el tiempo que tus colaboradores destinan para obtener informes.</p>
-              </div>
-              <!-- End Heading -->
-
-              <!-- List Checked -->
-              <ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
-                <li class="list-checked-item">Citas y prestaciones asociadas</li>
-                <li class="list-checked-item">Tratamientos realizados</li>
-                <li class="list-checked-item">Pagos asociados a citas y más</li>
-              </ul>
-              <!-- End List Checked -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-lg-6">
-              <div class="position-relative mx-auto" data-aos="fade-up">
-                <!-- Mobile Device -->
-                <figure class="">
-                  <div class="">
-                    <img class="device-mobile-img" src="../assets/svg/ficha-clinica-electronica-medinet.svg" alt="Image Description">
-                  </div>
-                </figure>
-                <!-- End Mobile Device -->
-
-                <!-- SVG Shape -->
-                <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
-                  <img class="img-fluid" src="../assets/svg/components/shape-4.svg" alt="SVG">
-                </div>
-                <!-- End SVG Shape -->
-              </div>
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-        </div>
-      </div>
+            <ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
+              <li class="list-checked-item">Cuenta médica del paciente en línea y actualizada</li>
+              <li class="list-checked-item">Creación de kit con cargo automatizado a la cuenta de pacientes</li>
+              <li class="list-checked-item">Control por <span class="badge bg-primary rounded-pill ms-1">unidosis</span></li>
+            </ul>
     
+           
+          </div>
 
-    </div>  
+          <div class="col-lg-6">
+            <div class="position-relative mx-auto" data-aos="fade-up">
+              <!-- Mobile Device -->
+              <figure class="">
+                <div class="">
+                  <img class="device-mobile-img" src="../assets/svg/ficha-clinica-electronica-medinet.svg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Mobile Device -->
+
+              <!-- SVG Shape -->
+              <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
+                <img class="img-fluid" src="../assets/svg/components/shape-2.svg" alt="SVG">
+              </div>
+              <!-- End SVG Shape -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overflow-hidden">
+      <div class="container content-space-2">
+        <div class="row justify-content-lg-between align-items-lg-center">
+          <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
+            <!-- Heading -->
+            <div class="mb-5">
+              <h2 class="display-6">Optimiza los pedidos y el control de stock</h2>
+              <p>Organiza proveedores, genera órdenes de compra (OC) y recepciona pedidos de manera controlada. Control de stock máximo, mínimo y crítico para reducir errores o pérdidas.</p>
+            </div>
+            <!-- End Heading -->
+
+            <a class="link" href="#">Contáctanos<i class="bi-chevron-right small ms-1"></i></a>
+            
+          </div>
+          <!-- End Col -->
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="position-relative mx-auto" data-aos="fade-up">
+              <!-- Mobile Device -->
+              <figure class="">
+                <div class="">
+                  <img class="device-mobile-img" src="../assets/svg/ficha-clinica-electronica-medinet.svg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Mobile Device -->
+
+              <!-- SVG Shape -->
+              <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
+                <img class="img-fluid" src="../assets/svg/components/shape-1.svg" alt="SVG">
+              </div>
+              <!-- End SVG Shape -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
+
+    <div class="overflow-hidden">
+      <div class="container content-space-2">
+        <div class="row justify-content-lg-between align-items-lg-center">
+          <div class="col-lg-5 mb-9 mb-lg-0">
+            <!-- Heading -->
+            <div class="mb-4">
+              <h2 class="display-6">Visibilidad de costos y rentabilidad</h2>
+              <p>Total trazabilidad del inventario y visibilidad de todos los movimientos asociados a medicamentos o insumos.</p>
+            </div>
+            <!-- End Heading -->
+
+            <!-- List Checked -->
+            <ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
+              <li class="list-checked-item">Reportes de Órdenes de Compra (OC)</li>
+              <li class="list-checked-item">Reportes de existencias de productos de cada bodega</li>
+              <li class="list-checked-item">Reportes de gestión de pedidos externos (no clínicos)</li>
+            </ul>
+            <!-- End List Checked -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-lg-6">
+            <div class="position-relative mx-auto" data-aos="fade-up">
+              <!-- Mobile Device -->
+              <figure class="">
+                <div class="">
+                  <img class="device-mobile-img" src="../assets/svg/ficha-clinica-electronica-medinet.svg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Mobile Device -->
+
+              <!-- SVG Shape -->
+              <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
+                <img class="img-fluid" src="../assets/svg/components/shape-4.svg" alt="SVG">
+              </div>
+              <!-- End SVG Shape -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
     <!-- Deseo -->
 
     <!-- <div class="container content-space-1 content-space-lg-2">
@@ -613,16 +604,16 @@
           <div class="col-lg-5">
             <!-- Heading -->
             <div class="mb-4">
-              <h2>Optimiza la gestión de agenda</h2>
-              <p>Medinet te permite modernizar y digitalizar la gestión de la agenda médica y obtener mayor control.</p>
+              <h2>Optimiza la gestión de inventario</h2>
+              <p>Medinet te permite modernizar y digitalizar la gestión de inventario con mayor control.</p>
             </div>
             <!-- End Heading -->
 
             <!-- List Checked -->
             <ul class="list-checked list-checked-primary mb-5">
-              <li class="list-checked-item">Agenda online y portal de exámenes</li>
-              <li class="list-checked-item">Agenda de profesionales o recursos</li>
-              <li class="list-checked-item">Reportes en línea</li>
+              <li class="list-checked-item">Bodegas y farmacias</li>
+              <li class="list-checked-item">Órdenes de compra y recepción de pedidos</li>
+              <li class="list-checked-item">Dispensación de medicamentos a pacientes</li>
             </ul>
             <!-- End List Checked -->
 
@@ -630,7 +621,7 @@
 
             <hr class="my-5">
 
-            <span class="d-block">Clientes que agendan con Medinet</span>
+            <span class="d-block">Clientes que gestionan su inventario con Medinet</span>
 
             <div class="row">
               <div class="col py-3">
@@ -810,109 +801,63 @@
     </div> -->
 
     <!-- FAQ -->
-    <div class="container content-space-2 content-space-b-lg-3">
-      <div class="w-lg-75 mx-lg-auto">
+    <div class="container content-space-2">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <h2 class="display-6">Preguntas frecuentes</h2>
+      </div>
+      <!-- End Heading -->
 
-        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2 class="display-6">Preguntas frecuentes</h2>
-        </div>
-
-        <div class="d-grid gap-10">
-          <div class="d-grid gap-3">
-
-            <!-- Accordion -->
-            <div class="accordion accordion-flush accordion-lg" id="accordionFAQBasics">
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingBasicsOne">
-                  <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseBasicsOne" aria-expanded="true" aria-controls="collapseBasicsOne">
-                    ¿Los pacientes pueden pedir cita online?
-                  </a>
-                </div>
-                <div id="collapseBasicsOne" class="accordion-collapse collapse show" aria-labelledby="headingBasicsOne" data-bs-parent="#accordionFAQBasics">
-                  <div class="accordion-body">
-                    Si, te entregamos un link que puedes compartir en tu web o donde gustes para que tus pacientes agenden online. Puedes elegir que doctores, días y horas se pueden agendar online, máxima flexibilidad.</div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingBasicsTwo">
-                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseBasicsTwo" aria-expanded="false" aria-controls="collapseBasicsTwo">
-                    ¿Puedo recordar y confirmar cita de forma automática?
-                  </a>
-                </div>
-                <div id="collapseBasicsTwo" class="accordion-collapse collapse" aria-labelledby="headingBasicsTwo" data-bs-parent="#accordionFAQBasics">
-                  <div class="accordion-body">
-                    Si, de forma nativa soportamos email, pero mediante nuestro parter cero.ai puedes recordar, responder dudas y confirmar de forma automática vía whatsapp.</div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingBasicsThree">
-                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseBasicsThree" aria-expanded="false" aria-controls="collapseBasicsThree">
-                    ¿Pueden los pacientes descargar sus exámenes?
-                  </a>
-                </div>
-                <div id="collapseBasicsThree" class="accordion-collapse collapse" aria-labelledby="headingBasicsThree" data-bs-parent="#accordionFAQBasics">
-                  <div class="accordion-body">
-                    Si, mediante nuestra función Portal de Pacientes puedes disponibilizar las atenciones realizadas y examenes siempre y cuando tus sistemas de exámenes se encuentren integrados a Medinet              </div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingBasicsFour">
-                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseBasicsFour" aria-expanded="false" aria-controls="collapseBasicsFour">
-                    ¿Hay estados de cita?
-                  </a>
-                </div>
-                <div id="collapseBasicsFour" class="accordion-collapse collapse" aria-labelledby="headingBasicsFour" data-bs-parent="#accordionFAQBasics">
-                  <div class="accordion-body">
-                    Si, manejamos varios estados de cita y pueden ser configurados a gusto en el caso de que necesites una configuración especial.</div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingBasicsFive">
-                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseBasicsFive" aria-expanded="false" aria-controls="collapseBasicsFive">
-                    ¿Puedo agendar activos o máquinas en vez de profesionales? 
-                  </a>
-                </div>
-                <div id="collapseBasicsFive" class="accordion-collapse collapse" aria-labelledby="headingBasicsFive" data-bs-parent="#accordionFAQBasics">
-                  <div class="accordion-body">
-                    Si, no solo puedes generar agendas de profesionales, sino que también de box, sillones, máquinas de rayos o cualquier otro activo que decidas. Incluso puedes asignar profesionales a esos activos para un mayor control.</div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingBasicsSix">
-                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseBasicsSix" aria-expanded="false" aria-controls="collapseBasicsSix">
-                    ¿Puedo aperturar agenda a médicos que no trabajan todos los días acá?
-                  </a>
-                </div>
-                <div id="collapseBasicsSix" class="accordion-collapse collapse" aria-labelledby="headingBasicsSix" data-bs-parent="#accordionFAQBasics">
-                  <div class="accordion-body">
-                    Si, la agenda puede ser utilizada de forma abierta o puedes aperturar agenda dependiendo de los contratos con los médicos, horarios de trabajo, disponibilidad de los mismos y los tipos de citas que presten cada uno.</div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
+      <div class="w-lg-65 mx-lg-auto">
+        <!-- Accordion -->
+        <div class="accordion accordion-flush accordion-lg" id="accordionFAQ">
+          <!-- Accordion Item -->
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingCuriousOne">
+              <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Cuál es la diferencia de este módulo con un ERP?
+              </a>
             </div>
-            <!-- End Accordion -->
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingCuriousOne" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Nosotros no somos un ERP, solamente permitimos generar las compras y recepcionar los pedidos de manera de saber exactamente cuanto inventario hay en la menor dosis posible. Gracias a esta funcionalidad puedes emitir pastillas o fracciones de pastillas y no cajas como lo harías normalmente con un ERP.</div>
+            </div>
           </div>
+          <!-- End Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingCuriousTwo">
+              <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Puedo agrupar ordenes de muchas farmacias para optimizar la compra?
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingCuriousTwo" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Si, es factible y eso facilita la solicitud e incluso permite negociar con los proveedores descuentos por volumen.</div>
+          </div>
+          <!-- End Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingCuriousThree">
+              <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Puedo dispensar pastillas o deben ser cajas de medicamentos?
+              </a>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingCuriousThree" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Si, gracias a la habilidad del sistema de trabajar con unidosis, es posible dispensar grageas, viales o la unidad mínima posible para el medicamento en cuestión.            </div>
+          </div>
+          <!-- End Accordion Item -->
 
         </div>
+        <!-- End Accordion -->
       </div>
     </div>
-    <!-- End FAQ -->
+  </div>
+    </div>
+    <!-- FAQ -->
 
     <!-- Integraciones -->
     <div class="overflow-hidden">
