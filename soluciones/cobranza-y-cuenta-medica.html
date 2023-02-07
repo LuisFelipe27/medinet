@@ -16,7 +16,7 @@
 
 <body>
 
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
     "fixMoment": 1000,
     "fixEffect": "slide"
   }'>
@@ -24,8 +24,8 @@
 <div class="container">
 <nav class="js-mega-menu navbar-nav-wrap">
 <!-- Default Logo -->
-<a class="navbar-brand" href="../" aria-label="Medinet">
-  <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo-Medinet">
+<a class="navbar-brand" href="../" aria-label="Front">
+  <img class="navbar-brand-logo" src="./assets/svg/logos/logo-medinet.svg" alt="Logo">
 </a>
 <!-- End Default Logo -->
 
@@ -53,13 +53,13 @@
           <div class="row">
             <div class="col-lg-6 d-none d-lg-block">
               <!-- Banner Image -->
-              <div class="navbar-dropdown-menu-banner" style="background-image: url(./assets/svg/components/shape-3.svg);">
+              <div class="navbar-dropdown-menu-banner bg-light">
                 <div class="navbar-dropdown-menu-banner-content">
                   <div class="mb-4">
                     <span class="h2 d-block">Moderniza tu centro</span>
-                    <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si tienes dudas, contáctanos</p>
+                    <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si quieres saber más, agenda una demo</p>
                   </div>
-                  <a class="btn btn-primary btn-transition" href="#">Contáctanos <i class="bi-chevron-right small"></i></a>
+                  <a class="btn btn-primary btn-transition" href="https://meetings.hubspot.com/viterbo">Agendar reunión <i class="bi-chevron-right small"></i></a>
                 </div>
               </div>
               <!-- End Banner Image -->
@@ -71,14 +71,14 @@
                 <div class="row">
                   <div class="col-sm mb-3 mb-sm-0">
                     <span class="dropdown-header">Módulos</span>
-                    <a class="dropdown-item" href="../soluciones/agenda-medica">Agenda médica</a>
-                    <a class="dropdown-item" href="../soluciones/ficha-clinica-electronica">Ficha clínica</a>
-                    <a class="dropdown-item active" href="../soluciones/recaudacion-y-cobranza">Recaudación y cobranza</a>
-                    <a class="dropdown-item " href="../soluciones/gestion-pabellon">Gestión de pabellón</a>
+                    <a class="dropdown-item " href="../soluciones/agenda-medica">Agenda médica</a>
+                    <a class="dropdown-item " href="../soluciones/ficha-clinica-electronica">Ficha clínica</a>
+                    <a class="dropdown-item " href="../soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a>
+                    <a class="dropdown-item " href="../soluciones/gestion-quirofano">Gestión de quirófano</a>
                     <a class="dropdown-item " href="../soluciones/gestion-camas">Gestión de camas</a>
                     <a class="dropdown-item " href="../soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a>
-                    <a class="dropdown-item disabled" href="#">Reportes</a>
-                    <a class="dropdown-item disabled" href="#">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                    <a class="dropdown-item " href="../soluciones/reportes">Reportes</a>
+                    <a class="dropdown-item disabled" href="">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
                   </div>
                   <!-- End Col -->
 
@@ -89,13 +89,12 @@
                       <a class="dropdown-item " href="../roles/gerente-general">Gerente general (CEO)</a>
                       <a class="dropdown-item " href="../roles/gerente-finanzas">Gerente de finanzas (CFO)</a>
                       <a class="dropdown-item " href="../roles/gerente-operaciones">Gerente de operaciones (COO)</a>
-
-                      <span class="dropdown-header">Tipo de centro</span>
-                      <a class="dropdown-item " href="../tamaño/clinicas">Clínicas</a>
-                      <a class="dropdown-item " href="../tamaño/hospitales">Hospitales</a>
-                      <a class="dropdown-item disabled" href="../tamaño/consultas-medicas">Consultas médicas <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
                     </div>
 
+                    <span class="dropdown-header">Clientes</span>
+                    <a class="dropdown-item " href="../clinicas">Clínicas</a>
+                    <a class="dropdown-item " href="../hospitales">Hospitales</a>
+                    <a class="dropdown-item disabled" href="">Consultas médicas <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
                 </div>
                   <!-- End Col -->
                 </div>
@@ -116,12 +115,13 @@
 
         <!-- Mega Menu -->
         <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item " href="../especialidades/oftalmologia">Oftalmología</a>
-          <a class="dropdown-item " href="../especialidades/estetica">Estética</a>
-          <a class="dropdown-item " href="../especialidades/psiquiatria">Psiquiatría</a>
-          <a class="dropdown-item " href="../especialidades/bariatrica">Oncología</a>
-          <a class="dropdown-item " href="../especialidades/bariatrica">Bariátrica</a>
           <a class="dropdown-item " href="../especialidades/medicina-general">Medicina general</a>
+          <a class="dropdown-item " href="../especialidades/oftalmologia">Oftalmología</a>
+          <a class="dropdown-item " href="../especialidades/psiquiatria">Psiquiatría</a>
+          <a class="dropdown-item " href="../especialidades/estetica">Estética</a>
+          <a class="dropdown-item " href="../especialidades/oncologia">Oncología</a>
+          <a class="dropdown-item " href="../especialidades/salud-ocupacional">Salud ocupacional</a>
+          <a class="dropdown-item " href="../especialidades/bariatrica">Bariátrica</a>
         </div>
         <!-- End Mega Menu -->
       </li>
@@ -133,11 +133,11 @@
 
         <!-- Mega Menu -->
         <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item " href="../metodología/implementacion">Implementación</a>
-          <a class="dropdown-item " href="../metodología/integraciones">Integraciones</a>
-          <a class="dropdown-item " href="../metodología/migracion-de-datos">Migración de datos</a>
-          <a class="dropdown-item " href="../metodología/soporte">Soporte</a>
-          <a class="dropdown-item " href="../metodología/seguridad">Seguridad</a>
+          <a class="dropdown-item " href="../metodologia/implementacion">Implementación</a>
+          <a class="dropdown-item " href="../metodologia/integraciones">Integraciones</a>
+          <a class="dropdown-item " href="../metodologia/migracion-de-datos">Migración de datos</a>
+          <a class="dropdown-item " href="../metodologia/soporte">Soporte</a>
+          <a class="dropdown-item " href="../metodologia/seguridad">Seguridad</a>
 
         </div>
         <!-- End Mega Menu -->
@@ -147,16 +147,13 @@
 
       <!-- Blog -->
       <li class="hs-has-sub-menu nav-item">
-        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Recursos</a>
+        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Empresa</a>
 
         <!-- Mega Menu -->
         <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item" href="#">Nosotros</a>
-          <a class="dropdown-item disabled" href="#">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <a class="dropdown-item disabled" href="#">Trabajo <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="#">Blog <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <a class="dropdown-item disabled" href="#">Recursos <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+          <a class="dropdown-item" href="../empresa/nosotros">Nosotros</a>
+          <a class="dropdown-item" href="../empresa/trabajo">Trabajo</a>
+          <a class="dropdown-item disabled" href="">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
         </div>
         <!-- End Mega Menu -->
       </li>
@@ -164,7 +161,7 @@
 
       <!-- Button -->
       <li class="nav-item">
-        <a class="btn btn-primary btn-transition" href="#">Contáctanos</a>
+        <a class="btn btn-primary btn-transition" href="https://meetings.hubspot.com/viterbo">Agendar reunión</a>
       </li>
       <!-- End Button -->
     </ul>
@@ -187,7 +184,7 @@
                 <span class="badge bg-soft-primary text-primary mb-3">Cobranza y cuenta médica</span>
               </div>
               <h1 class="display-5">Cuenta médica automatizada y con total trazabilidad</h1>
-              <p>Lorem.</p>
+              <p>Medinet permite registrar pagos en línea y de manera automatizada para mantener la cuenta médica al día y disminuir los tiempos de pago de aseguradoras.</p>
             </div>
 
             <div class="d-grid d-sm-flex gap-3">
@@ -353,14 +350,18 @@
           <div class="col-lg-5 mb-9 mb-lg-0">
             <!-- Heading -->
             <div class="mb-5">
-              <h2 class="display-6">Control de alto flujo de ingresos por cajas y sucursales</h2>
+              <h2 class="display-6">Confección y emisión de presupuestos estandarizados</h2>
             </div>
             <!-- End Heading -->
             <div class="mb-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Medinet permite confeccionar presupuestos en línea, realizar seguimiento en un flujo estandarizado y reducir incobrables por errores en la cuenta médica de los pacientes.</p>
             </div>
-    
-            <a class="link" href="#">Contáctanos<i class="bi-chevron-right small ms-1"></i></a>
+
+            <ul class="list-checked list-checked-soft-bg-success list-checked-lg">
+              <li class="list-checked-item">Presupuestos asociados a cuentas médicas de manera automatizada</li>
+              <li class="list-checked-item">Reducción de errores de cobro y tiempos de pago</li>
+              <li class="list-checked-item">Confección de presupuestos personalizados con el logo de la institución</li>
+            </ul>
           </div>
 
           <div class="col-lg-6">
@@ -368,7 +369,7 @@
               <!-- Mobile Device -->
               <figure class="">
                 <div class="">
-                  <img class="device-mobile-img" src="../assets/svg/shapes/recaudacion-y-cobranza/control-de-cajas-clinicas.svg" alt="Image Description">
+                  <img class="device-mobile-img" src="../assets/svg/shapes/especialidades/seguimiento-pacientes-clinica-estetica.svg" alt="Image Description">
                 </div>
               </figure>
               <!-- End Mobile Device -->
@@ -385,15 +386,15 @@
           <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
             <!-- Heading -->
             <div class="mb-5">
-              <h2 class="display-6">Integración a ERP o sistemas de facturación</h2>
-              <p>Medinet permite integrar el módulo de recaudación y cobranza a tu ERP o sistema de facturación.</p>
+              <h2 class="display-6">Gestiona la recaudación de múltiples sucursales</h2>
+              <p>Medinet permite integrar la cobranza de múltiples sucursales y automatizar la cuenta médica de pacientes.</p>
             </div>
             <!-- End Heading -->
 
             <ul class="list-checked list-checked-soft-bg-success list-checked-lg">
-              <li class="list-checked-item">Integración a ERP o sistemas financieros</li>
-              <li class="list-checked-item">Integración a I-IMED</li>
-              <li class="list-checked-item">Capacidad de desarrollo para integraciones a la medida</li>
+              <li class="list-checked-item">Apertura y cierre de cajas</li>
+              <li class="list-checked-item">Trazabilidad de movimientos</li>
+              <li class="list-checked-item">Control de acceso y perfiles de usuarios</li>
             </ul>
           </div>
           <!-- End Col -->
@@ -403,7 +404,7 @@
               <!-- Mobile Device -->
               <figure class="">
                 <div class="">
-                  <img class="device-mobile-img" src="../assets/svg/shapes/recaudacion-y-cobranza/integracion-erp-o-sistemas-facturacion.svg" alt="Image Description">
+                  <img class="device-mobile-img" src="../assets/svg/shapes/recaudacion-y-cobranza/control-de-cajas-clinicas.svg" alt="Image Description">
                 </div>
               </figure>
               <!-- End Mobile Device -->
@@ -423,15 +424,14 @@
             <!-- Heading -->
             <div class="mb-4">
               <h2 class="display-6">Información en la nube, segura y accesible</h2>
-              <p>¿Porque es segura? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>En Medinet contamos con certificaciones con el mayor estándar de seguridad a nivel mundial para resguardar los datos y procesos de nuestros clientes.</p>
             </div>
             <!-- End Heading -->
 
             <!-- List Checked -->
-            <ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
-              <li class="list-checked-item">Tipo reporte 1</li>
-              <li class="list-checked-item">Tipo reporte 2</li>
-              <li class="list-checked-item">Tipo reporte 3</li>
+            <ul class="list-checked list-checked-soft-bg-success list-checked-lg">
+              <li class="list-checked-item">Certificación ISO 9001</li>
+              <li class="list-checked-item">Certificación ISO 270001</li>
             </ul>
             <!-- End List Checked -->
           </div>

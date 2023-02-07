@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>EHR configurable y orientado a la productividad | Medinet</title>
+  <title>Ficha clínica | Medinet</title>
 
   <link rel="shortcut icon" href="../assets/svg/logos/favicon-medinet.png">
 
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
     "fixMoment": 1000,
     "fixEffect": "slide"
   }'>
@@ -23,8 +23,8 @@
 <div class="container">
 <nav class="js-mega-menu navbar-nav-wrap">
 <!-- Default Logo -->
-<a class="navbar-brand" href="../" aria-label="Medinet">
-  <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo-Medinet">
+<a class="navbar-brand" href="../" aria-label="Front">
+  <img class="navbar-brand-logo" src="./assets/svg/logos/logo-medinet.svg" alt="Logo">
 </a>
 <!-- End Default Logo -->
 
@@ -52,13 +52,13 @@
           <div class="row">
             <div class="col-lg-6 d-none d-lg-block">
               <!-- Banner Image -->
-              <div class="navbar-dropdown-menu-banner" style="background-image: url(./assets/svg/components/shape-3.svg);">
+              <div class="navbar-dropdown-menu-banner bg-light">
                 <div class="navbar-dropdown-menu-banner-content">
                   <div class="mb-4">
                     <span class="h2 d-block">Moderniza tu centro</span>
-                    <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si tienes dudas, contáctanos</p>
+                    <p>Revisa nuestras soluciones por módulo, rol o tipo de centro. Si quieres saber más, agenda una demo</p>
                   </div>
-                  <a class="btn btn-primary btn-transition" href="#">Contáctanos <i class="bi-chevron-right small"></i></a>
+                  <a class="btn btn-primary btn-transition" href="https://meetings.hubspot.com/viterbo">Agendar reunión <i class="bi-chevron-right small"></i></a>
                 </div>
               </div>
               <!-- End Banner Image -->
@@ -70,14 +70,14 @@
                 <div class="row">
                   <div class="col-sm mb-3 mb-sm-0">
                     <span class="dropdown-header">Módulos</span>
-                    <a class="dropdown-item" href="../soluciones/agenda-medica">Agenda médica</a>
-                    <a class="dropdown-item active" href="../soluciones/ficha-clinica-electronica">Ficha clínica</a>
-                    <a class="dropdown-item " href="../soluciones/recaudacion-y-cobranza">Recaudación y cobranza</a>
-                    <a class="dropdown-item " href="../soluciones/gestion-pabellon">Gestión de pabellón</a>
+                    <a class="dropdown-item " href="../soluciones/agenda-medica">Agenda médica</a>
+                    <a class="dropdown-item " href="../soluciones/ficha-clinica-electronica">Ficha clínica</a>
+                    <a class="dropdown-item " href="../soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a>
+                    <a class="dropdown-item " href="../soluciones/gestion-quirofano">Gestión de quirófano</a>
                     <a class="dropdown-item " href="../soluciones/gestion-camas">Gestión de camas</a>
                     <a class="dropdown-item " href="../soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a>
-                    <a class="dropdown-item disabled" href="#">Reportes</a>
-                    <a class="dropdown-item disabled" href="#">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+                    <a class="dropdown-item " href="../soluciones/reportes">Reportes</a>
+                    <a class="dropdown-item disabled" href="">Reportes BI <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
                   </div>
                   <!-- End Col -->
 
@@ -90,13 +90,10 @@
                       <a class="dropdown-item " href="../roles/gerente-operaciones">Gerente de operaciones (COO)</a>
                     </div>
 
-                    
-                    <span class="dropdown-header">Tipo de centro</span>
-                    <a class="dropdown-item " href="../tamaño/clinicas">Clínicas</a>
-                    <a class="dropdown-item " href="../tamaño/hospitales">Hospitales</a>
-                    <a class="dropdown-item disabled" href="../tamaño/consultas-medicas">Consultas médicas <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-
-
+                    <span class="dropdown-header">Clientes</span>
+                    <a class="dropdown-item " href="../clinicas">Clínicas</a>
+                    <a class="dropdown-item " href="../hospitales">Hospitales</a>
+                    <a class="dropdown-item disabled" href="">Consultas médicas <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
                 </div>
                   <!-- End Col -->
                 </div>
@@ -117,12 +114,13 @@
 
         <!-- Mega Menu -->
         <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item " href="../especialidades/oftalmologia">Oftalmología</a>
-          <a class="dropdown-item " href="../especialidades/estetica">Estética</a>
-          <a class="dropdown-item " href="../especialidades/psiquiatria">Psiquiatría</a>
-          <a class="dropdown-item " href="../especialidades/bariatrica">Oncología</a>
-          <a class="dropdown-item " href="../especialidades/bariatrica">Bariátrica</a>
           <a class="dropdown-item " href="../especialidades/medicina-general">Medicina general</a>
+          <a class="dropdown-item " href="../especialidades/oftalmologia">Oftalmología</a>
+          <a class="dropdown-item " href="../especialidades/psiquiatria">Psiquiatría</a>
+          <a class="dropdown-item " href="../especialidades/estetica">Estética</a>
+          <a class="dropdown-item " href="../especialidades/oncologia">Oncología</a>
+          <a class="dropdown-item " href="../especialidades/salud-ocupacional">Salud ocupacional</a>
+          <a class="dropdown-item " href="../especialidades/bariatrica">Bariátrica</a>
         </div>
         <!-- End Mega Menu -->
       </li>
@@ -134,11 +132,11 @@
 
         <!-- Mega Menu -->
         <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item " href="../metodología/implementacion">Implementación</a>
-          <a class="dropdown-item " href="../metodología/integraciones">Integraciones</a>
-          <a class="dropdown-item " href="../metodología/migracion-de-datos">Migración de datos</a>
-          <a class="dropdown-item " href="../metodología/soporte">Soporte</a>
-          <a class="dropdown-item " href="../metodología/seguridad">Seguridad</a>
+          <a class="dropdown-item " href="../metodologia/implementacion">Implementación</a>
+          <a class="dropdown-item " href="../metodologia/integraciones">Integraciones</a>
+          <a class="dropdown-item " href="../metodologia/migracion-de-datos">Migración de datos</a>
+          <a class="dropdown-item " href="../metodologia/soporte">Soporte</a>
+          <a class="dropdown-item " href="../metodologia/seguridad">Seguridad</a>
 
         </div>
         <!-- End Mega Menu -->
@@ -148,16 +146,13 @@
 
       <!-- Blog -->
       <li class="hs-has-sub-menu nav-item">
-        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Recursos</a>
+        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Empresa</a>
 
         <!-- Mega Menu -->
         <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
-          <a class="dropdown-item" href="#">Nosotros</a>
-          <a class="dropdown-item disabled" href="#">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <a class="dropdown-item disabled" href="#">Trabajo <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="#">Blog <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
-          <a class="dropdown-item disabled" href="#">Recursos <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+          <a class="dropdown-item" href="../empresa/nosotros">Nosotros</a>
+          <a class="dropdown-item" href="../empresa/trabajo">Trabajo</a>
+          <a class="dropdown-item disabled" href="">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
         </div>
         <!-- End Mega Menu -->
       </li>
@@ -165,7 +160,7 @@
 
       <!-- Button -->
       <li class="nav-item">
-        <a class="btn btn-primary btn-transition" href="#">Contáctanos</a>
+        <a class="btn btn-primary btn-transition" href="https://meetings.hubspot.com/viterbo">Agendar reunión</a>
       </li>
       <!-- End Button -->
     </ul>
