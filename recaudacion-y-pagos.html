@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recaudación y Pagos - Medinet</title>
+  <meta name="description" content="Descubre un software de gestión médica, basado en procesos, alojado en la nube para la administración cohesionada y unificada de tu centro médico o clínica.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://medinetapp.com/" />
+  <meta property="og:site_name" content="Medinet" />
+  <meta property="fb:app_id" content="" />
+
+  <link rel="shortcut icon" href="../assets/svg/logos/favicon-medinet.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <link rel="stylesheet" href="./assets/css/vendor.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KH42KFM');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH42KFM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light bg-white" data-hs-header-options="{
+    &quot;fixMoment&quot;: 1000,
+    &quot;fixEffect&quot;: &quot;slide&quot;
+  }" hsheader="true">
+
+<div class="container">
+<nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+<!-- Default Logo -->
+<a class="navbar-brand" href="../" aria-label="Medinet">
+  <img class="navbar-brand-logo" src="./assets/svg/logos/logo-medinet.svg" alt="Logo">
+</a>
+<!-- End Default Logo -->
+
+<!-- Toggler -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-default">
+    <i class="bi-list"></i>
+  </span>
+  <span class="navbar-toggler-toggled">
+    <i class="bi-x"></i>
+  </span>
+</button>
+<!-- End Toggler -->
+
+<!-- Collapse -->
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="navbar-absolute-top-scroller">
+    <ul class="navbar-nav">
+      <!-- Landings -->
+      <li class="hs-has-mega-menu nav-item">
+        <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" aria-current="page" role="button" aria-expanded="false">Soluciones</a>
+
+        <!-- Mega Menu -->
+        <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg animated fadeOut" aria-labelledby="landingsMegaMenu" style="min-width: 30rem; animation-duration: 300ms; display: none;">
+          <div class="row">
+            <div class="col-lg-5 d-none d-lg-block">
+              <!-- Banner Image -->
+              <div class="navbar-dropdown-menu-banner bg-light">
+                <div class="navbar-dropdown-menu-banner-content">
+                  <div class="mb-4">
+                    <span class="h2 d-block">Conoce Medinet</span>
+                    <p>Descubre como Medinet te ayuda a administrar mejor y reducir costos</p>
+                  </div>
+                  <a class="btn btn-primary btn-transition" href="./reunion">Agendar reunión <i class="bi-chevron-right small"></i></a>
+                </div>
+              </div>
+              <!-- End Banner Image -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-lg-7">
+              <div class="navbar-dropdown-menu-inner">
+                <div class="row">
+                  <div class="col-sm mb-3 mb-sm-0">
+                    <span class="dropdown-header">Módulos</span>
+                    <a class="dropdown-item " href="./soluciones/agenda-medica">Agenda médica</a>
+                    <a class="dropdown-item " href="./soluciones/ficha-clinica-electronica">Ficha clínica</a>
+                    <a class="dropdown-item " href="./soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a>
+                    <a class="dropdown-item " href="./soluciones/gestion-quirofano">Gestión de quirófano</a>
+                    <a class="dropdown-item " href="./soluciones/gestion-camas">Gestión de camas</a>
+                    <a class="dropdown-item " href="./soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a>
+                    <a class="dropdown-item " href="./soluciones/reportes">Reportes</a>
+                    <a class="dropdown-item disabled" href="">Honorarios médicos <span class="badge bg-success rounded-pill ms-1">Pronto</span></a>
+                    <a class="dropdown-item disabled" href="">Reportes BI <span class="badge bg-success rounded-pill ms-1">Pronto</span></a>
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-sm">
+                    <div class="mb-3">
+                      <span class="dropdown-header">Roles</span>
+                      <a class="dropdown-item " href="./roles/director-medico">Director médico</a>
+                      <a class="dropdown-item " href="./roles/gerente-general">Gerente general (CEO)</a>
+                      <a class="dropdown-item " href="./roles/gerente-finanzas">Gerente de finanzas (CFO)</a>
+                      <a class="dropdown-item " href="./roles/gerente-operaciones">Gerente de operaciones (COO)</a>
+                    </div>
+
+                </div>
+                  <!-- End Col -->
+                </div>
+                <!-- End Row -->
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Mega Menu -->
+      </li>
+      <!-- End Landings -->
+
+      <!-- Company -->
+      <li class="hs-has-sub-menu nav-item">
+        <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" role="button" aria-expanded="false">Especialidades</a>
+
+        <!-- Mega Menu -->
+        <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="companyMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+          <a class="dropdown-item " href="./especialidades/oftalmologia">Oftalmología</a>
+          <a class="dropdown-item " href="./especialidades/psiquiatria">Psiquiatría</a>
+          <a class="dropdown-item " href="./especialidades/bariatrica">Bariátrica</a>
+          <a class="dropdown-item " href="./especialidades/multiespecialidad">Multiespecialidad</a>
+        </div>
+        <!-- End Mega Menu -->
+      </li>
+      <!-- End Company -->
+
+       <!-- Pages -->
+       <li class="hs-has-sub-menu nav-item">
+        <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" role="button" aria-expanded="false">Metodología</a>
+
+        <!-- Mega Menu -->
+        <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="pagesMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+          <a class="dropdown-item " href="./metodologia/implementacion">Implementación</a>
+          <a class="dropdown-item " href="./metodologia/integraciones">Integraciones</a>
+          <a class="dropdown-item " href="./metodologia/migracion-de-datos">Migración de datos</a>
+          <a class="dropdown-item " href="./metodologia/soporte">Soporte</a>
+          <a class="dropdown-item " href="./metodologia/seguridad">Seguridad</a>
+
+        </div>
+        <!-- End Mega Menu -->
+      </li>
+      <!-- End Pages -->
+
+
+      <!-- Blog -->
+      <li class="hs-has-sub-menu nav-item">
+        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Empresa</a>
+
+        <!-- Mega Menu -->
+        <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated fadeOut" aria-labelledby="blogMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+          <a class="dropdown-item" href="./empresa/nosotros">Nosotros</a>
+          <a class="dropdown-item" href="./empresa/trabajo">Trabajo</a>
+          <a class="dropdown-item disabled" href="">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+        </div>
+        <!-- End Mega Menu -->
+      </li>
+      <!-- End Blog -->
+
+      <!-- Button -->
+      <li class="nav-item">
+        <a class="btn btn-primary btn-transition" href="./reunion">Agendar reunión</a>
+      </li>
+      <!-- End Button -->
+    </ul>
+  </div>
+</div>
+<!-- End Collapse -->
+</nav>
+</div>
+  </header>
+
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="bg-soft-success position-relative overflow-hidden">
+      <div class="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
+        <div class="w-lg-65 text-center mx-lg-auto">
+          <!-- Heading -->
+          <div class="mb-5">
+            <h1 class="display-4 mb-3">Convierte, recauda y paga <span class="text-success">más rápido</span></h1>
+            <p class="lead">Medinet te permite unificar el seguimiento de presupuestos, aumentar la recaudación y pagar sin fricciones a tu equipo médico.</p>
+          </div>
+          <!-- End Heading -->
+
+          <div class="d-grid d-sm-flex justify-content-sm-center align-items-sm-center gap-3">
+            <a class="btn btn-primary btn-transition" href="#">Contact sales</a>
+            <small>or</small>
+            <a class="btn btn-soft-dark btn-transition" href="#">See pricing <i class="bi-chevron-right small ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup -->
+      <div class="container content-space-b-2 content-space-b-lg-3">
+        <div class="position-relative w-lg-75 text-center mx-lg-auto">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="./assets/svg/img/presupuestos-quirurgicos.svg" alt="Image Description">
+            </div>
+          </figure>
+          <!-- End Browser Device -->
+
+        </div>
+      </div>
+      <!-- End Mockup -->
+
+      <!-- SVG Background Shape -->
+      <figure class="position-absolute top-0 end-0 zi-n1 mt-n10 me-n10" style="width: 32rem;">
+        <svg viewBox="0 0 451 902" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M451 820C247.2 820 82 654.8 82 451C82 247.2 247.2 82 451 82" stroke="white" stroke-width="164" stroke-miterlimit="10"></path>
+        </svg>
+      </figure>
+      <!-- End SVG Background Shape -->
+
+      <!-- SVG Background Shape -->
+      <figure class="position-absolute bottom-0 start-0 zi-n1 mb-n10 me-n10" style="width: 21rem;">
+        <svg viewBox="0 0 451 902" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.125" d="M0 82C203.8 82 369 247.2 369 451C369 654.8 203.8 820 0 820" stroke="url(#paint1_linear)" stroke-width="164" stroke-miterlimit="10"></path>
+          <defs>
+            <linearGradient id="paint1_linear" x1="323.205" y1="785.242" x2="-97.6164" y2="56.3589" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="white" stop-opacity="0"></stop>
+              <stop offset="1" stop-color="#377dff"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </figure>
+      <!-- End SVG Background Shape -->
+    </div>
+    <!-- End Hero -->
+
+    <!-- Features -->
+    <div class="container content-space-t-2 content-space-b-2 content-space-b-lg-3">
+      <div class="row align-items-md-center">
+        <div class="col-md-7 mb-7 mb-md-0">
+          <div class="w-sm-75 mx-sm-auto aos-init aos-animate" data-aos="fade-up">
+            <!-- Card -->
+            <div class="card bg-soft-primary text-center">
+              <div class="card-body">
+                <div class="w-75 mx-auto">
+                  <h3>Choose a workflow, or make your own with Front Software</h3>
+                </div>
+              </div>
+
+              <div class="w-75 mx-auto">
+                <img class="img-fluid rounded-top-2" src="./assets/img/407x472/img7.jpg" alt="Image Description">
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-5 order-md-2">
+          <!-- Heading -->
+          <div class="mb-5">
+            <h2 class="mb-3">Emite presupuestos en 1 clic y aumenta la conversión</h2>
+            <p>Every team has a unique process for shipping software. Use an out-of-the-box workflow, or create one to match the way your team works.</p>
+          </div>
+          <!-- End Heading -->
+
+          <!-- List Checked -->
+          <ul class="list-checked list-checked-soft-bg-primary list-checked-lg">
+            <li class="list-checked-item">Extensive API documentation</li>
+            <li class="list-checked-item">Customizable &amp; open source</li>
+            <li class="list-checked-item">Continiously improved</li>
+          </ul>
+          <!-- End List Checked -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Features -->
+
+    <!-- CTA -->
+    <div class="container">
+      <div class="w-lg-75 mx-lg-auto">
+        <div class="card card-sm overflow-hidden">
+          <!-- Card -->
+          <div class="card-body">
+            <div class="row justify-content-md-start align-items-md-center text-center text-md-start">
+              <div class="col-md offset-md-3 mb-3 mb-md-0">
+                <h4 class="card-title">Revolutionizing the way your team works!</h4>
+              </div>
+
+              <div class="col-md-auto">
+                <a class="btn btn-primary btn-transition" href="#">Get started</a>
+              </div>
+            </div>
+
+            <!-- SVG Shape -->
+            <figure class="w-25 d-none d-md-block position-absolute top-0 start-0 mt-n2">
+              <svg viewBox="0 0 451 902" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.125" d="M0 82C203.8 82 369 247.2 369 451C369 654.8 203.8 820 0 820" stroke="url(#paint2_linear)" stroke-width="164" stroke-miterlimit="10"></path>
+                <defs>
+                  <linearGradient id="paint2_linear" x1="323.205" y1="785.242" x2="-97.6164" y2="56.3589" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="white" stop-opacity="0"></stop>
+                    <stop offset="1" stop-color="#377dff"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+            <!-- End SVG Shape -->
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>
+    </div>
+    <!-- End CTA -->
+
+    <!-- Features -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="row align-items-md-center">
+        <div class="col-md-7 order-md-2 mb-7 mb-md-0">
+          <div class="w-sm-75 mx-sm-auto aos-init aos-animate" data-aos="fade-up">
+            <!-- Card -->
+            <div class="card bg-soft-success text-center">
+              <div class="card-body">
+                <div class="w-75 mx-auto">
+                  <h3>Integrate with the tools and workflow you already use</h3>
+                </div>
+              </div>
+
+              <div class="w-75 mx-auto">
+                <img class="img-fluid rounded-top-2" src="./assets/img/407x472/img8.jpg" alt="Image Description">
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-5">
+          <!-- Heading -->
+          <div class="mb-5">
+            <h2 class="mb-3">Calcula honorarios médicos sin trámites, con total transparencia</h2>
+            <p>Front Software is built for every member of your software team to plan, track, and release great software.</p>
+          </div>
+          <!-- End Heading -->
+
+          <!-- List Checked -->
+          <ul class="list-checked list-checked-soft-bg-primary list-checked-lg">
+            <li class="list-checked-item">Knowledge management</li>
+            <li class="list-checked-item">Development workflow</li>
+            <li class="list-checked-item">Continuous integration</li>
+          </ul>
+          <!-- End List Checked -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Features -->
+
+    <!-- Icon Blocks -->
+    <div class="position-relative bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);">
+      <div class="container content-space-2 content-space-lg-3 position-relative zi-2">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+          <h2 class="text-white">Elimina tu back-office con Medinet</h2>
+          <p class="text-white-70">Whether you’re a seasoned agile expert, or just getting started, Jira Software unlocks the power of agile.</p>
+        </div>
+        <!-- End Heading -->
+
+        <!-- Icon Blocks -->
+        <div class="row mb-5 mb-sm-9">
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+            <span class="svg-icon text-white mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="#035A4B"></path>
+                <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="#035A4B"></path>
+              </svg>
+
+            </span>
+            <h4 class="text-white">Gestor de precios</h4>
+            <p class="text-white-70">Front Software's rich planning features enable your team to flexibly plan.</p>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+            <span class="svg-icon text-white mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M3 3V17H7V21H15V9H20V3H3Z" fill="#035A4B"></path>
+                <path d="M20 22H3C2.4 22 2 21.6 2 21V3C2 2.4 2.4 2 3 2H20C20.6 2 21 2.4 21 3V21C21 21.6 20.6 22 20 22ZM19 4H4V8H19V4ZM6 18H4V20H6V18ZM6 14H4V16H6V14ZM6 10H4V12H6V10ZM10 18H8V20H10V18ZM10 14H8V16H10V14ZM10 10H8V12H10V10ZM14 18H12V20H14V18ZM14 14H12V16H14V14ZM14 10H12V12H14V10ZM19 14H17V20H19V14ZM19 10H17V12H19V10Z" fill="#035A4B"></path>
+              </svg>
+
+            </span>
+            <h4 class="text-white">Accurate estimations</h4>
+            <p class="text-white-70">Use story points, hours, t-shirt sizes, or your own estimation technique.</p>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+            <span class="svg-icon text-white mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M18 20.3C20.2091 20.3 22 18.5092 22 16.3C22 14.0909 20.2091 12.3 18 12.3C15.7909 12.3 14 14.0909 14 16.3C14 18.5092 15.7909 20.3 18 20.3Z" fill="#035A4B"></path>
+                <path d="M18 18.3C17.4 18.3 17 17.9 17 17.3V15.3C17 14.7 17.4 14.3 18 14.3C18.6 14.3 19 14.7 19 15.3V17.3C19 17.9 18.6 18.3 18 18.3Z" fill="#035A4B"></path>
+                <path d="M14.4 18.1001C14.5 18.5001 14.4 19.0001 14 19.2001C13.8 19.3001 13.7 19.3 13.5 19.3C13.2 19.3 12.8 19.1 12.6 18.8V18.7001C12.1 18.9001 11.6 19.0001 11 19.1001V19.2001C11 19.8001 10.6 20.2001 10 20.2001C9.4 20.2001 9 19.8001 9 19.2001V19.1001C8.4 19.0001 7.89999 18.9001 7.39999 18.7001V18.8C7.19999 19.1 6.9 19.3 6.5 19.3C6.3 19.3 6.2 19.3001 6 19.2001C5.5 18.9001 5.40001 18.3 5.60001 17.8V17.7001C5.20001 17.4001 4.79999 17 4.39999 16.5H4.3C4.1 16.6 4 16.6001 3.8 16.6001C3.5 16.6001 3.09999 16.4001 2.89999 16.1001C2.59999 15.6001 2.8 15.0001 3.3 14.7001H3.39999C3.19999 14.2001 3.1 13.7001 3 13.1001C2.4 13.1001 2 12.7001 2 12.1001C2 11.5001 2.4 11.1001 3 11.1001H3.10001C3.20001 10.5001 3.3 10 3.5 9.5H3.39999C2.89999 9.2 2.8 8.6001 3 8.1001C3.3 7.6001 3.89999 7.50007 4.39999 7.70007H4.5C4.8 7.30007 5.2 6.9 5.7 6.5V6.40002C5.4 5.90002 5.60001 5.3 6.10001 5C6.60001 4.7 7.2 4.90002 7.5 5.40002V5.5C8 5.3 8.50001 5.2001 9.10001 5.1001V5C9.10001 4.4 9.50001 4 10.1 4C10.7 4 11.1 4.4 11.1 5V5.1001C11.7 5.2001 12.2 5.3 12.7 5.5V5.40002C13 4.90002 13.6 4.8 14.1 5C14.6 5.3 14.7 5.90002 14.5 6.40002V6.5C14.9 6.8 15.3 7.20007 15.7 7.70007H15.8C16.3 7.40007 16.9 7.6001 17.2 8.1001C17.5 8.6001 17.3 9.2 16.8 9.5H16.7C16.9 10 17 10.5001 17.1 11.1001H17.2C17.8 11.1001 18.2 11.5001 18.2 12.1001C16 12.1001 14.2 13.9001 14.2 16.1001C14 17.0001 14.2 17.6001 14.4 18.1001ZM11.8 8.40002H8.89999C8.59999 8.40002 8.4 8.5001 8.2 8.6001C8.1 8.7001 7.99999 9.00005 7.89999 9.30005L7.39999 11.9C7.39999 12.1 7.3 12.3 7.3 12.3C7.3 12.5 7.4 12.6001 7.5 12.7001C7.6 12.8001 7.8 12.9 8 12.9C8.2 12.9 8.40001 12.8001 8.60001 12.6001C8.90001 12.4001 9.1 12.3001 9.2 12.2001C9.3 12.1001 9.59999 12.1001 9.89999 12.1001C10.2 12.1001 10.4 12.2 10.6 12.3C10.8 12.4 11 12.6 11.1 12.9C11.2 13.2 11.3 13.5 11.3 13.8C11.3 14.1 11.2 14.4001 11.1 14.7001C11 15.0001 10.8 15.2 10.6 15.3C10.4 15.4 10.1 15.5 9.89999 15.5C9.59999 15.5 9.30001 15.4001 9.10001 15.2001C8.80001 15.0001 8.7 14.8 8.5 14.4C8.3 14 8.1 13.9 7.8 13.9C7.6 13.9 7.5 14.0001 7.3 14.1001C7.2 14.2001 7.10001 14.4 7.10001 14.5C7.10001 14.7 7.19999 15 7.39999 15.3C7.59999 15.6 7.9 15.9001 8.3 16.1001C8.7 16.3001 9.19999 16.5 9.89999 16.5C10.5 16.5 11 16.4001 11.5 16.1001C12 15.8001 12.3 15.5001 12.5 15.1001C12.7 14.7001 12.9 14.2001 12.9 13.6001C12.9 13.2001 12.8 12.9001 12.7 12.6001C12.6 12.3001 12.4 12 12.2 11.8C12 11.6 11.7 11.4 11.4 11.3C11.1 11.2 10.8 11.1001 10.4 11.1001C9.99999 11.1001 9.5 11.2 9 11.5L9.3 9.70007H11.9C12.2 9.70007 12.4 9.6 12.5 9.5C12.6 9.4 12.7 9.2 12.7 9C12.6 8.6 12.3 8.40002 11.8 8.40002Z" fill="#035A4B"></path>
+              </svg>
+
+            </span>
+            <h4 class="text-white">Value-driven prioritization</h4>
+            <p class="text-white-70">Order user stories, issues, and bugs in your product backlog with simple dragging.</p>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-7 mb-md-0">
+            <span class="svg-icon text-white mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M11.8 5.2L17.7 8.6V15.4L11.8 18.8L5.90001 15.4V8.6L11.8 5.2ZM11.8 2C11.5 2 11.2 2.1 11 2.2L3.8 6.4C3.3 6.7 3 7.3 3 7.9V16.2C3 16.8 3.3 17.4 3.8 17.7L11 21.9C11.3 22 11.5 22.1 11.8 22.1C12.1 22.1 12.4 22 12.6 21.9L19.8 17.7C20.3 17.4 20.6 16.8 20.6 16.2V7.9C20.6 7.3 20.3 6.7 19.8 6.4L12.6 2.2C12.4 2.1 12.1 2 11.8 2Z" fill="#035A4B"></path>
+                <path d="M11.8 8.69995L8.90001 10.3V13.7L11.8 15.3L14.7 13.7V10.3L11.8 8.69995Z" fill="#035A4B"></path>
+              </svg>
+
+            </span>
+            <h4 class="text-white">Transparent execution</h4>
+            <p class="text-white-70">Front Software brings a new level of transparency to your team's work.</p>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-0">
+            <span class="svg-icon text-white mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M2.10001 10C3.00001 5.6 6.69998 2.3 11.2 2L8.79999 4.39999L11.1 7C9.60001 7.3 8.30001 8.19999 7.60001 9.59999L4.5 12.4L2.10001 10ZM19.3 11.5L16.4 14C15.7 15.5 14.4 16.6 12.7 16.9L15 19.5L12.6 21.9C17.1 21.6 20.8 18.2 21.7 13.9L19.3 11.5Z" fill="#035A4B"></path>
+                <path d="M13.8 2.09998C18.2 2.99998 21.5 6.69998 21.8 11.2L19.4 8.79997L16.8 11C16.5 9.39998 15.5 8.09998 14 7.39998L11.4 4.39998L13.8 2.09998ZM12.3 19.4L9.69998 16.4C8.29998 15.7 7.3 14.4 7 12.8L4.39999 15.1L2 12.7C2.3 17.2 5.7 20.9 10 21.8L12.3 19.4Z" fill="#035A4B"></path>
+              </svg>
+
+            </span>
+            <h4 class="text-white">Actionable results</h4>
+            <p class="text-white-70">Extensive reporting functionality gives your team critical insight into their agile process.</p>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4">
+            <span class="svg-icon text-white mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M7 20.5L2 17.6V11.8L7 8.90002L12 11.8V17.6L7 20.5ZM21 20.8V18.5L19 17.3L17 18.5V20.8L19 22L21 20.8Z" fill="#035A4B"></path>
+                <path d="M22 14.1V6L15 2L8 6V14.1L15 18.2L22 14.1Z" fill="#035A4B"></path>
+              </svg>
+
+            </span>
+            <h4 class="text-white">Scalable evolution <span class="badge bg-warning text-dark rounded-pill ms-1">Coming soon</span></h4>
+            <p class="text-white-70">Front Software is agile project management designed for any teams.</p>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <div class="text-center">
+          <div class="d-grid d-sm-flex justify-content-sm-center align-items-sm-center gap-3 mb-3">
+            <a class="btn btn-light btn-transition" href="#">Sign up and start building</a>
+            <small class="text-white-70">or</small>
+            <a class="btn btn-dark btn-transition" href="#">Talk to our experts</a>
+          </div>
+
+          <p class="text-white-70 small">Start free trial. * No credit card required.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+    </div>
+    <!-- End Icon Blocks -->
+
+    <!-- Pricing -->
+    <div class="container content-space-2 content-space-lg-3">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <h2>Choose a plan that's right for you.</h2>
+        <p>Everything you need. From front to back.</p>
+      </div>
+      <!-- End Heading -->
+
+      <!-- Table -->
+      <div class="table-responsive-lg w-lg-75 mx-lg-auto">
+        <table class="table table-lg table-striped table-borderless table-nowrap table-vertical-border-striped">
+          <thead class="table-text-center">
+            <tr>
+              <th scope="col" style="width: 40%;"></th>
+
+              <th scope="col" style="width: 20%;">
+                <span class="d-block">Professional</span>
+                <span class="d-block text-muted small">$0/mon</span>
+              </th>
+
+              <th scope="col" style="width: 20%;">
+                <span class="d-block">Team <span class="badge bg-warning text-dark rounded-pill ms-1">Hot</span></span>
+                <span class="d-block text-muted small">$60/mon</span>
+              </th>
+
+              <th scope="col" style="width: 20%;">
+                <span class="d-block">Enterprise</span>
+                <span class="d-block text-muted small">Custom</span>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-dark">Cross-platform UI toolkit</th>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">14-days free trial</th>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">No user limit</th>
+              <td></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">Long-term support</th>
+              <td></td>
+              <td></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">Email support</th>
+              <td><span class="badge bg-soft-primary text-primary rounded-pill">Add-on available</span></td>
+              <td></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">Developer tools</th>
+              <td></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">Removal of Front branding</th>
+              <td></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">Active maintenance &amp; support</th>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark">Data storage for 365 days</th>
+              <td></td>
+              <td><span class="badge bg-soft-primary text-primary rounded-pill">Add-on available</span></td>
+              <td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="text-dark"></th>
+              <td><button type="button" class="btn btn-soft-dark btn-sm btn-transition">Choose plan</button></td>
+              <td><button type="button" class="btn btn-soft-dark btn-sm btn-transition">Choose plan</button></td>
+              <td><button type="button" class="btn btn-primary btn-sm btn-transition">Contact us</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End Table -->
+    </div>
+    <!-- End Pricing -->
+  </main>
+
+  <footer class="bg-dark">
+    <div class="container pb-1 pb-lg-5">
+      <div class="row content-space-t-2 mb-9">
+        <div class="col-12 col-lg-3 mb-7 mb-lg-0">
+          <!-- Logo -->
+          <div class="mb-5">
+            <a class="navbar-brand" href="./" aria-label="Medinet">
+              <img class="navbar-brand-logo" src="./assets/svg/logos/logo-medinet-white.svg" alt="Image Description">
+            </a>
+          </div>
+          <!-- End Logo -->
+          <ul class="list-unstyled list-py-1">
+            <li><a class="link-sm link-light"><i class="bi bi-envelope me-1"></i> contacto@medinetapp.com</a></li>
+            <li><a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i>José Miguel de la Barra 480, Oficina 501, Santiago de Chile.          </a></li>
+            <li><a class="link-sm link-light" href="tel:5695836333"><i class="bi-telephone-inbound-fill me-1"></i>+56 (9) 5836 3333</a></li>
+            <li><a class="link-sm link-light" href="tel:232024575"><i class="bi-telephone-inbound-fill me-1"></i> (2) 3202 4575</a></li>
+          </ul>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="text-white mb-3"> <a href="./soluciones/" class="text-white">Soluciones</a> </h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link-sm link-light" href="./soluciones/agenda-medica">Agenda médica</a></li>
+              <li><a class="link-sm link-light" href="./soluciones/ficha-clinica-electronica">Ficha clínica</a></li>
+              <li><a class="link-sm link-light" href="./soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a></li>
+              <li><a class="link-sm link-light" href="./soluciones/gestion-quirofano">Gestión de quirófano</a></li>
+              <li><a class="link-sm link-light" href="./soluciones/gestion-camas">Gestión de camas</a></li>
+              <li><a class="link-sm link-light" href="./soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a></li>
+              <li><a class="link-sm link-light" href="./soluciones/reportes">Reportes</a></li>
+              <li><a class="link-sm link-light">Honorarios médicos<span class="badge bg-success rounded-pill ms-1">Pronto</span></a></li>
+              <li><a class="link-sm link-light">Reportes BI <span class="badge bg-success rounded-pill ms-1">Pronto</span></a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">Especialidades</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="./especialidades/medicina-general">Medicina general</li>
+            <li><a class="link-sm link-light" href="./especialidades/oftalmologia">Oftalmología</a></li>
+            <li><a class="link-sm link-light" href="./especialidades/psiquiatria">Psiquiatría</a></li>
+            <li><a class="link-sm link-light" href="./especialidades/estetica">Estética</a></li>
+            <li><a class="link-sm link-light" href="./especialidades/oncologia">Oncología</a></li>
+            <li><a class="link-sm link-light" href="./especialidades/salud-ocupacional">Salud ocupacional</a></li>
+            <li><a class="link-sm link-light" href="./especialidades/bariatrica">Bariátrica</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">Metodología</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="./metodologia/acreditacion">Acreditación</li>
+            <li><a class="link-sm link-light" href="./metodologia/implementacion">Implementación</a></li>
+            <li><a class="link-sm link-light" href="./metodologia/integraciones">Integraciones</a></li>
+            <li><a class="link-sm link-light" href="./metodologia/migracion-de-datos">Migración de datos</a></li>
+            <li><a class="link-sm link-light" href="./metodologia/seguridad">Seguridad</a></li>
+            <li><a class="link-sm link-light" href="./metodologia/soporte">Soporte</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm">
+          <h5 class="text-white mb-3">Empresa</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-5">
+            <li><a class="link-sm link-light" href="./empresa/nosotros">Sobre Medinet</a></li>
+            <li><a class="link-sm link-light" href="./empresa/trabajo">Trabaja con nosotros</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="row align-items-center">
+        <div class="col">
+          <p class="text-white-70 small mb-0">© Medinet. 2023. Todos los derechos reservados.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-auto">
+          <!-- Socials -->
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.facebook.com/medinetappcl">
+                <i class="bi-facebook"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.instagram.com/medinetapp/">
+                <i class="bi-instagram"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.linkedin.com/company/medinetapp/">
+                <i class="bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- End Socials -->
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <script src="./assets/js/theme.min.js"></script>
+
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller')
+    })()
+  </script>
+
+</body>
+</html>
