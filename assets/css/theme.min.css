@@ -18843,7 +18843,7 @@ input[type=number] {
 }
 
 .btn-check:focus+.btn-primary,.btn-primary:focus,.btn-primary:hover {
-    box-shadow: 0 4px 11px rgba(255,0,0,.35)
+    box-shadow: 0 4px 11px rgba(113,134,157,.35)
 }
 
 .btn-check:focus+.btn-secondary,.btn-secondary:focus,.btn-secondary:hover {
