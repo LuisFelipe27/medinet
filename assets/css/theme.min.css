@@ -35,10 +35,10 @@
     --bs-danger: #ed4c78;
     --bs-light: #f7faff;
     --bs-dark: #243f6d;
-    --bs-primary-rgb: 36,63,109;
+    --bs-primary-rgb: 112,147,255;
     --bs-secondary-rgb: 113,134,157;
     --bs-success-rgb: 112,147,255;
-    --bs-info-rgb: 9,165,190;
+    --bs-info-rgb: 112,147,255;
     --bs-warning-rgb: 245,202,153;
     --bs-danger-rgb: 237,76,120;
     --bs-light-rgb: 247,250,255;
@@ -54,8 +54,8 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #677788;
-    --bs-body-bg: #fff
+    --bs-body-color: rgb(103, 119, 136);
+    --bs-body-bg: #FFF
 }
 
 *,::after,::before {
@@ -3342,7 +3342,7 @@ textarea.form-control-lg {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #2f6ad9;
+    background-color: #0b3583;
     border-color: #2c64cc
 }
 
@@ -8881,8 +8881,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-    padding-top: 2rem!important;
-    padding-bottom: 2rem!important
+    padding-top: 7rem!important;
+    padding-bottom: 7rem!important
 }
 
 .py-6 {
@@ -9485,7 +9485,7 @@ textarea.form-control-lg {
 }
 
 .content-space-t-2 {
-    padding-top: 5rem!important
+    padding-top: 3rem!important
 }
 
 .content-space-t-3 {
@@ -9543,8 +9543,8 @@ textarea.form-control-lg {
 }
 
 .content-space-2 {
-    padding-top: 5rem!important;
-    padding-bottom: 5rem!important
+    padding-top: 4rem!important;
+    padding-bottom: 4rem!important
 }
 
 .content-space-3 {
@@ -14254,8 +14254,8 @@ textarea.form-control-lg {
     }
 
     .content-space-lg-3 {
-        padding-top: 7.5rem!important;
-        padding-bottom: 7.5rem!important
+        padding-top: 4.2!important;
+        padding-bottom: 4.2!important
     }
 
     .content-space-lg-4 {
@@ -29222,6 +29222,17 @@ a:hover .text-inherit {
     font-size: .875rem;
     margin-top: .5rem
 }
-.gracias .navbar-nav .nav-link {
-    color: white !important; /
+.custom-hero-background {
+    background-color: #FFF; /* Azul estándar de Bootstrap */
+        border-top: 5px solid #7093FF; /* Ajusta la altura del borde según necesites */
+        text-align: left;  /* Centra el texto horizontalmente */
+        padding-top: 200px;  /* Añade espacio en la parte superior, ajusta según sea necesario */
+    
   }
+  .hero-image {
+    border: 20px solid #7093FF; /* Color azul sutil */
+    border-radius: 80px; /* Bordes redondeados sutiles */
+}
+
+  
+  
