@@ -189,215 +189,340 @@
 </div>
 </header>
 
-<main id="content" role="main">
-
-  <div class="container content-space-t-3 content-space-t-lg-3">
-    <div class="w-lg-75 text-center mx-lg-auto">
+<div class="position-relative bg-primary overflow-hidden">
+  <div class="container position-relative zi-2 content-space-2 content-space-md-3"> <!-- Ajuste para reducir el tamaño del Hero -->
+    <div class="w-md-75 w-xl-65 text-center mx-md-auto">
       <!-- Heading -->
-      <div class="mb-5 mb-md-10">
-        <h1 class="display-4 mb-5">Sobre nosotros</h1>
-        <p class="lead">Medinet es un spin-off de Sistemas Expertos e Ingeniería de Software, empresa de capitales chilenos con más de 15 años de experiencia que actualmente sirve a aproximadamente el 30% de los hospitales públicos chilenos.</p>
+      <div class="mb-5"> <!-- Ajuste del margen para reducir espacio debajo del título -->
+        <h1 class="display-4 text-white mb-3">Descubre cómo impulsamos</h1> <!-- Ajuste de márgenes -->
+        <h1 class="display-4 d-inline" style="color: #ffffff;">
+          <span class="js-typedjs"
+                data-hs-typed-options='{
+                "strings": ["Talento", "Pasión", "Visión"],
+                "typeSpeed": 90,
+                "loop": true,
+                "backSpeed": 30,
+                "backDelay": 2500
+                }'></span>
+        </h1>
       </div>
-      <!-- End Heading -->
+      <!-- End Title & Description -->
     </div>
+  </div>
 
-    <div class="container content-space-b-2 content-space-b-lg-3">
-      <div class="position-relative w-lg-75 text-center mx-lg-auto">
-        <!-- Browser Device -->
-        <figure class="device-browser">
-          <div class="device-browser-frame">
-            <img class="device-browser-img" src="../equipo-medinet.jpg" alt="Image Description">
+  <!-- Background Shape -->
+  <figure class="position-absolute top-0 start-0 w-65">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
+      <g opacity=".4">
+        <linearGradient id="doubleEllipseTopLeftID1" gradientUnits="userSpaceOnUse" x1="2073.5078" y1="1.7251" x2="2273.4375" y2="1135.5818" gradientTransform="matrix(-1 0 0 1 2600 0)">
+          <stop offset="0.4976" style="stop-color:#559bff"/>
+          <stop offset="1" style="stop-color:#377dff"/>
+        </linearGradient>
+        <polygon fill="url(#doubleEllipseTopLeftID1)" points="519.8,0.6 0,0.6 0,1078 863.4,1078"/>
+        <linearGradient id="doubleEllipseTopLeftID2" gradientUnits="userSpaceOnUse" x1="1717.1648" y1="3.779560e-05" x2="1717.1648" y2="644.0417" gradientTransform="matrix(-1 0 0 1 2600 0)">
+          <stop offset="1.577052e-06" style="stop-color:#559bff"/>
+          <stop offset="1" style="stop-color:#377dff"/>
+        </linearGradient>
+        <polygon fill="url(#doubleEllipseTopLeftID2)" points="519.7,0 1039.4,0.6 1246,639.1 725.2,644"/>
+      </g>
+    </svg>
+  </figure>
+  <!-- End Background Shape -->
+
+  <!-- Shape -->
+  <div class="shape shape-bottom zi-1" style="margin-bottom: 0;"> <!-- Eliminado el margen inferior para reducir espacio blanco -->
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+      <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+    </svg>
+  </div>
+  <!-- End Shape -->
+</div>
+<!-- Sección de la imagen de fondo del equipo -->
+<section class="hero-image-section" style="background-image: url('../assets/svg/img/Imagenes%20Nosotros/FOTO%20SEIS%2018.png'); background-size: cover; background-position: center center; height: 100vh;">
+  <!-- Aquí podrías agregar algún degradado si deseas -->
+</section>
+
+<!-- Features Stats -->
+<div class="container content-space-2 content-space-lg-3">
+  <div class="row">
+    <div class="col-sm-4 mb-3 mb-sm-0">
+      <div class="text-center">
+        <small class="text-cap text-primary">— Atendemos </small>
+        <h4 class="display-4">2.5M</h4>
+        <p>Nuestro sistema gestiona más de 2.5 millones de pacientes cada año, lo que refleja nuestro continuo crecimiento en hospitales y clínicas a lo largo de Chile.</p>
+      </div>
+    </div>
+    <!-- End Col -->
+
+    <div class="col-sm-4 mb-3 mb-sm-0">
+      <div class="text-center">
+        <small class="text-cap text-primary">— Profesionales</small>
+        <h4 class="display-4">30K+</h4>
+        <p>Más de 30.000 profesionales de la salud confían en Medinet para gestionar de manera eficiente sus tareas administrativas y clínicas.</p>
+      </div>
+    </div>
+    <!-- End Col -->
+
+    <div class="col-sm-4">
+      <div class="text-center">
+        <small class="text-cap text-primary">—  Registros Clínicos</small>
+        <h4 class="display-4">4M</h4>
+        <p>A través de nuestra plataforma, se gestionan más de 4 millones de registros clínicos con total seguridad y precisión, asegurando la integridad de los datos en todo momento.</p>
+      </div>
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Row -->
+</div>
+<!-- End Features Stats -->
+
+
+<!-- About Us Section -->
+<section id="about-us" class="container content-space-2 content-space-lg-3">
+  <div class="row align-items-lg-center">
+    <div class="col-lg-7 mb-5 mb-lg-0">
+      <!-- Browser Device -->
+      <figure class="device-browser">
+        <div class="device-browser-header">
+          <div class="device-browser-header-btn-list">
+            <span class="device-browser-header-btn-list-btn"></span>
+            <span class="device-browser-header-btn-list-btn"></span>
+            <span class="device-browser-header-btn-list-btn"></span>
           </div>
-        </figure>
-        <!-- End Browser Device -->
-  
-   
-  
-        <!-- SVG Shape -->
-        <figure class="position-absolute bottom-0 start-0 mb-n7 ms-n7" style="width: 10rem;" data-aos="fade-up">
-          <img class="img-fluid" src="../assets/svg/shapes/dots-lg.svg" alt="Image Description">
-        </figure>
-        <!-- End SVG Shape -->
-      </div>
-    </div>
-    <!-- End Mockup -->
-    <!-- End Row -->
-  </div>
+          <div class="device-browser-header-browser-bar">www.medinetapp.com</div>
+        </div>
 
-  <div class="container content-space-2">
-    <div class="row">
-      <div class="col-sm-4 mb-3 mb-sm-0">
-        <div class="text-center">
-          <small class="text-cap text-success">Pacientes </small>
-          <h4 class="display-5">2.500.000</h4>
-          <p>Atendidos cada año y subiendo</p>
+        <div class="device-browser-frame">
+          <img class="device-browser-img" src="../assets/svg/img/Imagenes Nosotros/Medinet nosotros 2.jpeg" alt="Image Description">
+        </div>
+      </figure>
+      <!-- End Browser Device -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-lg-5">
+      <div class="pe-lg-6">
+        <div class="mb-4">
+          <h2 class="h1" style="color: #7098FF;">Sobre nosotros</h2> <!-- Título con el color solicitado -->
+        </div>
+
+        <div class="mb-4">
+          <p>En Medinet, somos un equipo comprometido con mejorar la tecnología en salud. Con más de 15 años de experiencia, hoy brindamos soporte a clínicas y hospitales en todo Chile. Nos enorgullece contribuir a la mejora de la atención médica, siendo un aliado confiable en el cuidado de la salud.</p>
         </div>
       </div>
-      <!-- End Col -->
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Row -->
+</section>
+<!-- End About Us Section -->
 
-      <div class="col-sm-4 mb-3 mb-sm-0">
-        <div class="text-center">
-          <small class="text-cap text-success">Profesionales</small>
-          <h4 class="display-5">30.000</h4>
-          <p>Utilizan nuestros softwares</p>
+<!-- Mission and Vision Section -->
+<section id="mission-vision" class="container content-space-2 content-space-lg-3">
+  <div class="row justify-content-lg-between align-items-lg-center">
+    <!-- Misión (Cuadro a la izquierda) -->
+    <div class="col-lg-5 mb-9 mb-lg-0">
+      <div class="p-4 bg-light border rounded">
+        <h2 class="h1" style="color: #7098FF;">Nuestra misión</h2> <!-- Título con el color solicitado -->
+        <p>MEDINET ayuda a clínicas a prestar una atención de excelencia a pacientes y sus familias. Permitimos a todo el personal, proporcionar una atención integral centrada en la experiencia óptima del paciente.</p>
+        <div class="mt-4">
+          <a class="btn btn-primary btn-transition" href="../empresa/trabajo.html">Sé parte del equipo</a>
         </div>
       </div>
-      <!-- End Col -->
+    </div>
+    <!-- End Misión -->
 
-      <div class="col-sm-4">
-        <div class="text-center">
-          <small class="text-cap text-success">Registros clínicos</small>
-          <h4 class="display-5">4.000.000</h4>
-          <p>A través de nuestras fichas clínicas</p>
+    <!-- Visión (Cuadro a la derecha) -->
+    <div class="col-lg-5">
+      <div class="p-4 bg-light border rounded">
+        <h2 class="h1" style="color: #7098FF;">Nuestra Visión</h2> <!-- Título con el color solicitado -->
+        <p>Ser reconocidos como el mejor software de apoyo a la gestión clínica, satisfaciendo las exigencias de las partes interesadas al proveerles la máxima calidad en el producto y servicio entregado.</p>
+        <div class="mt-4">
+          <a class="btn btn-primary btn-transition" href="../empresa/trabajo.html">Sé parte del equipo</a>
         </div>
       </div>
-      <!-- End Col -->
     </div>
-    <!-- End Row -->
+    <!-- End Visión -->
+  </div>
+</section>
+<!-- End Mission and Vision Section -->
+
+<!-- Values Section -->
+<section id="values" class="container content-space-2 content-space-lg-3">
+  <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+    <h2 style="color: #7098FF;">Nuestros valores</h2> <!-- Convertido a H2 y con el color solicitado -->
   </div>
 
-  <div class="container content-space-1 content-space-b-lg-3">
-    <div class="row justify-content-lg-between">
-      <div class="col-lg-4 mb-5 mb-lg-0">
-        <h2>Nuestra misión en la Salud</h2>
+  <div class="row">
+    <!-- First Value -->
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="text-center px-lg-3">
+        <div class="svg-icon text-primary mb-4">
+          <img class="img-fluid" src="../assets/svg/img/icons/excelente.png" alt="Excelencia" style="width: 50%; height: auto;">
+        </div>
+        <h3>Excelencia</h3>
+        <p>Nos comprometemos a ofrecer un servicio de excelencia, buscando siempre superar las expectativas y manteniendo los más altos estándares de calidad.</p>
       </div>
-      <!-- End Col -->
-
-      <div class="col-lg-6">
-        <p class="lead">En Medinet, nuestra misión es enfocarnos exclusivamente en las clínicas o centros médicos que proveen servicios de salud y que necesitan mejorar la calidad de procesos administrativos y clínicos. Con presencia en Chile, México y Europa, Medinet se enfoca en atender, una necesidad cada vez mayor y universal: mejorar la salud de millones de pacientes con seguridad y ética en el manejo de datos y precios accesibles.</p>
-      </div>
-      <!-- End Col -->
     </div>
-    <!-- End Row -->
-  </div>
 
-  <div class="content-space-3 bg-soft-success">
-    <div class="text-center py-6">
-      <div class="mb-5">
-        <h2 class="display-6 mb-5">¿Más información?</h2>
-        <p>Agenda una reunión y descubre como Medinet te ayuda a administrar mejor y reducir costos</p>
+    <!-- Second Value -->
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="text-center px-lg-3">
+        <div class="svg-icon text-primary mb-4">
+          <img class="img-fluid" src="../assets/svg/img/Imagenes Nosotros/public-service.png" alt="Responsabilidad" style="width: 50%; height: auto;">
+        </div>
+        <h3>Responsabilidad e Integridad</h3>
+        <p>Garantizamos la confianza y la transparencia en nuestras relaciones y operaciones.</p>
       </div>
-      <a class="btn btn-primary btn-transition" href="../reunion">Agendar reunión</a>
-      <a class="btn btn-link" href="../contacto">Contactar<i class="bi-chevron-right small ms-1"></i></a>      </div>
+    </div>
+
+    <!-- Third Value -->
+    <div class="col-md-4">
+      <div class="text-center px-lg-3">
+        <div class="svg-icon text-primary mb-4">
+          <img class="img-fluid" src="../assets/svg/img/icons/empatia.png" alt="Empatía" style="width: 50%; height: auto;">
+        </div>
+        <h3>Empatía</h3>
+        <p>Entendemos y atendemos las necesidades de nuestros clientes con genuino interés y cuidado.</p>
+      </div>
+    </div>
   </div>
+</section>
+<!-- End Values Section -->
 
-</main>
+<!-- More Information Section -->
+<section id="more-info" class="content-space-3 bg-soft-success">
+  <div class="text-center py-6">
+    <div class="mb-5">
+      <h2 class="display-6 mb-5">¿Más información?</h2>
+      <p>Agenda una reunión y descubre cómo Medinet te ayuda a administrar mejor y reducir costos.</p>
+    </div>
+    <a class="btn btn-primary btn-transition" href="./reunion">Agendar reunión</a>
+    <a class="btn btn-link" href="./contacto">Contactar<i class="bi-chevron-right small ms-1"></i></a>
+  </div>
+</section>
+<!-- End More Information Section -->
 
+</body>
 <footer class="bg-dark">
-    <div class="container pb-1 pb-lg-5">
-      <div class="row content-space-t-2 mb-9">
-        <div class="col-12 col-lg-3 mb-7 mb-lg-0">
-          <!-- Logo -->
-          <div class="mb-5">
-            <a class="navbar-brand" href="../" aria-label="Space">
-              <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet-white.svg" alt="Image Description">
-            </a>
-          </div>
-          <!-- End Logo -->
-          <ul class="list-unstyled list-py-1">
-            <li><a class="link-sm link-light"><i class="bi bi-envelope me-1"></i> contacto@medinetapp.com</a></li>
-          </ul>
+  <div class="container pb-1 pb-lg-5">
+    <div class="row content-space-t-2 mb-9">
+      <div class="col-12 col-lg-3 mb-7 mb-lg-0">
+        <!-- Logo -->
+        <div class="mb-5">
+          <a class="navbar-brand" href="./" aria-label="Medinet">
+            <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet-white.svg" alt="Image Description">
+          </a>
         </div>
-        <!-- End Col -->
-
-        <div class="col-6 col-sm mb-7 mb-sm-0">
-          <h5 class="text-white mb-3"> <a href="./" class="text-white">Soluciones</a> </h5>
-
-          <!-- List -->
-          <ul class="list-unstyled list-py-1 mb-0">
-              <li><a class="link-sm link-light" href="../soluciones/agenda-medica">Agenda médica</a></li>
-              <li><a class="link-sm link-light" href="../soluciones/ficha-clinica-electronica">Ficha clínica</a></li>
-              <li><a class="link-sm link-light" href="../soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a></li>
-              <li><a class="link-sm link-light" href="../soluciones/gestion-quirofano">Gestión de quirófano</a></li>
-              <li><a class="link-sm link-light" href="../soluciones/gestion-camas">Gestión de camas</a></li>
-              <li><a class="link-sm link-light" href="../soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a></li>
-              <li><a class="link-sm link-light" href="../soluciones/reportes">Reportes</a></li>
-              <li><a class="link-sm link-light">Reportes BI <span class="badge bg-success rounded-pill ms-1">Pronto</span></a></li>
-          </ul>
-          <!-- End List -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-6 col-sm mb-7 mb-sm-0">
-          <h5 class="text-white mb-3">Especialidades</h5>
-
-          <!-- List -->
-          <ul class="list-unstyled list-py-1 mb-0">
-            <li><a class="link-sm link-light" href="../especialidades/medicina-general">Medicina general</li>
-            <li><a class="link-sm link-light" href="../especialidades/oftalmologia">Oftalmología</a></li>
-            <li><a class="link-sm link-light" href="../especialidades/psiquiatria">Psiquiatría</a></li>
-            <li><a class="link-sm link-light" href="../especialidades/estetica">Estética</a></li>
-            <li><a class="link-sm link-light" href="../especialidades/oncologia">Oncología</a></li>
-            <li><a class="link-sm link-light" href="../especialidades/salud-ocupacional">Salud ocupacional</a></li>
-            <li><a class="link-sm link-light" href="../especialidades/bariatrica">Bariátrica</a></li>
-          </ul>
-          <!-- End List -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-6 col-sm mb-7 mb-sm-0">
-          <h5 class="text-white mb-3">Metodología</h5>
-
-          <!-- List -->
-          <ul class="list-unstyled list-py-1 mb-0">
-            <li><a class="link-sm link-light" href="../metodologia/acreditacion">Acreditación</li>
-            <li><a class="link-sm link-light" href="../metodologia/implementacion">Implementación</a></li>
-            <li><a class="link-sm link-light" href="../metodologia/integraciones">Integraciones</a></li>
-            <li><a class="link-sm link-light" href="../metodologia/migracion-de-datos">Migración de datos</a></li>
-            <li><a class="link-sm link-light" href="../metodologia/seguridad">Seguridad</a></li>
-            <li><a class="link-sm link-light" href="../metodologia/soporte">Soporte</a></li>
-          </ul>
-          <!-- End List -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-6 col-sm">
-          <h5 class="text-white mb-3">Empresa</h5>
-
-          <!-- List -->
-          <ul class="list-unstyled list-py-1 mb-5">
-            <li><a class="link-sm link-light" href="../empresa/nosotros">Sobre Medinet</a></li>
-            <li><a class="link-sm link-light" href="../empresa/trabajo">Trabaja con nosotros</a></li>
-          </ul>
-          <!-- End List -->
-        </div>
-        <!-- End Col -->
+        <!-- End Logo -->
+        <ul class="list-unstyled list-py-1">
+          <li><a class="link-sm link-light"><i class="bi bi-envelope me-1"></i> contacto@medinetapp.com</a></li>
+          <li><a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i>José Miguel de la Barra 480, Oficina 501, Santiago de Chile.</a></li>
+          <li><a class="link-sm link-light" href="tel:232024575"><i class="bi-telephone-inbound-fill me-1"></i> (2) 3202 4575</a></li>
+        </ul>
       </div>
-      <!-- End Row -->
+      
+      <!-- End Col -->
 
-      <div class="row align-items-center">
-        <div class="col">
-          <p class="text-white-70 small mb-0">© Medinet. 2023. Todos los derechos reservados.</p>
-        </div>
-        <!-- End Col -->
+      <div class="col-6 col-sm mb-7 mb-sm-0">
+        <h5 class="text-white mb-3"> <a href="./soluciones/" class="text-white">Soluciones</a> </h5>
 
-        <div class="col-auto">
-          <!-- Socials -->
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.facebook.com/medinetappcl">
-                <i class="bi-facebook"></i>
-              </a>
-            </li>
-
-            <li class="list-inline-item">
-              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.instagram.com/medinetapp/">
-                <i class="bi-instagram"></i>
-              </a>
-            </li>
-
-            <li class="list-inline-item">
-              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.linkedin.com/company/medinetapp/">
-                <i class="bi-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-          <!-- End Socials -->
-        </div>
-        <!-- End Col -->
+        <!-- List -->
+        <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="./soluciones/agenda-medica">Agenda médica</a></li>
+            <li><a class="link-sm link-light" href="./soluciones/ficha-clinica-electronica">Ficha clínica</a></li>
+            <li><a class="link-sm link-light" href="./soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a></li>
+            <li><a class="link-sm link-light" href="./soluciones/gestion-quirofano">Gestión de quirófano</a></li>
+            <li><a class="link-sm link-light" href="./soluciones/gestion-camas">Gestión de camas</a></li>
+            <li><a class="link-sm link-light" href="./soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a></li>
+            <li><a class="link-sm link-light" href="./soluciones/reportes">Reportes</a></li>
+            <li><a class="link-sm link-light">Honorarios médicos<span class="badge bg-success rounded-pill ms-1">Pronto</span></a></li>
+            <li><a class="link-sm link-light">Reportes BI <span class="badge bg-success rounded-pill ms-1">Pronto</span></a></li>
+        </ul>
+        <!-- End List -->
       </div>
+      <!-- End Col -->
+
+      <div class="col-6 col-sm mb-7 mb-sm-0">
+        <h5 class="text-white mb-3">Especialidades</h5>
+
+        <!-- List -->
+        <ul class="list-unstyled list-py-1 mb-0">
+          <li><a class="link-sm link-light" href="./especialidades/medicina-general">Medicina general</li>
+          <li><a class="link-sm link-light" href="./especialidades/oftalmologia">Oftalmología</a></li>
+          <li><a class="link-sm link-light" href="./especialidades/psiquiatria">Psiquiatría</a></li>
+          <li><a class="link-sm link-light" href="./especialidades/estetica">Estética</a></li>
+          <li><a class="link-sm link-light" href="./especialidades/oncologia">Oncología</a></li>
+          <li><a class="link-sm link-light" href="./especialidades/salud-ocupacional">Salud ocupacional</a></li>
+          <li><a class="link-sm link-light" href="./especialidades/bariatrica">Bariátrica</a></li>
+        </ul>
+        <!-- End List -->
+      </div>
+      <!-- End Col -->
+
+      <div class="col-6 col-sm mb-7 mb-sm-0">
+        <h5 class="text-white mb-3">Metodología</h5>
+
+        <!-- List -->
+        <ul class="list-unstyled list-py-1 mb-0">
+          <li><a class="link-sm link-light" href="./metodologia/acreditacion">Acreditación</li>
+          <li><a class="link-sm link-light" href="./metodologia/implementacion">Implementación</a></li>
+          <li><a class="link-sm link-light" href="./metodologia/integraciones">Integraciones</a></li>
+          <li><a class="link-sm link-light" href="./metodologia/migracion-de-datos">Migración de datos</a></li>
+          <li><a class="link-sm link-light" href="./metodologia/seguridad">Seguridad</a></li>
+          <li><a class="link-sm link-light" href="./metodologia/soporte">Soporte</a></li>
+        </ul>
+        <!-- End List -->
+      </div>
+      <!-- End Col -->
+
+      <div class="col-6 col-sm">
+        <h5 class="text-white mb-3">Empresa</h5>
+
+        <!-- List -->
+        <ul class="list-unstyled list-py-1 mb-5">
+          <li><a class="link-sm link-light" href="./empresa/nosotros">Sobre Medinet</a></li>
+          <li><a class="link-sm link-light" href="./empresa/trabajo">Trabaja con nosotros</a></li>
+        </ul>
+        <!-- End List -->
+      </div>
+      <!-- End Col -->
     </div>
-  </footer>
+    <!-- End Row -->
+
+    <div class="row align-items-center">
+      <div class="col">
+        <p class="text-white-70 small mb-0">© Medinet. 2024. Todos los derechos reservados.</p>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-auto">
+        <!-- Socials -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.facebook.com/medinetappcl">
+              <i class="bi-facebook"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.instagram.com/medinetapp/">
+              <i class="bi-instagram"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.linkedin.com/company/medinetapp/">
+              <i class="bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Socials -->
+      </div>
+      <!-- End Col -->
+    </div>
+  </div>
+</footer>
 
   <script src="../assets/js/vendor.min.js"></script>
 
@@ -447,5 +572,35 @@
       new HsNavScroller('.js-nav-scroller')
     })()
   </script>
-</body>
+  <!-- JS Implementing Plugins -->
+<script src="./node_modules/typed.js/lib/typed.min.js"></script>
+
+<!-- JS Front -->
+<script src="./assets/js/hs.typed.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  (function() {
+    // INITIALIZATION OF TEXT ANIMATION (TYPING)
+    // =======================================================
+    HSCore.components.HSTyped.init('.js-typedjs')
+  })()
+</script>
+<!-- JS Implementing Plugins -->
+<script src="./node_modules/appear/dist/appear.min.js"></script>
+<script src="./node_modules/circles.js/circles.js"></script>
+
+<!-- JS Front -->
+<script src="./assets/js/hs.circles.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  (function() {
+    // INITIALIZATION OF CIRCLES
+    // =======================================================
+    setTimeout(() => {
+      HSCore.components.HSCircles.init('.js-circle')
+    })
+  })()
+</script>
 </html>
