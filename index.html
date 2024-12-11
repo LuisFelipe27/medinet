@@ -558,7 +558,16 @@
       <!-- End Courses Demo -->
 
     </div>
-
+    <div class="w-md-75 text-center mx-md-auto mb-5 mb-md-9">
+      <h2 class="display-4">Descubre cómo Medinet <span class="text-info text-highlight-indigo">transforma clínicas</span></h2>
+      <p class="lead">Mira el testimonio de quienes ya confían en nosotros.</p>
+    </div>
+    
+    <!-- Video Iframe -->
+  <div class="ratio ratio-16x9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tK1CsF7JNlQ?si=rQwnILWqf75PyKTH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <!-- End Video Iframe -->
     <div class="content-space-3 bg-soft-success">
       <div class="text-center py-6">
         <div class="mb-5">
@@ -776,6 +785,11 @@
 
   <script src="./assets/js/theme.min.js"></script>
 
+  <script src="./assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
+
+  
+  
+
   <script>
     (function() {
       // INITIALIZATION OF HEADER
@@ -819,7 +833,14 @@
       // =======================================================
       new HsNavScroller('.js-nav-scroller')
     })()
+    (function() {
+    // INITIALIZATION OF VIDEO PLAYER
+    // =======================================================
+    new HSVideoPlayer('.js-inline-video-player')
+  });
+    
   </script>
+  
 
 </body>
 </html>
