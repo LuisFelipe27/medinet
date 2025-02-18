@@ -176,6 +176,44 @@
         background: transparent;
         border: none;
     }
+    .custom-contact-box2 {
+      background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
+      border: 2px solid #7098FF; /* Color del borde */
+      border-radius: 20px; /* Bordes redondeados */
+      padding: 1.5rem;
+      max-width: 500px;
+      margin: 0 auto;
+  }
+  .custom-image-container {
+      background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
+      border: 2px solid #7098FF; /* Borde con el color azul ya usado */
+      border-radius: 20px; /* Bordes redondeados */
+      padding: 1rem;
+      max-width: 100%;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+  }
+  .custom-transparent-box {
+    background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
+    border: 2px solid #7098FF; /* Color del borde */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* 📌 Degradado en la parte inferior para un cierre más suave */
+.custom-gradient-overlay {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ajusta la altura del degradado según sea necesario */
+    background: linear-gradient(to bottom, rgba(10, 25, 47, 0.85) 50%, rgba(10, 25, 47, 0) 100%);
+    z-index: 1;
+}
+
 </style>
 
 
@@ -245,6 +283,7 @@
         <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
           <div class="svg-icon text-primary mb-4">
+            <img src="./assets/svg/logos/MAS CONSULTAS MAS INGRESOS.svg" alt="Icono" class="img-fluid" width="80">
           </div>
           <h3 class="text-white">Más consultas, más ingresos </h3>
           <p class="text-white opacity-75">La automatización permite atender más pacientes al día sin aumentar la carga medica.
@@ -259,6 +298,7 @@
         <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
           <div class="svg-icon text-primary mb-4">
+            <img src="./assets/svg/img/Transcripcion/MENOS TIEMPO.svg" alt="Icono" class="img-fluid" width="80">
           </div>
           <h3 class="text-white">Menos tiempo en papeleo</h3>
           <p class="text-white opacity-75">Reduce hasta 1 hora diaria en documentación, optimizando el tiempo clínico.</p>
@@ -271,7 +311,7 @@
         <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
           <div class="svg-icon text-primary mb-4">
-           
+            <img src="./assets/svg/img/Transcripcion/GANANCIA.svg" alt="Icono" class="img-fluid" width="80">
           </div>
           <h3 class="text-white">Mayor productividad</h3>
           <p class="text-white opacity-75">Elimina la doble digitación y disminuye el burnout, maximizando el rendimiento del equipo médico</p>
@@ -346,81 +386,134 @@
   </div>
 </div>
 <!-- End Step -->
+<!-- Features -->
+<div class="container content-space-2 content-space-lg-3">
+  <div class="row align-items-lg-center">
+    <!-- Columna de Texto -->
+    <div class="col-lg-5 mb-5 mb-lg-0">
+      <div class="pe-lg-6">
+        <div class="mb-4">
+          <h2 class="h1 text-white">Transforma minutos en más consultas y mejor atención</h2>
+        </div>
 
-<div class="container my-5 custom-benefits-section mb-7">
-  <!-- Título -->
-  <h2 class="text-center text-white mb-5 display-3">Disminuye el burnout de tu equipo médico y aumenta las consultas</h2>
+        <div class="d-flex gap-3 mb-4">
+          <img class="avatar avatar-xxl" src="./assets/svg/img/Transcripcion/ATENCION-AL-PACIENTE.png" alt="Logo">
+          <img class="avatar avatar-xxl" src="./assets/svg/img/Transcripcion/MENOS-TIEMPO.png" alt="Logo">
+          <img class="avatar avatar-xxl" src="./assets/svg/img/Transcripcion/GANANCIA.png" alt="Logo">
+        </div>
 
-  <div class="row align-items-center custom-benefits-container">
-      <!-- 📌 Imagen con borde azul -->
-      <div class="col-md-5 d-flex justify-content-center">
-          <div class="custom-benefits-image">
-              <img src="./assets/svg/img/Transcripcion/sad-young-male-doctor-with-medical-glasses-wearing-medical-robe-with-stethoscope.jpg" alt="Beneficio" class="img-fluid">
-          </div>
+        <div class="mb-4 text-white">
+          <p>¿Qué pasaría si cada minuto ahorrado se convirtiera en más pacientes atendidos?</p>
+          <p>Con la transcripción automática de Medinet, todo lo que dices en consulta se convierte en un registro clínico completo en tiempo real.</p>
+          <p>Ahorras 2 minutos por paciente, lo que al final del día suma 1 hora extra y se transforma en 2 consultas más al día y hasta 40 al mes, sin extender tu jornada ni aumentar la carga médica.</p>
+        </div>
+
+        <!-- 📌 CTA con Estilos -->
+        <div class="custom-contact-box2 text-center mt-4">
+          <a class="btn btn-outline-info btn-lg w-100" href="#contactoForm">
+            Aumenta la rentabilidad de tu clínica <i class="bi-chevron-right small ms-1"></i>
+          </a>
+        </div>
       </div>
+    </div>
+    <!-- End Col -->
 
-      <!-- 📌 Contenido a la derecha -->
-      <div class="col-md-7 text-white">
-          <h2 class="display-7 text-primary">Menos tiempo en registros, más en pacientes</h2>
-          <p>La documentación se genera automáticamente, permitiendo al médico enfocarse en la atención y no en el papeleo.</p>
-
-          <h2 class="display-7 text-primary">Reduce el estrés y mejora la eficiencia</h2>
-          <p>Automatiza los registros clínicos y elimina la doble digitación, liberando tiempo y reduciendo la carga medica.</p>
-
-          <h2 class="display-7 text-primary">Mejora la experiencia del paciente</h2>
-          <p>El médico mantiene contacto visual con el paciente, sin distracciones innecesarias.</p>
-
-          <!-- 📌 Botón CTA -->
-          <div class="mt-4">
-              <a href="#contactoForm" class="btn btn-outline-info custom-benefits-btn">Solicita más información<i class="bi-chevron-down small ms-1"></i></a> 
-          </div>
+    <!-- Columna de Imagen -->
+    <div class="col-lg-7 d-flex justify-content-center">
+      <div class="custom-image-container">
+        <img class="img-fluid rounded" src="./assets/svg/img/Transcripcion/FOTO LANDING ATENCION_ (1).png" alt="Descripción de la imagen">
       </div>
+    </div>
+
   </div>
+  <!-- End Row -->
+</div>
+<!-- End Features -->
+<!-- Clients -->
+<div class="position-relative overflow-hidden content-space-t-2">
+  <div class="position-absolute top-50 start-50 translate-middle w-100">
+    <div class="container-fluid px-lg-6">
+      <div class="row justify-content-center">
+        <div class="col-3 my-4">
+          <div class="d-none d-md-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
+            <img class="avatar-img" src="../assets/svg/brands/google-icon.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-3 mb-4">
+          <div class="d-block   p-4 mx-auto">
+            <img class="avatar-img" src="./assets/svg/logos/logo-medinet-white.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-3 my-4">
+          <div class="d-none d-md-block  p-4 mx-auto">
+            <img class="avatar-img" src="./assets/svg/logos/logo-medinet-white.svg" alt="Logo" >
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="row justify-content-between">
+        <div class="col-3 mb-4">
+          <div class="d-block  p-4">
+            <img class="avatar-img" src="./assets/svg/logos/logo-medinet-white.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-3 my-4">
+          <div class="d-block avatar avatar-xl rounded-circle shadow-sm p-4 ms-auto">
+            <img class="avatar-img" src="../assets/svg/brands/spotify-icon.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+
+      <div class="row justify-content-between">
+        <div class="col-4">
+          <div class="d-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
+            <img class="avatar-img" src="../assets/svg/brands/airbnb-icon.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-4 mt-6">
+          <div class="d-none d-sm-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
+            <img class="avatar-img" src="../assets/svg/brands/behance-icon.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-4 mt-6">
+          <div class="d-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
+            <img class="avatar-img" src="../assets/svg/brands/dribbble-icon.svg" alt="Logo">
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+  </div>
+
+  <div class="container position-relative zi-1 content-space-3 content-space-sm-4">
+    <!-- Heading -->
+    <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+      <h2 class="h1 text-white">Intégralo al sistema clínico que ya usas</h2>
+      <p class="text-white">Nuestra transcripción se adapta a cualquier HIS o software de registro clínico, rellenando automáticamente los formularios médicos con precisión.</p>
+    </div>
+    <!-- End Heading -->
+  </div>
+
+  <div class="gradient-y-lg-white position-absolute top-0 start-0 w-0 h-0"></div>
 </div>
 
-<div class="container text-center my-5 py-5">
-  <!-- Título -->
-  <h2 class="display-3 fw-bold mb-5 text-white">Transcripción médica integrada y automatizada</h2>
-
-  <div class="row align-items-center justify-content-center">
-      <!-- Columna izquierda (íconos y textos) -->
-      <div class="col-md-3 d-flex flex-column align-items-end text-end">
-          <div class="feature-item mb-4 text-center">
-              <i class="bi-arrow-left-right fs-2 text-white text-center"></i>
-              <p class="fw-bold text-white">Integrado a tu sistema de gestión clínica </p>
-          </div>
-          <div class="feature-item mb-4 text-center">
-              <i class="bi-file-earmark-code fs-2 text-white"></i>
-              <p class="fw-bold text-white">Codificación médica eficiente</p>
-          </div>
-      </div>
-
-      <!-- Imagen del teléfono en el centro -->
-      <div class="col-md-4">
-          <div class="phone-container">
-              <img src="./assets/svg/img/Transcripcion/1140-smartphone-voice-recorder-esp.jpg" alt="AI Assistant" class="img-fluid">
-          </div>
-      </div>
-
-      <!-- Columna derecha (íconos y textos) -->
-      <div class="col-md-3 d-flex flex-column align-items-start text-start">
-          <div class="feature-item mb-4 text-center">
-              <i class="bi-file-earmark-text fs-2 text-white"></i>
-              <p class="fw-bold text-white">Notas clínicas ordenadas y accesibles</p>
-          </div>
-          <div class="feature-item mb-4 text-center">
-              <i class="bi-list fs-2 text-white"></i>
-              <p class="fw-bold text-white"> Historial clínico automatizado</p>
-          </div>
-      </div>
-  </div>
-
-  <!-- 📌 Botón de contacto con el nuevo diseño -->
-  <div class="mt-4">
-    <a href="#contactoForm" class="btn btn-outline-info custom-benefits-btn">Contáctanos</a> <i class="bi-chevron-down small ms-1"></i></a>
-  </div>
-</div>
-
+<!-- End Clients -->
 <div id="contactoForm" class="container my-5">
   <div class="custom-contact-box d-flex flex-column align-items-center text-center p-5">
       <h2 class="fw-bold text-white display-4">¿Quiere verlo en acción?</h2>
