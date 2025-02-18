@@ -213,6 +213,18 @@
     background: linear-gradient(to bottom, rgba(10, 25, 47, 0.85) 50%, rgba(10, 25, 47, 0) 100%);
     z-index: 1;
 }
+.logo-img {
+  max-width: 150px; /* Aumenta el tamaño de los logos */
+  height: auto;
+  filter: none; /* Asegura que no haya filtros aplicados */
+  padding: 15px; /* Espaciado alrededor de cada logo */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.15); /* Efecto hover para mejorar la interacción */
+}
+
 
 </style>
 
@@ -232,8 +244,7 @@
         <!-- 📌 Contenedor principal centrado en la sección pero alineado a la izquierda -->
         <div class="mb-3 p-0 w-75">
           <h1 class="display-4 fw-bold text-white mb-4 text-start">
-            La IA que te ayuda a escribir 
-            tu historia clínica automáticamente
+            La IA que te ayuda a escribir tu historia clínica <span class="text-primary text-highlight-warning">automáticamente</span> 
           </h1>
           <p class="lead text-white opacity-75 mb-4 text-start">
             Menos estrés para los médicos, más tiempo para cada consulta y una mejor experiencia para el paciente.
@@ -274,7 +285,7 @@
   <div class="container content-space-1 content-space-lg-3">
     <!-- Heading -->
     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-      <h2 class="h1 text-white">Aumenta la rentabilidad de tu centro medico</h2>
+      <h2 class="h1 text-white">Aumenta la rentabilidad de tu centro médico</h2>
     </div>
     <!-- End Heading -->
 
@@ -282,7 +293,7 @@
       <div class="col-md-4 mb-5 mb-md-0">
         <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
-          <div class="svg-icon text-primary mb-4">
+          <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/logos/MAS CONSULTAS MAS INGRESOS.svg" alt="Icono" class="img-fluid" width="80">
           </div>
           <h3 class="text-white">Más consultas, más ingresos </h3>
@@ -297,7 +308,7 @@
       <div class="col-md-4 mb-5 mb-md-0">
         <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
-          <div class="svg-icon text-primary mb-4">
+          <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/img/Transcripcion/MENOS TIEMPO.svg" alt="Icono" class="img-fluid" width="80">
           </div>
           <h3 class="text-white">Menos tiempo en papeleo</h3>
@@ -310,7 +321,7 @@
       <div class="col-md-4">
         <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
-          <div class="svg-icon text-primary mb-4">
+          <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/img/Transcripcion/GANANCIA.svg" alt="Icono" class="img-fluid" width="80">
           </div>
           <h3 class="text-white">Mayor productividad</h3>
@@ -327,8 +338,8 @@
 <!-- Step -->
 <div id="learnSection" class="container content-space-2 content-space-lg-3">
   <!-- Heading -->
-  <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9 text-white display-6">
-    <p>Asi funciona </p>
+  <div class="w-md-75 w-lg-100 text-center mx-md-auto mb-5 mb-md-9 text-white display-6">
+    <p class="display-4">Así funciona en tan <span class="text-primary text-highlight-warning">solo 4 pasos</span></p>
   </div>
   <!-- End Heading -->
 
@@ -337,7 +348,9 @@
     <ul class="step step-md step-centered mb-md-9">
       <li class="step-item">
         <div class="step-content-wrapper">
-          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo"></span>
+          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo">
+            <strong class="text-white">1</strong>
+          </span>
           <div class="step-content">
             <h5 class="step-title text-white">Descarga, instala y activa la transcripción en segundos</h5>
           </div>
@@ -346,7 +359,9 @@
 
       <li class="step-item">
         <div class="step-content-wrapper">
-          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo bg-ligth"></span>
+          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo">
+            <strong class="text-white">2</strong>
+          </span>
           <div class="step-content">
             <h5 class="step-title text-white">Habla con tu paciente, la IA escucha en tiempo real</h5>
           </div>
@@ -355,18 +370,22 @@
 
       <li class="step-item">
         <div class="step-content-wrapper">
-          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo"></span>
+          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo">
+            <strong class="text-white">3</strong>
+          </span>
           <div class="step-content">
-            <h5 class="step-title text-white">La información se transcribe con precisión sin esfuerzo</h5>
+            <h5 class="step-title text-white"> La información se transcribe con precisión y sin esfuerzo</h5>
           </div>
         </div>
       </li>
 
       <li class="step-item">
         <div class="step-content-wrapper">
-          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo"></span>
+          <span class="step-icon step-icon-sm step-icon-soft-primary step-icon-pseudo">
+            <strong class="text-white">4</strong>
+          </span>
           <div class="step-content">
-            <h5 class="step-title text-white">Los datos se almacenan directamente en el historial del paciente</h5>
+            <h5 class="step-title text-white">Los datos se almacenan automáticamente en el historial del paciente</h5>
           </div>
         </div>
       </li>
@@ -374,26 +393,24 @@
     <!-- End Step -->
 
     <!-- 📌 Nuevo Contenedor Transparente con Video -->
-    <div class="d-flex justify-content-center align-items-center ">
+    <div class="d-flex justify-content-center align-items-center">
       <video class="video-overlay-container" autoplay loop muted playsinline>
         <source src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Equipo%20de%20marketing%20y%20comercial%20Medinet/Contenido%20audiovisual%20Medinet%20team/Dise%C3%B1o%20sin%20t%C3%ADtulo.mp4" type="video/mp4">
         Tu navegador no soporta videos en HTML5.
       </video>
     </div>
-    
-    
     <!-- End Video Block -->
   </div>
 </div>
-<!-- End Step -->
-<!-- Features -->
+
+
 <div class="container content-space-2 content-space-lg-3">
   <div class="row align-items-lg-center">
     <!-- Columna de Texto -->
     <div class="col-lg-5 mb-5 mb-lg-0">
       <div class="pe-lg-6">
         <div class="mb-4">
-          <h2 class="h1 text-white">Transforma minutos en más consultas y mejor atención</h2>
+          <h2 class="h1 text-white">Transforma minutos en mejor atención y <span class="text-primary text-highlight-warning"> más consultas</span></h2>
         </div>
 
         <div class="d-flex gap-3 mb-4">
@@ -404,8 +421,8 @@
 
         <div class="mb-4 text-white">
           <p>¿Qué pasaría si cada minuto ahorrado se convirtiera en más pacientes atendidos?</p>
-          <p>Con la transcripción automática de Medinet, todo lo que dices en consulta se convierte en un registro clínico completo en tiempo real.</p>
-          <p>Ahorras 2 minutos por paciente, lo que al final del día suma 1 hora extra y se transforma en 2 consultas más al día y hasta 40 al mes, sin extender tu jornada ni aumentar la carga médica.</p>
+          <p>Con la transcripción automática de Medinet, todo lo que dices en consulta se convierte en un registro clínico completo en <span class="text-warning text-highlight-warning">tiempo real.</span></p>
+          <p><span class="text-warning text-highlight-warning">Ahorras 2 minutos</span> por paciente, lo que al final del día suma <span class="text-warning text-highlight-warning">1 hora extra</span>  y se transforma en <span class="text-warning text-highlight-warning">2 consultas más al día</span> y hasta <span class="text-warning text-highlight-warning">40 al mes</span> sin extender tu jornada ni aumentar la carga médica.</p>
         </div>
 
         <!-- 📌 CTA con Estilos -->
@@ -430,95 +447,65 @@
 </div>
 <!-- End Features -->
 <!-- Clients -->
-<div class="position-relative overflow-hidden content-space-t-2">
-  <div class="position-absolute top-50 start-50 translate-middle w-100">
-    <div class="container-fluid px-lg-6">
-      <div class="row justify-content-center">
-        <div class="col-3 my-4">
-          <div class="d-none d-md-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
-            <img class="avatar-img" src="../assets/svg/brands/google-icon.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-3 mb-4">
-          <div class="d-block   p-4 mx-auto">
-            <img class="avatar-img" src="./assets/svg/logos/logo-medinet-white.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-3 my-4">
-          <div class="d-none d-md-block  p-4 mx-auto">
-            <img class="avatar-img" src="./assets/svg/logos/logo-medinet-white.svg" alt="Logo" >
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-
-      <div class="row justify-content-between">
-        <div class="col-3 mb-4">
-          <div class="d-block  p-4">
-            <img class="avatar-img" src="./assets/svg/logos/logo-medinet-white.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-3 my-4">
-          <div class="d-block avatar avatar-xl rounded-circle shadow-sm p-4 ms-auto">
-            <img class="avatar-img" src="../assets/svg/brands/spotify-icon.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-
-
-      <div class="row justify-content-between">
-        <div class="col-4">
-          <div class="d-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
-            <img class="avatar-img" src="../assets/svg/brands/airbnb-icon.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-4 mt-6">
-          <div class="d-none d-sm-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
-            <img class="avatar-img" src="../assets/svg/brands/behance-icon.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-4 mt-6">
-          <div class="d-block avatar avatar-xl rounded-circle shadow-sm p-4 mx-auto">
-            <img class="avatar-img" src="../assets/svg/brands/dribbble-icon.svg" alt="Logo">
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-    </div>
+<!-- Clients -->
+<div class="container content-space-2 content-space-b-lg-3">
+  <!-- Heading -->
+  <div class="w-md-50 w-lg-100 text-center mx-md-auto mb-6 text-white ">
+    <h2 class="text-white display-5 text-center">Intégralo al sistema clínico que utilizas</h2>
   </div>
+  <!-- End Heading -->
 
-  <div class="container position-relative zi-1 content-space-3 content-space-sm-4">
-    <!-- Heading -->
-    <div class="w-md-75 w-lg-50 text-center mx-md-auto">
-      <h2 class="h1 text-white">Intégralo al sistema clínico que ya usas</h2>
-      <p class="text-white">Nuestra transcripción se adapta a cualquier HIS o software de registro clínico, rellenando automáticamente los formularios médicos con precisión.</p>
+  <div class="row justify-content-center text-center">
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Agendapro.png" alt="Logo">
     </div>
-    <!-- End Heading -->
-  </div>
+    <!-- End Col -->
 
-  <div class="gradient-y-lg-white position-absolute top-0 start-0 w-0 h-0"></div>
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Encuadrado.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/logo-medinet-white.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Kopland.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Medilink.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Reservo.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Salutem.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-4 col-sm-3 col-md-2 py-3">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Sked24.png" alt="Logo">
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Row -->
 </div>
+<!-- End Clients -->
 
 <!-- End Clients -->
 <div id="contactoForm" class="container my-5">
   <div class="custom-contact-box d-flex flex-column align-items-center text-center p-5">
-      <h2 class="fw-bold text-white display-4">¿Quiere verlo en acción?</h2>
+      <h2 class="fw-bold text-white display-4"><span class="text-warning text-highlight-warning">¿Quiere verlo en acción?</span></h2>
       <p class="text-white mt-3 w-75">
-          Prueba nuestra solución de transcripción médica sin costo. Solicite una prueba gratuita y experimenta cómo la automatización optimiza su flujo de trabajo clínico.
+          Prueba nuestra solución de transcripción médica sin costo. Solicite una <span class="text-warning text-highlight-warning">prueba gratuita</span> y experimenta cómo la automatización optimiza su flujo de trabajo clínico.
       </p>
 
       <!-- 📌 Contenedor del Formulario -->
