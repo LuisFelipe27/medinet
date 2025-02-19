@@ -23,25 +23,31 @@
 
         /* 📌 Ajuste del degradado en la imagen de fondo */
         .left-section {
-            
-            padding: 2rem;
-        }
+    padding: 2rem;
+    z-index: 2;
+}
 
         /* 📌 Video a la derecha */
         .video-container {
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
+    overflow: hidden; /* Evita el desplazamiento horizontal */
 }
+
 
 .video-container video {
     position: absolute;
-    top: 0%; /* Baja el video */
-    left: -30%; /* Mueve el video más a la izquierda */
-    width: 110%; /* Asegura que el video cubra el espacio */
-    height: 110%;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%); /* Centra el video */
+    width: 120%; /* Se agranda un poco para cubrir bien */
+    height: auto;
     object-fit: cover;
+}
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 .benefits-wrapper {
     background: rgba(3, 17, 51, 0.932); /* Fondo azul oscuro semi-transparente */
@@ -67,35 +73,35 @@
     border-radius: 10px;
 }
 
- .custom-benefits-btn {
-        color: #7098FF !important; /* Texto en azul */
-        border-color: #7098FF !important; /* Borde en azul */
-        background-color: transparent !important; /* Fondo transparente */
-        padding: 12px 24px;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 6px; /* Bordes suaves */
-        transition: all 0.3s ease-in-out;
-    }
+.custom-benefits-btn {
+    color: #7098FF !important;
+    border-color: #7098FF !important;
+    background-color: transparent !important;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
 
     /* 📌 Cambio de color al pasar el mouse */
     .custom-benefits-btn:hover {
-        background-color: #7098FF !important;
-        color: white !important;
-    }
+    background-color: #7098FF !important;
+    color: white !important;
+}
 
-    .check-icon {
-        color: white; /* Mantiene el ticket en blanco */
-        background-color: #7098FF; /* Color azul HEX: 7098FF */
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        font-size: 16px;
-        font-weight: bold;
-    }
+.check-icon {
+    color: white;
+    background-color: #7098FF;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+}
     .phone-container {
         display: flex;
         justify-content: center;
@@ -236,51 +242,44 @@
 <body>
 
     <!-- Hero -->
-    <div class="container-fluid d-flex vh-100">
-
-      
+    <div class="container-fluid d-flex min-vh-100 overflow-hidden">
+      <!-- Sección Izquierda -->
       <div class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center text-white p-5 position-relative left-section">
-        
-        <!-- 📌 Contenedor principal centrado en la sección pero alineado a la izquierda -->
-        <div class="mb-3 p-0 w-75">
-          <h1 class="display-4 fw-bold text-white mb-4 text-start">
-            La IA que te ayuda a escribir tu historia clínica <span class="text-primary text-highlight-warning">automáticamente</span> 
-          </h1>
-          <p class="lead text-white opacity-75 mb-4 text-start">
-            Menos estrés para los médicos, más tiempo para cada consulta y una mejor experiencia para el paciente.
-          </p>
-          <ul class="list-unstyled text-white">
-        <li class="d-flex align-items-center mb-2">
-            <span class="check-icon me-2">&#10003;</span> 20+ consultas adicionales al mes por médico
-        </li>
-        <li class="d-flex align-items-center mb-2">
-            <span class="check-icon me-2">&#10003;</span> Ahorra más de 1 hora diaria por consulta
-        </li>
-        <li class="d-flex align-items-center">
-            <span class="check-icon me-2">&#10003;</span> Equipo con 10+ años de experiencia en salud
-        </li>
-    </ul>
-        </div>
-    
-        <!-- 📌 Botón alineado a la izquierda -->
-        <div class="d-flex gap-3 mt-4">
-    <a href="#contactoForm" class="btn btn-outline-info custom-benefits-btn">Contáctanos <i class="bi-chevron-down small ms-1"></i></a>
-    <a href="#learnSection" class="btn btn-outline-info custom-benefits-btn">Más Información <i class="bi-chevron-down small ms-1"></i></a>
-</div>
-    
+          <div class="mb-3 p-0 w-75">
+              <h1 class="display-4 fw-bold text-white mb-4 text-start">
+                  La IA que te ayuda a escribir tu historia clínica <span class="text-primary text-highlight-warning">automáticamente</span> 
+              </h1>
+              <p class="lead text-white opacity-75 mb-4 text-start">
+                  Menos estrés para los médicos, más tiempo para cada consulta y una mejor experiencia para el paciente.
+              </p>
+              <ul class="list-unstyled text-white">
+                  <li class="d-flex align-items-center mb-2">
+                      <span class="check-icon me-2">&#10003;</span> 20+ consultas adicionales al mes por médico
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                      <span class="check-icon me-2">&#10003;</span> Ahorra más de 1 hora diaria por consulta
+                  </li>
+                  <li class="d-flex align-items-center">
+                      <span class="check-icon me-2">&#10003;</span> Equipo con 10+ años de experiencia en salud
+                  </li>
+              </ul>
+          </div>
+          <div class="d-flex gap-3 mt-4">
+              <a href="#contactoForm" class="btn btn-outline-info custom-benefits-btn">Contáctanos <i class="bi-chevron-down small ms-1"></i></a>
+              <a href="#learnSection" class="btn btn-outline-info custom-benefits-btn">Más Información <i class="bi-chevron-down small ms-1"></i></a>
+          </div>
       </div>
-      
-      <!-- 📌 Sección del video (NO TOCADA) -->
-      <div class="col-12 col-md-6 position-relative overflow-x: hidden; video-container">
-        <video autoplay loop muted playsinline>
-          <source src="./assets/svg/video/HERO TRANSCRIPCIÓN.mp4" type="video/mp4">
-          Tu navegador no soporta videos en HTML5.
-        </video>
+  
+      <!-- Video -->
+      <div class="col-12 col-md-6 position-relative video-container">
+          <video autoplay loop muted playsinline>
+              <source src="./assets/svg/video/HERO TRANSCRIPCIÓN.mp4" type="video/mp4">
+              Tu navegador no soporta videos en HTML5.
+          </video>
       </div>
-    
-    </div>
-
-<!-- Sección de Beneficios con Fondo Completo -->
+  </div>
+  
+<!-- Beneficios-->    
 <div class="benefits-wrapper">
   <div class="container content-space-1 content-space-lg-3">
     <!-- Heading -->
@@ -311,8 +310,8 @@
           <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/img/Transcripcion/MENOS TIEMPO.svg" alt="Icono" class="img-fluid" width="80">
           </div>
-          <h3 class="text-white">Menos tiempo en papeleo</h3>
-          <p class="text-white opacity-75">Reduce hasta 1 hora diaria en documentación, optimizando el tiempo clínico.</p>
+          <h3 class="text-white">Libera tu tiempo en cada consulta</h3>
+          <p class="text-white opacity-75">Automatiza la documentación y gana hasta 1 hora diaria para enfocarte en tus pacientes.</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -324,8 +323,8 @@
           <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/img/Transcripcion/GANANCIA.svg" alt="Icono" class="img-fluid" width="80">
           </div>
-          <h3 class="text-white">Mayor productividad</h3>
-          <p class="text-white opacity-75">Elimina la doble digitación y disminuye el burnout, maximizando el rendimiento del equipo médico</p>
+          <h3 class="text-white">Más cupos, menos burnout</h3>
+          <p class="text-white opacity-75">Aumenta la disponibilidad del médico y mejora la atención sin estrés adicional</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -403,7 +402,7 @@
   </div>
 </div>
 
-
+<!-- Rentabilidad -->
 <div class="container content-space-2 content-space-lg-3">
   <div class="row align-items-lg-center">
     <!-- Columna de Texto -->
@@ -421,8 +420,8 @@
 
         <div class="mb-4 text-white">
           <p>¿Qué pasaría si cada minuto ahorrado se convirtiera en más pacientes atendidos?</p>
-          <p>Con la transcripción automática de Medinet, todo lo que dices en consulta se convierte en un registro clínico completo en <span class="text-warning text-highlight-warning">tiempo real.</span></p>
-          <p><span class="text-warning text-highlight-warning">Ahorras 2 minutos</span> por paciente, lo que al final del día suma <span class="text-warning text-highlight-warning">1 hora extra</span>  y se transforma en <span class="text-warning text-highlight-warning">2 consultas más al día</span> y hasta <span class="text-warning text-highlight-warning">40 al mes</span> sin extender tu jornada ni aumentar la carga médica.</p>
+          <p>Cada consulta te roba minutos valiosos en documentación. Con la transcripción automática de Medinet,<span class="text-warning text-highlight-warning">todo lo que dices se convierte en un registro clínico en tiempo real</span> , sin que tengas que escribir.<span class="text-warning text-highlight-warning">Ahorras 2 minutos por paciente y ganas hasta 1 hora al día.</span></p>
+          <p>Ese tiempo extra no se desperdicia<span class="text-warning text-highlight-warning">son 2 consultas más cada día y hasta 40 al mes</span>sin extender tu jornada ni aumentar tu carga de trabajo.</p>
         </div>
 
         <!-- 📌 CTA con Estilos -->
@@ -445,9 +444,8 @@
   </div>
   <!-- End Row -->
 </div>
-<!-- End Features -->
-<!-- Clients -->
-<!-- Clients -->
+
+<!-- INTEGRACION -->
 <div class="container content-space-2 content-space-b-lg-3">
   <!-- Heading -->
   <div class="w-md-50 w-lg-100 text-center mx-md-auto mb-6 text-white ">
@@ -467,7 +465,7 @@
     <!-- End Col -->
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
-      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/logo-medinet-white.png" alt="Logo">
+      <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/MEDINET.png" alt="Logo">
     </div>
     <!-- End Col -->
 
@@ -498,9 +496,9 @@
   </div>
   <!-- End Row -->
 </div>
-<!-- End Clients -->
 
-<!-- End Clients -->
+
+<!-- CTA FINAL -->
 <div id="contactoForm" class="container my-5">
   <div class="custom-contact-box d-flex flex-column align-items-center text-center p-5">
       <h2 class="fw-bold text-white display-4"><span class="text-warning text-highlight-warning">¿Quiere verlo en acción?</span></h2>
@@ -531,7 +529,7 @@
   </div>
 </div>
 
-<!-- 📌 Estilos CSS personalizados (Aplicados solo a este contenedor) -->
+<!--Estilos-->
 <style>
     .custom-benefits-container {
         background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
