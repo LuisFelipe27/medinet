@@ -240,11 +240,29 @@ html, body {
 
   
     .custom-form-container {
-        background: rgba(0, 0, 0, 0.6); 
-        border: 2px solid #7098FF;
-        border-radius: 15px;
-    }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 1));
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.custom-form-container h3 {
+    color: #0A5D45; /* Color del título */
+    font-weight: bold;
+}
 
+.custom-form-container input,
+.custom-form-container select,
+.custom-form-container textarea {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.custom-form-container input::placeholder {
+    color: #6c757d;
+}
    
     .card-header-title {
         font-size: 1.8rem;
@@ -338,6 +356,39 @@ html, body {
         background-color: #7098FF;
         color: white;
     }
+    .custom-contact-form {
+    background: white !important;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+    max-width: 550px; /* Ancho máximo del formulario */
+}
+
+.custom-contact-form h3 {
+    color: #0A5D45; /* Color del título */
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-contact-form input,
+.custom-contact-form select,
+.custom-contact-form textarea {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.custom-contact-form input::placeholder {
+    color: #6c757d;
+}
+
+@media (max-width: 992px) {
+    .custom-contact-form {
+        margin-top: 2rem; /* Ajusta la altura en pantallas pequeñas */
+    }
+}
 
 </style>
 
@@ -349,72 +400,73 @@ html, body {
 <body>
 
  
-<div class="hero-gradient position-relative">
-  <div class="content-space-t-3 content-space-t-lg-5 content-space-b-2 content-space-b-lg-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Columna Izquierda: Título, Descripción y Beneficios -->
-        <div class="col-lg-5 col-xl-6">
-          <div class="mb-3 p-0 w-100 w-md-75">
-            <h1 class="display-4 fw-bold text-white mb-4 text-start">
-              La IA que te ayuda a escribir tu historia clínica 
-              <span class="text-primary text-highlight-warning">automáticamente</span>
-            </h1>
-            <p class="lead text-white opacity-75 mb-4 text-start">
-              Menos estrés para los médicos, más tiempo para cada consulta y una mejor experiencia para el paciente.
-            </p>
-            <ul class="list-unstyled text-white">
-              <li class="d-flex align-items-center mb-2">
-                <span class="check-icon me-2">&#10003;</span> 20+ consultas adicionales al mes por médico
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <span class="check-icon me-2">&#10003;</span> Ahorra más de 1 hora diaria por consulta
-              </li>
-              <li class="d-flex align-items-center">
-                <span class="check-icon me-2">&#10003;</span> Equipo con 10+ años de experiencia en salud
-              </li>
-            </ul>
-
-            <!-- 📌 Botón de Más Información -->
-            <div class="d-flex gap-3 mt-4">
-              <a href="#learnSection" class="btn btn-outline-info custom-benefits-btn">
-                Más Información <i class="bi-chevron-down small ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <!-- Columna Derecha: Formulario de Contacto -->
-        <div class="col-lg-6">
-          <div class="ps-lg-5">
-            <!-- Card -->
-            <div class="card" id="contactoForm"> <!-- 📌 Se agregó la ID aquí -->
-              <div class="card-header border-bottom text-center">
-                <h3 class="card-header-title">Contáctanos</h3>
-              </div>
-              <div class="card-body">
-                <!-- Form -->
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                    region: "na1",
-                    portalId: "21935835",
-                    formId: "a44a6e1c-6f94-40da-b455-3017f72a67c9"
-                  });
-                </script>
-                <!-- End Form -->
+  <div class="hero-gradient position-relative">
+    <div class="content-space-t-3 content-space-t-lg-5 content-space-b-2 content-space-b-lg-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Columna Izquierda: Título, Descripción y Beneficios -->
+          <div class="col-lg-5 col-xl-6">
+            <div class="mb-3 p-0 w-100 w-md-75">
+              <h1 class="display-4 fw-bold text-white mb-4 text-start">
+                La IA que te ayuda a escribir tu historia clínica 
+                <span class="text-primary text-highlight-warning">automáticamente</span>
+              </h1>
+              <p class="lead text-white opacity-75 mb-4 text-start">
+                Menos estrés para los médicos, más tiempo para cada consulta y una mejor experiencia para el paciente.
+              </p>
+              <ul class="list-unstyled text-white">
+                <li class="d-flex align-items-center mb-2">
+                  <span class="check-icon me-2">&#10003;</span> 20+ consultas adicionales al mes por médico
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <span class="check-icon me-2">&#10003;</span> Ahorra más de 1 hora diaria por consulta
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="check-icon me-2">&#10003;</span> Equipo con 10+ años de experiencia en salud
+                </li>
+              </ul>
+  
+              <!-- 📌 Botón de Más Información -->
+              <div class="d-flex gap-3 mt-4">
+                <a href="#learnSection" class="btn btn-outline-info custom-benefits-btn">
+                  Más Información <i class="bi-chevron-down small ms-1"></i>
+                </a>
               </div>
             </div>
-            <!-- End Card -->
           </div>
+          <!-- End Col -->
+  
+          <!-- Columna Derecha: Formulario de Contacto -->
+          <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="ps-lg-5 w-100">
+              <!-- Card -->
+              <div class="card custom-contact-form shadow-lg p-4" id="contactoForm"> <!-- 📌 Se agregó la ID aquí -->
+                <div class="card-header border-bottom text-center bg-white">
+                  <h3 class="card-header-title text-dark fw-bold">Contáctanos</h3>
+                </div>
+                <div class="card-body bg-white">
+                  <!-- Form -->
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                      region: "na1",
+                      portalId: "21935835",
+                      formId: "a44a6e1c-6f94-40da-b455-3017f72a67c9"
+                    });
+                  </script>
+                  <!-- End Form -->
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+          <!-- End Col -->
         </div>
-        <!-- End Col -->
+        <!-- End Row -->
       </div>
-      <!-- End Row -->
     </div>
   </div>
-</div>
+  
 
 
 
@@ -626,6 +678,24 @@ html, body {
 
   </div>
 
+</div>
+<div class="container my-5">
+  <div class="custom-contact-box d-flex flex-column align-items-center text-center p-5">
+    <h2 class="fw-bold text-white display-4">
+      <span class="text-warning text-highlight-warning">¿Quieres verlo en acción?</span>
+    </h2>
+    <p class="text-white mt-3 w-75">
+      Prueba nuestra solución de transcripción médica sin costo. Solicite una
+      <span class="text-warning text-highlight-warning">prueba gratuita</span> y experimente cómo la automatización optimiza su flujo de trabajo clínico.
+    </p>
+
+    <!-- 📌 Botón CTA Dorado -->
+    <div class="mt-4">
+      <a href="#contactoForm" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">
+        Contáctanos
+      </a>
+    </div>
+  </div>
 </div>
 
 
