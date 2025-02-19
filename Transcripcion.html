@@ -26,6 +26,45 @@
     padding: 2rem;
     z-index: 2;
 }
+        @media (max-width: 768px) {
+    .left-section {
+        text-align: center;
+        align-items: center !important;
+    }
+
+    .left-section h1 {
+        font-size: 2rem;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .left-section ul {
+        padding-left: 0;
+    }
+
+    .check-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .custom-benefits-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .video-container {
+      display: none !important;
+    }
+
+    .video-container video {
+        width: 130%; /* Asegura que el video ocupe más espacio en móvil */
+        left: 50%;
+    }
+}
 
         /* 📌 Video a la derecha */
         .video-container {
@@ -33,6 +72,9 @@
     width: 100%;
     height: 100vh;
     overflow: hidden; /* Evita el desplazamiento horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -242,12 +284,13 @@ html, body {
 <body>
 
     <!-- Hero -->
-    <div class="container-fluid d-flex min-vh-100 overflow-hidden">
+    <div class="container-fluid d-flex min-vh-100 overflow-hidden flex-column flex-md-row">
       <!-- Sección Izquierda -->
       <div class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center text-white p-5 position-relative left-section">
-          <div class="mb-3 p-0 w-75">
+          <div class="mb-3 p-0 w-100 w-md-75">
               <h1 class="display-4 fw-bold text-white mb-4 text-start">
-                  La IA que te ayuda a escribir tu historia clínica <span class="text-primary text-highlight-warning">automáticamente</span> 
+                  La IA que te ayuda a escribir tu historia clínica 
+                  <span class="text-primary text-highlight-warning">automáticamente</span> 
               </h1>
               <p class="lead text-white opacity-75 mb-4 text-start">
                   Menos estrés para los médicos, más tiempo para cada consulta y una mejor experiencia para el paciente.
@@ -270,14 +313,16 @@ html, body {
           </div>
       </div>
   
-      <!-- Video -->
-      <div class="col-12 col-md-6 position-relative video-container">
-          <video autoplay loop muted playsinline>
+      <!-- Sección del Video (Oculto en dispositivos móviles) -->
+      <div class="col-12 col-md-6 video-container d-none d-md-block">
+          <video autoplay loop muted playsinline class="video-responsive">
               <source src="./assets/svg/video/HERO TRANSCRIPCIÓN.mp4" type="video/mp4">
               Tu navegador no soporta videos en HTML5.
           </video>
       </div>
   </div>
+  
+  
   
 <!-- Beneficios-->    
 <div class="benefits-wrapper">
