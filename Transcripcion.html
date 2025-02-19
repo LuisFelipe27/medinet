@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transcribe tu consulta médica con IA</title>
+<html lang="es" dir="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Transcribe tu consulta medica con IA - Medinet</title>
+        <meta name="description" content="">
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://medinetapp.com/" />
+        <meta property="og:site_name" content="Medinet" />
+        <meta property="fb:app_id" content="" />
+      
+        <link rel="shortcut icon" href="../assets/svg/logos/favicon-medinet.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/theme.min.css">
+        <link rel="stylesheet" href="./assets/css/vendor.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      
+        <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KH42KFM');</script>
+        <!-- End Google Tag Manager -->
+      </head>
 
-    <!-- Estilos Bootstrap y Vendor -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
-    <link rel="stylesheet" href="./assets/css/vendor.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <!-- Estilos personalizados -->
     <style>
-        /* 📌 Fondo de toda la página */
+
         body {
             background-image: url('./assets/svg/img/Transcripcion/45157703_9019805.jpg');
             background-size: cover;
@@ -21,7 +43,7 @@
             background-repeat: no-repeat;
         }
 
-        /* 📌 Ajuste del degradado en la imagen de fondo */
+
         .left-section {
     padding: 2rem;
     z-index: 2;
@@ -61,17 +83,17 @@
     }
 
     .video-container video {
-        width: 130%; /* Asegura que el video ocupe más espacio en móvil */
+        width: 130%; 
         left: 50%;
     }
 }
 
-        /* 📌 Video a la derecha */
+
         .video-container {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden; /* Evita el desplazamiento horizontal */
+    overflow: hidden; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,8 +104,8 @@
     position: absolute;
     top: 50%;
     left: 22%;
-    transform: translate(-50%, -50%); /* Centra el video */
-    width: 120%; /* Se agranda un poco para cubrir bien */
+    transform: translate(-50%, -50%); 
+    width: 120%; 
     height: auto;
     object-fit: cover;
 }
@@ -92,18 +114,18 @@ html, body {
     max-width: 100%;
 }
 .benefits-wrapper {
-    background: rgba(3, 17, 51, 0.932); /* Fondo azul oscuro semi-transparente */
-    padding: 6rem 2rem; /* Ajuste de espaciado */
-    width: 100%; /* Asegurar que ocupe todo el ancho */
+    background: rgba(3, 17, 51, 0.932); 
+    padding: 6rem 2rem;
+    width: 100%; 
 }
 .video-overlay-container {
     position: relative;
     width: 100%;
-    max-width: 900px; /* Ajusta el tamaño del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
+    max-width: 900px; 
+    margin: 0 auto; 
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Negro semi-transparente */
-    border-radius: 10px; /* Bordes redondeados */
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,8 +147,6 @@ html, body {
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
 }
-
-    /* 📌 Cambio de color al pasar el mouse */
     .custom-benefits-btn:hover {
     background-color: #7098FF !important;
     color: white !important;
@@ -171,15 +191,15 @@ html, body {
         color: white !important;
     }
     .custom-info-box {
-        background: rgba(10, 25, 47, 0.85); /* Color de fondo semi-transparente */
-        border: 2px solid #7098FF; /* Color del borde */
-        border-radius: 20px; /* Bordes redondeados */
+        background: rgba(10, 25, 47, 0.85); 
+        border: 2px solid #7098FF; 
+        border-radius: 20px;
         padding: 3rem;
         max-width: 900px;
         margin: 0 auto;
     }
 
-    /* 📌 Botón con el diseño solicitado */
+    
     .custom-info-btn {
         border: 2px solid #7098FF;
         color: white;
@@ -197,53 +217,53 @@ html, body {
     }
     
     .custom-contact-box {
-        background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
-        border: 2px solid #7098FF; /* Color del borde */
-        border-radius: 20px; /* Bordes redondeados */
+        background: rgba(10, 25, 47, 0.85); 
+        border: 2px solid #7098FF; 
+        border-radius: 20px; 
         padding: 3rem;
         max-width: 900px;
         margin: 0 auto;
     }
 
-    /* 📌 Estilo para el formulario */
+  
     .custom-form-container {
-        background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+        background: rgba(0, 0, 0, 0.6); 
         border: 2px solid #7098FF;
         border-radius: 15px;
     }
 
-    /* 📌 Ajustes al título de la tarjeta */
+   
     .card-header-title {
         font-size: 1.8rem;
         font-weight: bold;
         color: #ffffff;
     }
 
-    /* 📌 Bordes de la tarjeta */
+
     .card {
         background: transparent;
         border: none;
     }
     .custom-contact-box2 {
-      background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
-      border: 2px solid #7098FF; /* Color del borde */
-      border-radius: 20px; /* Bordes redondeados */
+      background: rgba(10, 25, 47, 0.85); 
+      border: 2px solid #7098FF; 
+      border-radius: 20px; 
       padding: 1.5rem;
       max-width: 500px;
       margin: 0 auto;
   }
   .custom-image-container {
-      background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
-      border: 2px solid #7098FF; /* Borde con el color azul ya usado */
-      border-radius: 20px; /* Bordes redondeados */
+      background: rgba(10, 25, 47, 0.85); 
+      border: 2px solid #7098FF; 
+      border-radius: 20px; 
       padding: 1rem;
       max-width: 100%;
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); 
   }
   .custom-transparent-box {
-    background: rgba(10, 25, 47, 0.85); /* Fondo oscuro semi-transparente */
-    border: 2px solid #7098FF; /* Color del borde */
-    border-radius: 20px; /* Bordes redondeados */
+    background: rgba(10, 25, 47, 0.85); 
+    border: 2px solid #7098FF; 
+    border-radius: 20px; 
     padding: 3rem;
     max-width: 900px;
     margin: 0 auto;
@@ -251,7 +271,6 @@ html, body {
     z-index: 2;
 }
 
-/* 📌 Degradado en la parte inferior para un cierre más suave */
 .custom-gradient-overlay {
     position: absolute;
     bottom: -50px;
@@ -262,17 +281,50 @@ html, body {
     z-index: 1;
 }
 .logo-img {
-  max-width: 150px; /* Aumenta el tamaño de los logos */
+  max-width: 150px; 
   height: auto;
-  filter: none; /* Asegura que no haya filtros aplicados */
-  padding: 15px; /* Espaciado alrededor de cada logo */
+  filter: none; 
+  padding: 15px; 
   transition: transform 0.3s ease-in-out;
 }
 
 .logo-img:hover {
-  transform: scale(1.15); /* Efecto hover para mejorar la interacción */
+  transform: scale(1.15); 
 }
+.custom-benefits-container {
+        background: rgba(255, 255, 255, 0.1); /
+        padding: 40px;
+        border-radius: 15px;
+    }
 
+    .custom-benefits-image {
+        border: 3px solid #7098FF;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .custom-benefits-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .custom-benefits-btn {
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .custom-benefits-btn:hover {
+        background-color: #7098FF;
+        color: white;
+    }
 
 </style>
 
@@ -285,7 +337,6 @@ html, body {
 
     <!-- Hero -->
     <div class="container-fluid d-flex min-vh-100 overflow-hidden flex-column flex-md-row">
-      <!-- Sección Izquierda -->
       <div class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center text-white p-5 position-relative left-section">
           <div class="mb-3 p-0 w-100 w-md-75">
               <h1 class="display-4 fw-bold text-white mb-4 text-start">
@@ -313,7 +364,6 @@ html, body {
           </div>
       </div>
   
-      <!-- Sección del Video (Oculto en dispositivos móviles) -->
       <div class="col-12 col-md-6 video-container d-none d-md-block">
           <video autoplay loop muted playsinline class="video-responsive">
               <source src="./assets/svg/video/HERO TRANSCRIPCIÓN.mp4" type="video/mp4">
@@ -327,15 +377,13 @@ html, body {
 <!-- Beneficios-->    
 <div class="benefits-wrapper">
   <div class="container content-space-1 content-space-lg-3">
-    <!-- Heading -->
     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
       <h2 class="h1 text-white">Aumenta la rentabilidad de tu centro médico</h2>
     </div>
-    <!-- End Heading -->
+
 
     <div class="row">
       <div class="col-md-4 mb-5 mb-md-0">
-        <!-- Icon Blocks -->
         <div class="text-center px-lg-3">
           <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/logos/MAS CONSULTAS MAS INGRESOS.svg" alt="Icono" class="img-fluid" width="80">
@@ -345,12 +393,10 @@ html, body {
 
           </p>
         </div>
-        <!-- End Icon Blocks -->
       </div>
-      <!-- End Col -->
 
       <div class="col-md-4 mb-5 mb-md-0">
-        <!-- Icon Blocks -->
+
         <div class="text-center px-lg-3">
           <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/img/Transcripcion/MENOS TIEMPO.svg" alt="Icono" class="img-fluid" width="80">
@@ -358,12 +404,12 @@ html, body {
           <h3 class="text-white">Libera tu tiempo en cada consulta</h3>
           <p class="text-white opacity-75">Automatiza la documentación y gana hasta 1 hora diaria para enfocarte en tus pacientes.</p>
         </div>
-        <!-- End Icon Blocks -->
+
       </div>
-      <!-- End Col -->
+
 
       <div class="col-md-4">
-        <!-- Icon Blocks -->
+
         <div class="text-center px-lg-3">
           <div class="svg-icon text-primary mb-4 d-flex align-items-center justify-content-center" style="height: 100px;">
             <img src="./assets/svg/img/Transcripcion/GANANCIA.svg" alt="Icono" class="img-fluid" width="80">
@@ -371,24 +417,23 @@ html, body {
           <h3 class="text-white">Más cupos, menos burnout</h3>
           <p class="text-white opacity-75">Aumenta la disponibilidad del médico y mejora la atención sin estrés adicional</p>
         </div>
-        <!-- End Icon Blocks -->
+
       </div>
-      <!-- End Col -->
+
     </div>
-    <!-- End Row -->
+
   </div>
 </div>
 
 <!-- Step -->
 <div id="learnSection" class="container content-space-2 content-space-lg-3">
-  <!-- Heading -->
   <div class="w-md-75 w-lg-100 text-center mx-md-auto mb-5 mb-md-9 text-white display-6">
     <p class="display-4">Así funciona en tan <span class="text-primary text-highlight-warning">solo 4 pasos</span></p>
   </div>
-  <!-- End Heading -->
+
 
   <div class="w-lg-75 mx-md-auto">
-    <!-- Step -->
+
     <ul class="step step-md step-centered mb-md-9">
       <li class="step-item">
         <div class="step-content-wrapper">
@@ -434,23 +479,19 @@ html, body {
         </div>
       </li>
     </ul>
-    <!-- End Step -->
-
-    <!-- 📌 Nuevo Contenedor Transparente con Video -->
     <div class="d-flex justify-content-center align-items-center">
       <video class="video-overlay-container" autoplay loop muted playsinline>
         <source src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Equipo%20de%20marketing%20y%20comercial%20Medinet/Contenido%20audiovisual%20Medinet%20team/Dise%C3%B1o%20sin%20t%C3%ADtulo.mp4" type="video/mp4">
         Tu navegador no soporta videos en HTML5.
       </video>
     </div>
-    <!-- End Video Block -->
   </div>
 </div>
 
 <!-- Rentabilidad -->
 <div class="container content-space-2 content-space-lg-3">
   <div class="row align-items-lg-center">
-    <!-- Columna de Texto -->
+
     <div class="col-lg-5 mb-5 mb-lg-0">
       <div class="pe-lg-6">
         <div class="mb-4">
@@ -465,11 +506,11 @@ html, body {
 
         <div class="mb-4 text-white">
           <p>¿Qué pasaría si cada minuto ahorrado se convirtiera en más pacientes atendidos?</p>
-          <p>Cada consulta te roba minutos valiosos en documentación. Con la transcripción automática de Medinet,<span class="text-warning text-highlight-warning">todo lo que dices se convierte en un registro clínico en tiempo real</span> , sin que tengas que escribir.<span class="text-warning text-highlight-warning">Ahorras 2 minutos por paciente y ganas hasta 1 hora al día.</span></p>
-          <p>Ese tiempo extra no se desperdicia<span class="text-warning text-highlight-warning">son 2 consultas más cada día y hasta 40 al mes</span>sin extender tu jornada ni aumentar tu carga de trabajo.</p>
+          <p>Cada consulta te roba minutos valiosos en documentación. Con la transcripción automática de Medinet <span class="text-warning text-highlight-warning">todo lo que dices se convierte en un registro clínico en tiempo real</span>, sin que tengas que escribir.<span class="text-warning text-highlight-warning">Ahorras 2 minutos por paciente y ganas hasta 1 hora al día.</span></p>
+          <p>Ese tiempo extra no se desperdicia <span class="text-warning text-highlight-warning">son 2 consultas más cada día y hasta 40 al mes</span> sin extender tu jornada ni aumentar tu carga de trabajo.</p>
         </div>
 
-        <!-- 📌 CTA con Estilos -->
+
         <div class="custom-contact-box2 text-center mt-4">
           <a class="btn btn-outline-info btn-lg w-100" href="#contactoForm">
             Aumenta la rentabilidad de tu clínica <i class="bi-chevron-right small ms-1"></i>
@@ -477,9 +518,9 @@ html, body {
         </div>
       </div>
     </div>
-    <!-- End Col -->
 
-    <!-- Columna de Imagen -->
+
+
     <div class="col-lg-7 d-flex justify-content-center">
       <div class="custom-image-container">
         <img class="img-fluid rounded" src="./assets/svg/img/Transcripcion/FOTO LANDING ATENCION_ (1).png" alt="Descripción de la imagen">
@@ -487,59 +528,57 @@ html, body {
     </div>
 
   </div>
-  <!-- End Row -->
 </div>
 
 <!-- INTEGRACION -->
 <div class="container content-space-2 content-space-b-lg-3">
-  <!-- Heading -->
   <div class="w-md-50 w-lg-100 text-center mx-md-auto mb-6 text-white ">
     <h2 class="text-white display-5 text-center">Intégralo al sistema clínico que utilizas</h2>
   </div>
-  <!-- End Heading -->
+
 
   <div class="row justify-content-center text-center">
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Agendapro.png" alt="Logo">
     </div>
-    <!-- End Col -->
+ 
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Encuadrado.png" alt="Logo">
     </div>
-    <!-- End Col -->
+
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/MEDINET.png" alt="Logo">
     </div>
-    <!-- End Col -->
+ 
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Kopland.png" alt="Logo">
     </div>
-    <!-- End Col -->
+ 
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Medilink.png" alt="Logo">
     </div>
-    <!-- End Col -->
+  
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Reservo.png" alt="Logo">
     </div>
-    <!-- End Col -->
+ 
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Salutem.png" alt="Logo">
     </div>
-    <!-- End Col -->
+
 
     <div class="col-4 col-sm-3 col-md-2 py-3">
       <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="./assets/svg/logos/Sked24.png" alt="Logo">
     </div>
-    <!-- End Col -->
+
   </div>
-  <!-- End Row -->
+
 </div>
 
 
@@ -551,14 +590,14 @@ html, body {
           Prueba nuestra solución de transcripción médica sin costo. Solicite una <span class="text-warning text-highlight-warning">prueba gratuita</span> y experimenta cómo la automatización optimiza su flujo de trabajo clínico.
       </p>
 
-      <!-- 📌 Contenedor del Formulario -->
+
       <div class="custom-form-container w-100 mt-4 p-4">
           <div class="card">
               <div class="card-header text-center border-bottom">
                   <h3 class="card-header-title text-white">Completa el formulario</h3>
               </div>
               <div class="card-body">
-                  <!-- 📌 Formulario de HubSpot -->
+
                   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                   <script>
                     hbspt.forms.create({
@@ -567,56 +606,14 @@ html, body {
                       formId: "a44a6e1c-6f94-40da-b455-3017f72a67c9"
                     });
                   </script>
-                  <!-- 📌 Fin del Formulario -->
+
               </div>
           </div>
       </div>
   </div>
 </div>
 
-<!--Estilos-->
-<style>
-    .custom-benefits-container {
-        background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
-        padding: 40px;
-        border-radius: 15px;
-    }
 
-    .custom-benefits-image {
-        border: 3px solid #7098FF; /* Borde azul */
-        border-radius: 15px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .custom-benefits-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .custom-benefits-btn {
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 5px;
-        transition: 0.3s;
-    }
-
-    .custom-benefits-btn:hover {
-        background-color: #7098FF;
-        color: white;
-    }
-</style>
-
-
-
-
-
-<!-- Agregar el script del video background -->
 <script src="./assets/vendor/hs-video-bg/dist/hs-video-bg.min.js"></script>
 <!-- JS Implementing Plugins -->
 <script src="../assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
@@ -660,7 +657,7 @@ html, body {
     }
   
     .hero-text {
-      background: #0d47a1; /* Azul oscuro */
+      background: #0d47a1;
       padding: 5rem;
       display: flex;
       flex-direction: column;
@@ -685,7 +682,7 @@ html, body {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3); /* Sutil oscurecimiento */
+      background: rgba(0, 0, 0, 0.3); 
     }
   
     @media (max-width: 768px) {
