@@ -520,7 +520,7 @@
 <!-- End Features -->
 
 <!-- Features Stats -->
-<div class="container content-space-2 content-space-lg-3">
+<div class="container content-space-2 content-space-b-lg-5 mb-lg-7 ">
   <div class="row">
     <div class="col-sm-4 mb-3 mb-sm-0">
       <div class="text-center">
@@ -557,22 +557,70 @@
 </div>
 <!-- End Features Stats -->
 
-<!-- Swiper -->
-<div class="js-swiper-navigation swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img class="img-fluid" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20lo%20arcaya.png" alt="Image Description">
-    </div>
-    <div class="swiper-slide">
-      <img class="img-fluid" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20renal%20mater.png" alt="Image Description">
+<!-- Sección de Testimonios -->
+<div class="container text-center my-4"> <!-- Margen reducido -->
+  
+  <!-- 📌 Contenedor del Título -->
+  <div class="container mb-3 ">
+    <h2 class=" display-5 fw-bold text-primary mb-2">Lo que dicen nuestros clientes</h2>
+  </div>
+
+  <!-- 📌 Contenedor del Swiper -->
+  <div class="position-relative">
+    <div class="js-swiper-navigation swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide text-center">
+          <div class="d-flex justify-content-center"> <!-- Contenedor para centrar imagen -->
+            <img class="img-fluid mx-auto d-block" 
+                 src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20lo%20arcaya.png" 
+                 alt="Testimonio Lo Arcaya">
+          </div>
+        </div>
+        <div class="swiper-slide text-center">
+          <div class="d-flex justify-content-center">
+            <img class="img-fluid mx-auto d-block" 
+                 src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20renal%20mater.png" 
+                 alt="Testimonio Renal Mater">
+          </div>
+        </div>
+      </div>
+
+      <!-- 📌 Flechas de Navegación -->
+      <div class="js-swiper-navigation-button-prev position-absolute start-0 top-50 translate-middle-y">
+        <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Prev" width="40">
+      </div>
+      <div class="js-swiper-navigation-button-next position-absolute end-0 top-50 translate-middle-y">
+        <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Next" width="40">
+      </div>
     </div>
   </div>
 
-  <!-- Arrows -->
-  <div class="js-swiper-navigation-button-next"></div>
-  <div class="js-swiper-navigation-button-prev"></div>
 </div>
-<!-- End Swiper -->
+
+<!-- Swiper JS Configuración -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".js-swiper-navigation", {
+      loop: true,
+      navigation: {
+        nextEl: ".js-swiper-navigation-button-next",
+        prevEl: ".js-swiper-navigation-button-prev"
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 5
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        }
+      }
+    });
+  });
+</script>
+
+
 
 <!-- Contacts -->
 <div class="position-relative">
