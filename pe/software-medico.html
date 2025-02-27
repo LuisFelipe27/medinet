@@ -363,7 +363,7 @@
           </li>
         </ul>
 
-        <a class="btn btn-primary mt-3" id="scrollToForm" href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -403,7 +403,7 @@
              Integración con reportes clínicos
           </li>
         </ul>
-        <a class="btn btn-primary mt-3" id="scrollToForm" href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -447,7 +447,7 @@
           </li>
         </ul>
 
-        <a class="btn btn-primary mt-3" id="scrollToForm" href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -481,7 +481,7 @@
             <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/iconos/SVG/REDUCCION%20COSTOS%20OPERATIVOS.svg" alt="Icono Citas" width="50" class="me-2"> Reducción de costos operativos
           </li>
         </ul>
-        <a class="btn btn-primary mt-3" id="scrollToForm" href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -522,7 +522,7 @@
           </li>
         </ul>
 
-        <a class="btn btn-primary mt-3" id="scrollToForm"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"   href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -556,7 +556,7 @@
             <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/iconos/SVG/MEJORA%20GESTION%20HOSPITALARIA.svg" alt="Icono WhatsApp" width="50" class="me-2"> Mejora en la gestión hospitalaria
           </li>
         </ul>
-        <a class="btn btn-primary mt-3" id="scrollToForm" href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -597,7 +597,7 @@
           </li>
         </ul>
 
-        <a class="btn btn-primary mt-3" id="scrollToForm"  href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3"   href="#contactoForm">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -623,7 +623,7 @@
         Contamos con un equipo de soporte que te acompaña en cada paso. Desde la capacitación hasta la operación diaria, siempre tendrás asistencia disponible. 
         Contacta con nuestro equipo por teléfono o correo electrónico para resolver cualquier inquietud.
       </p>
-      <a href="#contactoForm" id="scrollToForm" class="btn btn-warning text-dark fw-bold px-4 py-2 mt-3  shadow-sm">Solicita tu asesoría</a>
+      <a href="#contactoForm"  class="scrollToForm btn btn-warning text-dark fw-bold px-4 py-2 mt-3  shadow-sm">Solicita tu asesoría</a>
     </div>
 
   </div>
@@ -810,14 +810,17 @@
   })()
 </script>
 <script>
-  document.getElementById("scrollToForm").addEventListener("click", function (event) {
-    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    document.getElementById("contactoForm").scrollIntoView({
-      behavior: "smooth",
-      block: "start"
+  document.querySelectorAll(".scrollToForm").forEach(button => {
+    button.addEventListener("click", function (event) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      document.getElementById("contactoForm").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     });
   });
 </script>
+
 
 
 
