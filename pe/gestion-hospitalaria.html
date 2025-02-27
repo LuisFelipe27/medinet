@@ -49,6 +49,49 @@
   height: auto;
 }
 
+.hero-gradient {
+  position: relative;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 5%, rgba(0, 98, 255, 0.8) 40%, rgba(0, 98, 255, 1) 100%);
+}
+
+
+@media (max-width: 991px) {
+  .hero-gradient {
+    background: #0062ff;
+  }
+}
+.iso-icon {
+  background: none !important;
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .iso-cert {
+    max-width: 100%;
+  }
+}
+.iso-cert {
+  mix-blend-mode: multiply; /* Hace que el fondo blanco desaparezca */
+  filter: brightness(1.1) contrast(1.2); /* Ajusta la visibilidad */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+  min-height: 250px; /* Fuerza la misma altura */
+}
+
+.iso-title {
+  min-height: 50px; /* Ajusta según el tamaño del título */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 </style>
 </header>
       </head>
