@@ -1,5 +1,9 @@
 User-Agent: *
 Disallow: /Transcripcion.html
 Disallow: /Transcripcion
+Disallow: /pe/sistema-oftalmologia.html
+Disallow: /pe/sistema-oftalmologia
+Disallow: /pe/software-de-salud-ocupacional.html
+Disallow: /pe/software-de-salud-ocupacional
 Allow: /
 
