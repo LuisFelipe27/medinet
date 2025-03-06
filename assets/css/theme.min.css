@@ -29223,16 +29223,131 @@ a:hover .text-inherit {
     margin-top: .5rem
 }
 .custom-hero-background {
-    background-color: #FFF; /* Azul estándar de Bootstrap */
-        border-top: 5px solid #7093FF; /* Ajusta la altura del borde según necesites */
-        text-align: left;  /* Centra el texto horizontalmente */
-        padding-top: 200px;  /* Añade espacio en la parte superior, ajusta según sea necesario */
+    background-color: #FFF; 
+        border-top: 5px solid #7093FF; 
+        text-align: left;  
+        padding-top: 200px;  
     
   }
   .hero-image {
-    border: 20px solid #7093FF; /* Color azul sutil */
-    border-radius: 80px; /* Bordes redondeados sutiles */
+    border: 20px solid #7093FF; 
+    border-radius: 80px; 
 }
+
+.medinet-card-container {
+    background: rgb(242, 242, 242); /* Fondo gris */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 65%; /* Reducción del ancho */
+    margin: auto;
+    padding: 40px 50px; /* Más control del espaciado */
+    margin-bottom: 70px;
+}
+
+.medinet-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.medinet-card-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.medinet-card-text {
+    max-width: 50%; /* Para evitar que el texto ocupe demasiado espacio */
+    padding-left: 30px;
+}
+.medinet-card-title {
+    display: inline-block;
+    background: linear-gradient(90deg, #2DB7FC, #6B5AED)!important; /* Degradado azul */
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    white-space: nowrap; /* Evita saltos de línea */
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.medinet-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.medinet-card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #034694;
+    background: linear-gradient(90deg, #007bff, #7098FF); /* Degradado azul */
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.medinet-card-module-button {
+    border: 2px solid #034694;
+    background: transparent;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.medinet-card-text p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.medinet-card-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.medinet-card-text ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.medinet-card-text ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Ajuste en responsivo */
+@media (max-width: 1024px) {
+    .medinet-card-container {
+        max-width: 95%; /* Para no ocupar todo el ancho en pantallas pequeñas */
+        padding: 30px;
+    }
+
+    .medinet-card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .medinet-card-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+
 
   
   
