@@ -76,19 +76,19 @@
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    min-height: 110vh; /* Ajusta según necesites */
+    min-height: 110vh; 
     padding: 150px 0;
-    padding-bottom: 0; /* Evita espacio extra */
+    padding-bottom: 0;
     position: relative;
     overflow: hidden;
   }
   .hero::after {
     content: "";
     position: absolute;
-    bottom: 0px; /* Ajusta según sea necesario */
+    bottom: 0px; 
     left: 0;
     width: 100%;
-    height: 1000px; /* Ajusta según el espacio que debas cubrir */
+    height: 1000px; 
     background: linear-gradient(to right, #375EA2 5%, #1E9CD7 59%, #0075BE 85% , #005B97  );
     z-index: -1;
 }
@@ -98,8 +98,8 @@
     display: block;
     width: 100%;
     position: relative;
-    top: -247px; /* Ajuste fino para evitar líneas blancas */
-    z-index: 1; /* Mantiene la imagen debajo del HERO */
+    top: -247px; 
+    z-index: 1; 
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -170,14 +170,14 @@
     padding: 0;
 }
 
-/* Asegurar que el background cubra toda la sección */
+
 .hero-section {
     background-image: url('https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Software%20medico%20antiguamente%20Soluciones/fondo_hero_sin_fotomesa_de_trabajo_3.png'); 
-    background-size: cover; /* Asegura que el fondo cubra toda la sección */
-    background-position: top center; /* Alinea correctamente la imagen */
+    background-size: cover; 
+    background-position: top center; 
     background-repeat: no-repeat;
-    min-height: 100vh; /* Ocupa el alto completo de la pantalla */
-    width: 100vw; /* Ocupa todo el ancho */
+    min-height: 100vh; 
+    width: 100vw; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -185,27 +185,27 @@
     justify-content: center;
 }
 
-/* Ajuste de la sección siguiente para unir los fondos sin dejar espacios */
+
 .next-section {
     background-image: url('https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/SISTEMA%20MEDINET.png');
-    background-size: cover; /* Ajuste total de la imagen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
-    margin: -5px 0 0 0; /* Ajusta el margen superior para evitar separación */
+    margin: -5px 0 0 0; 
     padding: 0;
 }
 
-/* Quitar espacio en blanco generado por el body */
+
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evita desplazamiento horizontal */
+    overflow-x: hidden; 
 }
 
 
-    /* Ajustes para la imagen de continuación */
+
     .hero-extension {
         width: 100%;
         height: auto;
@@ -214,7 +214,7 @@ body {
     }
     @media (max-width: 768px) {
     .container-fluid {
-        background-size: contain; /* En pantallas pequeñas, ajusta el fondo sin cortar */
+        background-size: contain; 
         background-position: top center;
         margin: 0;
     padding: 0;
@@ -240,11 +240,11 @@ body {
   
   <div class="container">
   <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
-  <!-- Default Logo -->
+
   <a class="navbar-brand" href="../" aria-label="Medinet">
     <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo">
   </a>
-  <!-- End Default Logo -->
+
   
   <!-- Toggler -->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -468,7 +468,7 @@ body {
         </div>
 
 
-        <!-- Imagen de la derecha -->
+
         <div class="col-md-6 position-absolute end-0 top-50 translate-middle-y d-none d-md-block " 
         style="width: 100%; height: 100%; left: 54%;">   
   <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Software%20medico%20antiguamente%20Soluciones/DOCTOR%20HERO%202.png"
@@ -482,7 +482,7 @@ body {
 
       </div>
     </div>
-  <!-- Contenedor de Logos -->
+
 
 
   
@@ -515,7 +515,7 @@ body {
       </div>
     </div>
   
-    <!-- Shape Ondulado debajo de la imagen -->
+
     <div class="position-absolute bottom-0 start-0 w-100" style="z-index: 1;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#1E9CD7" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,224C672,224,768,224,864,192C960,160,1056,96,1152,80C1248,64,1344,96,1392,112L1440,128V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path>
@@ -549,7 +549,6 @@ body {
                     pacientes como para el personal administrativo.</p>
               </div>
 
-              <!-- Lista de beneficios -->
               <ul class="list-unstyled">
                 <li class="d-flex align-items-center mb-2">
                   <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Software%20medico%20antiguamente%20Soluciones/Iconos-contenido/ICONOS%20LANDING%20Mesa%20de%20trabajo%201.svg" alt="Icono" width="60" class="me-2">
@@ -570,6 +569,7 @@ body {
 
               <!-- Botón CTA -->
               <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+              <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/agenda-medica">Más información <i class="bi-chevron-right small ms-1"></i></a>
           </div>
       </div>
       <!-- End Col -->
@@ -607,7 +607,8 @@ body {
             <p>Integración con RIS/PACS y LIS para exámenes y diagnósticos </p>
           </li>
         </ul>
-        <a class="scrollToForm btn btn-primary mt-3"  href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/agenda-medica">Más información <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -645,7 +646,8 @@ body {
             <p>Gestión de pagos centralizada para mayor control financiero </p>
           </li>
         </ul>
-        <a class="scrollToForm btn btn-primary mt-3"  href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/cobranza-y-cuenta-medica">Más información <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -698,7 +700,7 @@ body {
           </li>
         </ul>
 
-        <a class="scrollToForm btn btn-primary mt-3"  href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -738,7 +740,8 @@ body {
               el alta del paciente</p>
           </li>
         </ul>
-        <a class="scrollToForm btn btn-primary mt-3"  href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/gestion-quirofano">Más información <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -777,7 +780,8 @@ body {
             <p>Reportes personalizados para una mejor toma de decisiones</p>
           </li>
         </ul>
-        <a class="scrollToForm btn btn-primary mt-3"  href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/reportes">Más información <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -816,7 +820,8 @@ body {
             <p>Reportes automatizados para una gestión eficiente</p>
           </li>
         </ul>
-        <a class="scrollToForm btn btn-primary mt-3"  href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/adquisicion-y-dispensacion">Más información <i class="bi-chevron-right small ms-1"></i></a>
       </div>
     </div>
     <!-- End Col -->
@@ -869,7 +874,8 @@ body {
           </li>
         </ul>
 
-        <a class="scrollToForm btn btn-primary mt-3" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../contacto">Solicitar Asesoría <i class="bi-chevron-right small ms-1"></i></a>
+        <a class="scrollToForm btn btn-primary mt-3 px-4 py-2 fw-bold" href="../soluciones/gestion-camas">Más información <i class="bi-chevron-right small ms-1"></i></a>
         
       </div>
     </div>
