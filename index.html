@@ -240,23 +240,108 @@
 </div>
   </header>
 
+  <style>
+
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+      box-sizing: border-box;
+    }
+  
+
+    @media (max-width: 576px) {
+
+      .px-5,
+      .px-lg-5,
+      .content-space-2,
+      .content-space-lg-3 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+  
+
+      .content-space-2,
+      .content-space-lg-3 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+      }
+  
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+  
+
+      .swiper-wrapper {
+        overflow-x: hidden !important;
+      }
+  
+
+      .container,
+      .container-fluid {
+        max-width: 100% !important;
+        overflow-x: hidden;
+      }
+  
+ 
+      .col-lg-6,
+      .col-lg-7,
+      .col-lg-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+  
+
+      .btn {
+        max-width: 100%;
+        white-space: normal;
+      }
+    }
+    .hero-section {
+  background-image: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%),
+                    url('https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Home-page/ELEMENTO%20HERO%20COMPLETO.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    background-image: linear-gradient(180deg, #377DFF 0%, #85B8FF 100%),
+                      url('https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Home-page/ELEMENTO%20HERO%20COMPLETO.png');
+  }
+}
+
+.clientes-section {
+  background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+@media (max-width: 767.98px) {
+  .clientes-section {
+    background: #85B8FF !important;
+  }
+}
+
+
+</style>
+  
+
 <!-- HERO -->
-<div class="d-lg-flex align-items-center min-vh-100 content-space-5"
-     style="background-image: 
-              linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%),
-              url(https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Home-page/ELEMENTO%20HERO%20COMPLETO.png);
-            background-position: center, center;
-            background-repeat: no-repeat, no-repeat;">
+<div class="hero-section d-lg-flex align-items-center min-vh-100 content-space-3">
 
   <div class="container-fluid px-lg-5">
     <div class="row align-items-center justify-content-between position-relative">
 
       <!-- Columna izquierda: TEXTO -->
       <div class="col-lg-6 px-5" style="z-index: 2;">
-        <h1><span class=" fw-bold badge btn-primary mb-3">Software Médico</span></h1>   
-        <h2 class="text-white display-5 fw-bold mb-3">
-          El sistema clínico pensado para clínicas que quieren escalar sin perder el control
-        </h2>
+        <span class=" fw-bold badge btn-primary mb-3">Software Médico</span>   
+        <h1 class="text-white display-5 fw-bold mb-3">
+          El software médico pensado para clínicas que quieren escalar sin perder el control
+        </h1>
         <p class="text-dark lead mb-3 "style=" background: rgb(255, 255, 255); border-radius: 20px; padding: 40px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);  position: relative;">
           Medinet digitaliza <strong class="text-primary">agenda</strong>, 
           <strong class="text-primary">ficha clínica</strong>, 
@@ -317,7 +402,7 @@
   </div>
 </div>
 <!-- Clients -->
-<div style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%); padding: 80px 0;">
+<div class="clientes-section" style="padding: 80px 0;">
   <div class="container content-space-2 content-space-lg-3">
     <div class="row">
       <div class="col-md-4 pt-7 pt-md-0">
@@ -340,15 +425,15 @@
       <div class="col-md-8 pt-7">
         <div class="row">
           <div class="col-4 py-3">
-            <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Modulo%20dental/Logos/LOGOS%20DANIELAMesa%20de%20trabajo%204.svg" alt="clinica-loarcaya">
+            <img class="avatar avatar-xl avatar-4x3 avatar-centered" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Modulo%20dental/Logos/LOGOS%20DANIELAMesa%20de%20trabajo%204.svg" alt="clinica-loarcaya">
           </div>
 
           <div class="col-4 py-3">
-            <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Modulo%20dental/Logos/LOGOS%20DANIELARENAL%20MATER%20ORI.svg" alt="renal-mater">
+            <img class="avatar avatar-xl avatar-4x3 avatar-centered" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Modulo%20dental/Logos/LOGOS%20DANIELARENAL%20MATER%20ORI.svg" alt="renal-mater">
           </div>
 
           <div class="col-4 py-3">
-            <img class="avatar avatar-xxl avatar-4x3 avatar-centered" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Modulo%20dental/Logos/LOGOS%20DANIELASANATORIO%20MARITIMO%20ORI.svg" alt="sanatorio-maritimo">
+            <img class="avatar avatar-xl avatar-4x3 avatar-centered" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Modulo%20dental/Logos/LOGOS%20DANIELASANATORIO%20MARITIMO%20ORI.svg" alt="sanatorio-maritimo">
           </div>
         </div>
       </div>
@@ -358,7 +443,7 @@
 <!-- End Clients -->
 
 <!-- End Clients -->
-<section style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%); padding: 80px 0;">
+<section class="clientes-section" style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%); padding: 80px 0;">
   <div class="container content-space-b-2 content-space-b-lg-3">
     <div class="row">
       <div class="col-sm-4 mb-3 mb-sm-0">
@@ -389,7 +474,7 @@
 </section>
 
 <!-- Card Grid -->
-<div style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%); width: 100%; padding: 40px 0;">
+<div class="clientes-section" style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%); width: 100%; padding: 40px 0;">
   <div class="container content-space-2 content-space-lg-3" style=" background: rgb(51, 67, 104); border-radius: 20px; padding: 40px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);  position: relative;">
     <!-- Heading -->
     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-3">
@@ -432,7 +517,7 @@
 <!-- End Card Grid -->
 
 <!-- Swiper Slider -->
-<section class="position-relative overflow-hidden w-100"
+<section class="clientes-section position-relative overflow-hidden w-100"
          style="background-image: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%);
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -440,7 +525,7 @@
                 padding: 80px 0;">
 
   <div class="container position-relative">
-    <!-- Título -->
+ 
     <div class="w-md-80 w-lg-50 mx-auto text-center mb-5 mb-md-9">
       <h2 class="text-white display-6 mb-3">Una solución modular para cada área de tu centro médico</h2>
       <p class="d-inline-block px-4 py-2 rounded-pill  bg-opacity-10 text-white small fw-semibold ">
@@ -552,10 +637,10 @@
 
       </div>
 
-      <!-- Pagination para mobile -->
+
       <div class="js-swiper-software-hero-pagination swiper-pagination d-lg-none mt-4"></div>
 
-      <!-- Preloader opcional -->
+
       <div class="js-swiper-software-hero-preloader swiper-preloader d-none">
         <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -564,7 +649,7 @@
     </div>
   </div>
 
-  <!-- Shape decorativo inferior -->
+
   <div class="shape shape-bottom zi-1">
     <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 500H3000V0L0 500Z" fill="#fff"/>
@@ -619,7 +704,7 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
 <div class="container content-space-2 content-space-lg-3 medinet-card-container"
 style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);  position: relative;">
 <div class="row align-items-lg-center ">
-  <!-- Imagen -->
+
   <div class="col-lg-7 mb-4 mb-lg-0">
     <img class="img-fluid" src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Home-page/hero-medinet-2%20(2).png" alt="Image Description">
   </div>
@@ -669,23 +754,27 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
 </div>
 
 <div class="container my-5">
-  <!-- Fila de texto centrado -->
+
   <div class="row mb-5">
     <div class="col text-center">
-      <h2 class="fw-bold medinet-card-title">Clínicas que ya confían en Medinet</h2>
+      <h2 class="fw-bold medinet-card-title d-none d-md-block">
+        Clínicas que ya confían en Medinet
     </div>
+    <h2 class="fw-bold medinet-card-title d-block d-md-none">
+      Confían en Medinet
+    </h2>
   </div>
 
-  <!-- Fila de imágenes -->
+
   <div class="row justify-content-center g-4">
-    <!-- Imagen 1 -->
+ 
     <div class="col-12 col-md-6">
       <div class="card border-0">
         <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20lo%20arcaya.png" class="img-fluid rounded-3 w-100" alt="clinica-loarcaya">
       </div>
     </div>
 
-    <!-- Imagen 2 -->
+
     <div class="col-12 col-md-6">
       <div class="card border-0">
         <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20renal%20mater.png" class="img-fluid rounded-3 w-100" alt="renal-mater">
@@ -693,53 +782,84 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
     </div>
   </div>
 </div>
-<div class="position-relative w-100 py-5"
-     style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%); z-index: 1;">
 
-  <!-- Shape Ondulado Superior -->
-  <div class="position-absolute top-0 start-0 w-100">
+<div class="position-relative w-100">
+
+
+  <div class="position-absolute top-0 start-0 w-100 d-none d-md-block">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
       <path fill="#377DFF" fill-opacity="1"
-            d="M0,100L48,85.3C96,70,192,40,288,37.3C384,35,480,60,576,69.3C672,78,768,72,864,64C960,56,1056,48,1152,45.3C1248,43,1344,47,1392,49.3L1440,52V0H0Z"></path>
+            d="M0,100L48,85.3C96,70,192,40,288,37.3C384,35,480,60,576,69.3C672,78,768,72,864,64C960,56,1056,48,1152,45.3C1248,43,1344,47,1392,49.3L1440,52V0H0Z">
+      </path>
     </svg>
   </div>
-  <!-- Fin Shape Superior -->
 
-  <div class="container position-relative" style="z-index: 1;">
-    <div class="row align-items-center">
-      <!-- Texto a la izquierda -->
-      <div class="col-md-6">
-        <h2 class="text-white fw-bold display-3">Mejora la gestión de tu clínica <br>con nuestras integraciones</h2>
-        <p class="text-white">
-          Las clínicas suelen enfrentar desafíos como pagos complejos, sistemas aislados y tareas manuales.
-          Medinet proporciona integraciones avanzadas que simplifican estos procesos, optimizando la eficiencia operativa
-          y centralizando la administración de tu clínica en un solo sistema.
-        </p>
+
+  <div class="position-absolute top-0 start-0 w-100 d-block d-md-none">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <path fill="#85B8FF" fill-opacity="1"
+            d="M0,100L48,85.3C96,70,192,40,288,37.3C384,35,480,60,576,69.3C672,78,768,72,864,64C960,56,1056,48,1152,45.3C1248,43,1344,47,1392,49.3L1440,52V0H0Z">
+      </path>
+    </svg>
+  </div>
+
+
+  <div class="d-none d-md-block w-100 py-5"
+       style="background: linear-gradient(90deg, #377DFF 0%, rgba(255, 255, 255, 0) 100%);">
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="text-white fw-bold display-3">Mejora la gestión de tu clínica <br>con nuestras integraciones</h2>
+          <p class="text-white">
+            Las clínicas suelen enfrentar desafíos como pagos complejos, sistemas aislados y tareas manuales.
+            Medinet proporciona integraciones avanzadas que simplifican estos procesos, optimizando la eficiencia operativa
+            y centralizando la administración de tu clínica en un solo sistema.
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img class="img-fluid"
+               src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Software%20medico%20antiguamente%20Soluciones/INTEGRACIONESMesa%20de%20trabajo%201.png"
+               alt="Integraciones-Medinet"
+               style="max-width: 100%;">
+        </div>
       </div>
-      <!-- Fin Texto -->
-
-      <!-- Imagen a la derecha -->
-      <div class="col-md-6 d-flex justify-content-center">
-        <img class="img-fluid"
-             src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Software%20medico%20antiguamente%20Soluciones/INTEGRACIONESMesa%20de%20trabajo%201.png"
-             alt="Integraciones-Medinet"
-             style="max-width: 100%;">
-      </div>
-      <!-- Fin Imagen -->
-
     </div>
   </div>
 
-  <!-- Shape Ondulado Inferior -->
-  <div class="position-absolute top-0 start-0 w-100">
+
+  <div class="d-block d-md-none w-100 py-5"
+       style="background: linear-gradient(180deg, #377DFF 0%, #85B8FF 100%);">
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row align-items-center">
+        <div class="col-12 mb-4">
+          <h2 class="text-white fw-bold h2">Mejora la gestión de tu clínica <br>con nuestras integraciones</h2>
+          <p class="text-white">
+            Las clínicas suelen enfrentar desafíos como pagos complejos, sistemas aislados y tareas manuales.
+            Medinet proporciona integraciones avanzadas que simplifican estos procesos, optimizando la eficiencia operativa
+            y centralizando la administración de tu clínica en un solo sistema.
+          </p>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <img class="img-fluid"
+               src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Software%20medico%20antiguamente%20Soluciones/INTEGRACIONESMesa%20de%20trabajo%201.png"
+               alt="Integraciones-Medinet"
+               style="max-width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="position-absolute bottom-0 start-0 w-100 d-block d-md-none">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-      <path fill="#377DFF" fill-opacity="1"
-            d="M0,100L48,85.3C96,70,192,40,288,37.3C384,35,480,60,576,69.3C672,78,768,72,864,64C960,56,1056,48,1152,45.3C1248,43,1344,47,1392,49.3L1440,52V0H0Z"></path>
+      <path fill="#85B8FF" fill-opacity="1"
+            d="M0,100L48,85.3C96,70,192,40,288,37.3C384,35,480,60,576,69.3C672,78,768,72,864,64C960,56,1056,48,1152,45.3C1248,43,1344,47,1392,49.3L1440,52V0H0Z">
+      </path>
     </svg>
   </div>
-  <!-- Fin Shape Inferior -->
 
 </div>
+
 <div class="container content-space-2 content-space-b-lg-3">
   <div class="w-lg-75 mx-lg-auto">
 

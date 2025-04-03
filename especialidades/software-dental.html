@@ -207,7 +207,67 @@
                 min-height: auto !important;
               }
             }
-          </style>
+            /* ==== OPTIMIZACIÓN RESPONSIVA GLOBAL ==== */
+
+            body {
+    overflow-x: hidden;
+  }
+
+  .container,
+  .col-12,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7 {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Asegura que imágenes no se salgan en móviles */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Corrige padding excesivo en móviles */
+  @media (max-width: 767.98px) {
+    .px-5, .px-lg-5, .px-lg-9 {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .ps-lg-1, .ps-lg-5, .ps-lg-6 {
+      padding-left: 1rem !important;
+    }
+
+    .content-space-2,
+    .content-space-lg-3 {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+
+    .medinet-card-container {
+      padding: 2rem !important;
+    }
+
+    .container {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    /* Evita que .row o .card rompan layout */
+    .row,
+    .card {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  /* Evitar que elementos se desplacen fuera de pantalla */
+  * {
+    box-sizing: border-box;
+  }
+</style>
           
 <!-- Hero -->
 <div class="position-relative overflow-hidden">
@@ -241,8 +301,8 @@
 
       <div class="col-lg-5 d-flex align-items-center px-5 px-lg-9">
         <div>
-          <h1><span class="badge bg-primary mb-3">Software Dental</span></h1>                      
-          <h2 class="display-6 mb-3">Ordena tu clínica, mejora la atención y gana tiempo desde el primer día</h2>
+          <span class="badge bg-primary mb-3">Software Dental</span>                      
+          <h1 class="display-6 mb-3">Software dental para ordenar tu clínica, mejorar la atención y ganar tiempo desde el primer día</h1>
           <p class="text-dark lead mb-3">
             Medinet conecta <strong>agenda</strong>, <strong>fichas clínicas</strong>, <strong>presupuestos</strong> con 
             <strong>firma digital</strong>, <strong>pagos</strong> y <strong>seguimiento de pacientes</strong>. Todo está 
