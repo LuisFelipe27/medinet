@@ -504,20 +504,18 @@
 
 <!-- SCRIPT DE SUSCRIPCIÓN -->
 <script>
-  const apiURL = "https://script.google.com/macros/s/AKfycbzYLgzd3OxdcoO2hqeRZMOXaX2FHijoagk7CFn2BNIX2DLPK-DT064yVnlZL3VFEmj3/exec";
-
   function crearSuscripcion(plan, precioId, selectId) {
     const cantidad = document.getElementById(selectId).value;
     const esAnual = document.getElementById('toggleAnual')?.checked;
-    const periodicidad = esAnual ? "anual" : "mensual";
+    const periodicidad = esAnual ? 'anual' : 'mensual';
 
-    // Construye la URL con los parámetros
-    const url = `${apiURL}?usuarios=${cantidad}&plan=${encodeURIComponent(plan)}&periodicidad=${periodicidad}`;
+    const url = "https://script.google.com/macros/s/AKfycbzYLgzd3OxdcoO2hqeRZMOXaX2FHijoagk7CFn2BNIX2DLPK-DT064yVnlZL3VFEmj3/exec";
 
-    // Redirige directamente al Web App
-    window.location.href = url;
+    // Redirección al Web App con los parámetros reales
+    window.location.href = `${url}?usuarios=${cantidad}&plan=${encodeURIComponent(plan)}&periodicidad=${periodicidad}`;
   }
 </script>
+
 
   <div class="container content-space-2 content-space-lg-3 medinet-card-container"
   style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);  position: relative;">
