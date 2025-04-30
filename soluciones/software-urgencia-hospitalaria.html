@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medinet - Módulo de Urgencias</title>
+  <meta name="description" content="Sistema informático para la gestión de urgencias médicas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://medinetapp.com/" />
+  <meta property="og:site_name" content="Medinet" />
+  <meta property="fb:app_id" content="" />
+
+  <link rel="shortcut icon" href="../assets/svg/logos/favicon-medinet.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KH42KFM');</script>
+        <!-- End Google Tag Manager -->
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH42KFM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light bg-white" data-hs-header-options="{
+      &quot;fixMoment&quot;: 1000,
+      &quot;fixEffect&quot;: &quot;slide&quot;
+    }" hsheader="true">
+  
+  <div class="container">
+  <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+  <!-- Default Logo -->
+  <a class="navbar-brand" href="../" aria-label="Medinet">
+    <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet.svg" alt="Logo">
+  </a>
+  <!-- End Default Logo -->
+  
+  <!-- Toggler -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-default">
+      <i class="bi-list"></i>
+    </span>
+    <span class="navbar-toggler-toggled">
+      <i class="bi-x"></i>
+    </span>
+  </button>
+  <!-- End Toggler -->
+  
+  <!-- Collapse -->
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="navbar-absolute-top-scroller">
+      <ul class="navbar-nav">
+        <!-- Landings -->
+        <li class="hs-has-mega-menu nav-item">
+          <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" aria-current="page" role="button" href="./soluciones/software-en-la-medicina"  aria-expanded="false">Soluciones</a>
+  
+          <!-- Mega Menu -->
+          <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg animated fadeOut" aria-labelledby="landingsMegaMenu" style="min-width: 30rem; animation-duration: 300ms; display: none;">
+            <div class="row">
+              <div class="col-lg-5 d-none d-lg-block">
+                <!-- Banner Image -->
+                <div class="navbar-dropdown-menu-banner bg-light">
+                  <div class="navbar-dropdown-menu-banner-content">
+                    <div class="mb-4">
+                      <span class="h2 d-block">Conoce Medinet</span>
+                      <p>Descubre como Medinet te ayuda a administrar mejor y reducir costos</p>
+                    </div>
+                    <a class="btn btn-primary btn-transition" href="./reunion">Agendar reunión <i class="bi-chevron-right small"></i></a>
+                  </div>
+                </div>
+                <!-- End Banner Image -->
+              </div>
+              <!-- End Col -->
+  
+              <div class="col-lg-7">
+                <div class="navbar-dropdown-menu-inner">
+                  <div class="row">
+                    <div class="col-sm mb-3 mb-sm-0">
+                      <span class="dropdown-header">Módulos</span>
+                      <a class="dropdown-item " href="./soluciones/agenda-medica">Agenda médica</a>
+                      <a class="dropdown-item " href="./soluciones/ficha-clinica-electronica">Ficha clínica</a>
+                      <a class="dropdown-item " href="./soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a>
+                      <a class="dropdown-item " href="./soluciones/gestion-quirofano">Gestión de quirófano</a>
+                      <a class="dropdown-item " href="./soluciones/gestion-camas">Gestión de camas</a>
+                      <a class="dropdown-item " href="./soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a>
+                      <a class="dropdown-item " href="./soluciones/reportes">Reportes</a>
+                      <a class="dropdown-item disabled" href="">Honorarios médicos <span class="badge bg-success rounded-pill ms-1">Pronto</span></a>
+                      <a class="dropdown-item disabled" href="">Reportes BI <span class="badge bg-success rounded-pill ms-1">Pronto</span></a>
+                    </div>
+                    <!-- End Col -->
+  
+                    <div class="col-sm">
+                      <div class="mb-3">
+                        <span class="dropdown-header">Roles</span>
+                        <a class="dropdown-item " href="./roles/director-medico">Director médico</a>
+                        <a class="dropdown-item " href="./roles/gerente-general">Gerente general (CEO)</a>
+                        <a class="dropdown-item " href="./roles/gerente-finanzas">Gerente de finanzas (CFO)</a>
+                        <a class="dropdown-item " href="./roles/gerente-operaciones">Gerente de operaciones (COO)</a>
+                      </div>
+  
+                  </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Landings -->
+  
+        <!-- Company -->
+        <li class="hs-has-sub-menu nav-item">
+          <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" role="button" aria-expanded="false">Especialidades</a>
+  
+          <!-- Mega Menu -->
+          <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="companyMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+            <a class="dropdown-item " href="./especialidades/software-para-oftalmologia">Oftalmología</a>
+            <a class="dropdown-item " href="./especialidades/software-para-psiquiatria">Psiquiatría</a>
+            <a class="dropdown-item " href="./especialidades/software-para-bariatrica">Bariátrica</a>
+            <a class="dropdown-item " href="./especialidades/software-gestion-centro-medico">Centros Médicos</a>
+            <a class="dropdown-item " href="./especialidades/software-para-clinica-estetica">Estética</a>
+            <a class="dropdown-item " href="./especialidades/software-dental">Dental</a>
+          </div>
+          <li class="hs-has-sub-menu nav-item">
+            <a id="gestionmenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Gestion de Pabellon</a>
+    
+            <!-- Mega Menu -->
+            <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="gestionmenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+              <a class="dropdown-item " href="./gestion-pabellon-quirurgico/agenda-quirurgica">Agenda quirurgica </a>
+              <a class="dropdown-item disabled " href="">Presupuesto quirurgico <span class="badge bg-success rounded-pill ms-1">Pronto</span></a>
+              <a class="dropdown-item " href="./gestion-pabellon-quirurgico/tabla-quirurgica">Tabla quirurgica </a>
+            </div>
+            <!-- End Mega Menu -->
+          </li>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Company -->
+  
+         <!-- Pages -->
+         <li class="hs-has-sub-menu nav-item">
+          <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" role="button" aria-expanded="false">Metodología</a>
+  
+          <!-- Mega Menu -->
+          <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="pagesMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+            <a class="dropdown-item " href="./metodologia/implementacion">Implementación</a>
+            <a class="dropdown-item " href="./metodologia/integraciones">Integraciones</a>
+            <a class="dropdown-item " href="./metodologia/migracion-de-datos">Migración de datos</a>
+            <a class="dropdown-item " href="./metodologia/soporte">Soporte</a>
+            <a class="dropdown-item " href="./metodologia/seguridad">Seguridad</a>
+  
+          </div>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Pages -->
+  
+  
+        <!-- Blog -->
+        <li class="hs-has-sub-menu nav-item">
+          <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Empresa</a>
+  
+          <!-- Mega Menu -->
+          <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated fadeOut" aria-labelledby="blogMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+            <a class="dropdown-item" href="./empresa/nosotros">Nosotros</a>
+            <a class="dropdown-item" href="./empresa/trabajo">Trabajo</a>
+            <a class="dropdown-item disabled" href="">Partners <span class="badge bg-primary rounded-pill ms-1">Pronto</span></a>
+          </div>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Blog -->
+  
+        <!-- Button -->
+        <li class="nav-item">
+          <a class="btn btn-primary btn-transition" href="./contacto">Contactar</a>
+        </li>
+        <!-- End Button -->
+      </ul>
+    </div>
+  </div>
+  <!-- End Collapse -->
+  </nav>
+  </div>
+    </header>
+
+  <main class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <section class="relative w-full bg-white overflow-hidden">
+      <div class="container-fluid mx-0 px-0 py-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 relative min-h-[400px] md:min-h-[550px]">
+          <!-- Left side - Text content -->
+          <div class="flex flex-col justify-center py-12 md:py-20 z-10 px-4 md:px-8 lg:px-12">
+            <div class="mb-2">
+              <div class="bg-[#dbeafe] inline-block px-2 py-1 rounded">
+                <span class="text-[#5493db] text-sm">Software modulo urgencia </span>
+              </div>
+            </div>
+            <h1 class="text-[#0a2463] text-3xl md:text-4xl font-bold mb-4">Sistema de Urgencia hospitalaria digital</h1>
+            <p class="text-[#444444] mb-6 text-sm max-w-md font-medium">
+                Optimiza la atención en tiempo real desde el ingreso hasta el alta del paciente. Medinet digitaliza tu urgencia hospitalaria con fichas electrónicas, gestión de filas, triage y atención médica integrada.
+            </p>
+            <div>
+              <a href="#contact" class="btn btn-primary btn-rounded uppercase px-8 py-3 text-sm font-medium">
+                Solicitar demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Right side - Image -->
+          <div class="relative h-[300px] md:h-full overflow-visible md:absolute md:right-0 md:w-[70%] md:top-0 md:bottom-0 md:inset-x-auto" style="right: 0">
+            <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/HERO%20URGENCIAS%201.png" alt="urgencia hospitalaria" class="w-full h-full object-cover" style="object-position: 30% center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-12 bg-[#dbeafe]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-center text-[#0a2463] text-2xl font-bold mb-4">Clientes que confían en nosotros</h2>
+        <p class="text-center text-[#666666] mb-8 text-sm max-w-2xl mx-auto">
+            Clínica Lo Arcaya, Renal Mater y San Juan de Dios son parte de los más de 30 centros que eligen Medinet.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <!-- Client Card 1 -->
+          <div class="card bg-white shadow-sm p-6 flex flex-col h-full border-2 border-[#0e79f4] rounded-lg overflow-hidden relative">
+            <div class="flex flex-col items-center text-center h-full">
+              <div class="h-20 flex items-center justify-center mb-4">
+                <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/San%20juan%20de%20dios.png" alt="Sanatorio Marítimo San Juan de Dios" width="160" height="80" class="object-contain">
+              </div>
+              <h3 class="text-[#0a2463] font-bold mb-3 text-sm">Sanatorio Marítimo San Juan de Dios</h3>
+              <p class="text-[#666666] text-xs flex-grow">Con Medinet logramos centralizar nuestra información clínica y administrativa. La eficiencia del sistema marcó un cambio radical en nuestra operación diaria.</p>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0e79f4]"></div>
+          </div>
+
+          <!-- Client Card 2 -->
+          <div class="card bg-white shadow-sm p-6 flex flex-col h-full border-2 border-[#0e79f4] rounded-lg overflow-hidden relative">
+            <div class="flex flex-col items-center text-center h-full">
+              <div class="h-20 flex items-center justify-center mb-4">
+                <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/Clinica%20lo%20arcaya.png" alt="Clínica Lo Arcaya" width="160" height="80" class="object-contain">
+              </div>
+              <h3 class="text-[#0a2463] font-bold mb-3 text-sm">Clínica Lo Arcaya</h3>
+              <p class="text-[#666666] text-xs flex-grow">Elegimos Medinet por su flexibilidad y capacidad de adaptación. El equipo entendió nuestras necesidades desde el primer día.</p>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0e79f4]"></div>
+          </div>
+
+          <!-- Client Card 3 -->
+          <div class="card bg-white shadow-sm p-6 flex flex-col h-full border-2 border-[#0e79f4] rounded-lg overflow-hidden relative">
+            <div class="flex flex-col items-center text-center h-full">
+              <div class="h-20 flex items-center justify-center mb-4">
+                <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/RENAL%20MATER%201.png" alt="Corporación Renal Infantil Mater" width="160" height="80" class="object-contain">
+              </div>
+              <h3 class="text-[#0a2463] font-bold mb-3 text-sm">Corporación Renal Infantil Mater</h3>
+              <p class="text-[#666666] text-xs flex-grow">El nivel de trazabilidad, seguridad y soporte que ofrece Medinet nos dio total confianza para digitalizar procesos sensibles.</p>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0e79f4]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Module Section - Side by Side with Icons -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+          <!-- Left side - Text content -->
+          <div>
+            <div class="mb-2">
+              <div class="bg-[#dbeafe] inline-block px-2 py-1 rounded">
+                <span class="text-[#5493db] text-sm">Módulo de urgencias</span>
+              </div>
+            </div>
+            <h2 class="text-[#0a2463] text-3xl font-bold mb-4">¿Qué pasa cuando tu clínica no tiene un sistema de urgencia digital?</h2>
+            <p class="text-[#444444] mb-6 text-sm max-w-md">
+                Tiempos de espera descontrolados, duplicación de tareas, errores en la atención y pérdida de trazabilidad clínica. En contextos críticos, cada minuto cuenta.
+            </p>
+            <div>
+              <a href="#contact" class="btn btn-primary btn-rounded uppercase px-8 py-3 text-sm font-medium">
+                Solicitar demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Right side - Icons -->
+          <div class="space-y-8">
+            <div class="flex items-center">
+              <div class="mr-4 flex-shrink-0">
+                <div class="w-12 h-12 bg-[#dbeafe] rounded-full flex items-center justify-center">
+                  <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/seguridad%202.png" alt="Seguridad" width="24" height="24" class="object-contain">
+                </div>
+              </div>
+              <p class="text-[#444444] text-sm">
+                Evita pérdidas de información con integración total al resto de tus módulos clínicos y administrativos.
+              </p>
+            </div>
+
+            <div class="flex items-center">
+              <div class="mr-4 flex-shrink-0">
+                <div class="w-12 h-12 bg-[#dbeafe] rounded-full flex items-center justify-center">
+                  <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/aaaa%202.png" alt="Actualización" width="24" height="24" class="object-contain">
+                </div>
+              </div>
+              <p class="text-[#444444] text-sm">
+                Registra signos vitales, diagnósticos y evolución en una ficha digital con firma y auditoría.
+              </p>
+            </div>
+
+            <div class="flex items-center">
+              <div class="mr-4 flex-shrink-0">
+                <div class="w-12 h-12 bg-[#dbeafe] rounded-full flex items-center justify-center">
+                  <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/actualizacion%202.png" alt="Configuración" width="24" height="24" class="object-contain">
+                </div>
+              </div>
+              <p class="text-[#444444] text-sm">
+                Desde la admisión hasta el egreso, gestiona triage, atención médica y derivaciones sin papeles ni interrupciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Module Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+          <!-- Left side - Text content -->
+          <div>
+            <h2 class="text-[#0a2463] text-3xl font-bold mb-4">Módulo de urgencias</h2>
+            <p class="text-[#666666] mb-6 text-sm">
+                Gestiona todo el flujo clínico y administrativo en tiempo real: desde la admisión del paciente hasta su egreso o derivación, con datos centralizados y alertas por tiempos críticos.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <!-- Feature Item 1 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Admisión y categorización de pacientes con trazabilidad completa</span>
+              </div>
+
+              <!-- Feature Item 2 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Triage configurable con alertas de espera y recategorización</span>
+              </div>
+
+              <!-- Feature Item 3 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Mapa de atención para monitorear boxes, tiempos y turnos</span>
+              </div>
+
+              <!-- Feature Item 4 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm"> Listas dinámicas por gravedad, especialidad y estado de atención</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+              Contáctanos
+            </a>
+          </div>
+
+          <!-- Right side - Interface Image -->
+          <div class="relative">
+            <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/URGENCIA.png" alt="Interfaz del módulo de urgencias" class="w-full h-auto rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinical Record Section -->
+    <section class="py-16 bg-white border-t border-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+          <!-- Left side - Interface Image -->
+          <div class="relative order-2 md:order-1">
+            <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/FICHA%20CLINICA..png" alt="Interfaz de ficha clínica" class="w-full h-auto rounded-lg shadow-lg">
+          </div>
+
+          <!-- Right side - Text content -->
+          <div class="order-1 md:order-2">
+            <h2 class="text-[#0a2463] text-3xl font-bold mb-4">Ficha clínica de urgencia</h2>
+            <p class="text-[#666666] mb-6 text-sm">
+                Registra cada atención médica con precisión y trazabilidad total. La ficha de urgencia se adapta al flujo clínico, con campos dinámicos, alertas configurables y firma digital.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <!-- Feature Item 1 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Registro rápido de antecedentes, signos vitales y evolución</span>
+              </div>
+
+              <!-- Feature Item 2 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Indicaciones, recetas y órdenes firmadas digitalmente</span>
+              </div>
+
+              <!-- Feature Item 3 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Solicitud directa de hospitalización o cirugía urgente</span>
+              </div>
+
+              <!-- Feature Item 4 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Trazabilidad completa por usuario y hora</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+              Contáctanos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="py-16 bg-white border-t border-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+          <!-- Left side - Text content -->
+          <div>
+            <h2 class="text-[#0a2463] text-3xl font-bold mb-4">Inventario</h2>
+            <p class="text-[#666666] mb-6 text-sm">
+                Controla en tiempo real el inventario de medicamentos y materiales críticos. Automatiza pedidos y evita quiebres en turnos de alta demanda.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <!-- Feature Item 1 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Alertas de stock mínimo en insumos vitales</span>
+              </div>
+
+              <!-- Feature Item 2 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Registro de entregas por box, profesional o paciente</span>
+              </div>
+
+              <!-- Feature Item 3 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Reportes automáticos por fecha y tipo de insumo</span>
+              </div>
+
+              <!-- Feature Item 4 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Integración con órdenes médicas y protocolos</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+              Contáctanos
+            </a>
+          </div>
+
+          <!-- Right side - Interface Image -->
+          <div class="relative">
+            <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/INVENTARIO..png" alt="Interfaz del módulo de inventario" class="w-full h-auto rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Billing Section -->
+    <section class="py-16 bg-white border-t border-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+          <!-- Left side - Interface Image -->
+          <div class="relative order-2 md:order-1">
+            <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/recaudacion.png" alt="Interfaz del módulo de recaudación" class="w-full h-auto rounded-lg shadow-lg">
+          </div>
+
+          <!-- Right side - Text content -->
+          <div class="order-1 md:order-2">
+            <h2 class="text-[#0a2463] text-3xl font-bold mb-4">Recaudación</h2>
+            <p class="text-[#666666] mb-6 text-sm">
+                Agiliza el proceso de pago en situaciones críticas. Medinet permite validar convenios, emitir boletas y registrar pagos desde el punto de atención.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <!-- Feature Item 1 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Pre-admisión conectada a FONASA, Isapres o I-MED</span>
+              </div>
+
+              <!-- Feature Item 2 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Emisión automática de cuenta médica y boleta electrónica</span>
+              </div>
+
+              <!-- Feature Item 3 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Pagos en línea, POS o en caja física</span>
+              </div>
+
+              <!-- Feature Item 4 -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-0.5 flex-shrink-0">
+                  <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                    <span class="icon-check"></span>
+                  </div>
+                </div>
+                <span class="text-[#666666] text-sm">Reportes de ingreso por turno y profesional</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+              Contáctanos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="portal-examenes-section">
+        <div class="container">
+          <div class="portal-grid">
+            <div class="portal-content">
+              <h2 class="portal-title">Portal de exámenes</h2>
+              <p class="portal-description">
+                Accede, visualiza y comparte los exámenes clínicos directamente desde urgencia. Ahorra tiempo y mejora la toma de decisiones médicas.
+              </p>
+              
+              <div class="space-y-3 mb-8">
+                <!-- Feature Item 1 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Resultados de exámenes integrados a la ficha del paciente</span>
+                </div>
+  
+                <!-- Feature Item 2 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm"> Visualización inmediata desde cualquier box de urgencia</span>
+                </div>
+  
+                <!-- Feature Item 3 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Notificaciones automáticas a profesionales</span>
+                </div>
+  
+                <!-- Feature Item 4 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Envío al paciente vía correo o portal web</span>
+                </div>
+              </div>
+              
+              <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+                Contáctanos
+              </a>
+            </div>
+            
+            <div class="portal-image">
+              <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/EXAMEN%20FICHAmi%20cumplea%C3%B1os%201.png" alt="Interfaz del Portal de exámenes" class="interface-image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Billing Section -->
+       <section class="py-16 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+            <!-- Left side - Interface Image -->
+            <div class="relative order-2 md:order-1">
+              <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/reporteriami%20cumplea%C3%B1os%201.png" alt="Interfaz del módulo de recaudación" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+  
+            <!-- Right side - Text content -->
+            <div class="order-1 md:order-2">
+              <h2 class="text-[#0a2463] text-3xl font-bold mb-4">Reportería</h2>
+              <p class="text-[#666666] mb-6 text-sm">
+                Toma control con reportes automáticos sobre flujos de pacientes, tiempos de espera, derivaciones, y rendimiento por turno.
+              </p>
+  
+              <div class="space-y-3 mb-8">
+                <!-- Feature Item 1 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Indicadores de gestión de urgencia</span>
+                </div>
+  
+                <!-- Feature Item 2 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Exportación de reportes clínicos y operativos</span>
+                </div>
+  
+                <!-- Feature Item 3 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Medición de productividad por box, profesional o especialidad</span>
+                </div>
+  
+                <!-- Feature Item 4 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Información clave para acreditación y auditoría</span>
+                </div>
+              </div>
+  
+              <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+                Contáctanos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consentimientos-section">
+        <div class="container">
+          <div class="consentimientos-grid">
+            <div class="consentimientos-content">
+              <h2 class="consentimientos-title">Consentimientos</h2>
+              <p class="consentimientos-description">
+                Firma digital de consentimientos en urgencia
+                Recoge consentimiento informado de manera segura y sin papeles, incluso en contextos críticos.
+              </p>
+              
+              <div class="space-y-3 mb-8">
+                <!-- Feature Item 1 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Formularios digitales firmables desde cualquier dispositivo</span>
+                </div>
+  
+                <!-- Feature Item 2 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm"> Registro legal y trazado por usuario y timestamp</span>
+                </div>
+  
+                <!-- Feature Item 3 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Plantillas personalizadas por tipo de atención o procedimiento</span>
+                </div>
+  
+                <!-- Feature Item 4 -->
+                <div class="flex items-start">
+                  <div class="mr-3 mt-0.5 flex-shrink-0">
+                    <div class="w-5 h-5 rounded-full bg-[#8edd8e] flex items-center justify-center">
+                      <span class="icon-check"></span>
+                    </div>
+                  </div>
+                  <span class="text-[#666666] text-sm">Acceso posterior desde la ficha clínica</span>
+                </div>
+              </div>
+              
+              <a href="#contact" class="btn btn-primary uppercase px-8 py-3 text-sm font-medium">
+                Contáctanos
+              </a>
+            </div>
+            
+            <div class="consentimientos-image">
+              <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Web/Urgencia/CONSENTIMIENTOmi%20cumplea%C3%B1os%201.png" alt="Interfaz de Consentimientos" class="interface-image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+          <div class="container my-5">
+
+            <div class="row mb-5">
+              <div class="col text-center">
+                <h2 class="fw-bold medinet-card-title d-none d-md-block">
+                  Clínicas que ya confían en Medinet
+              </div>
+              <h2 class="fw-bold medinet-card-title d-block d-md-none">
+                Confían en Medinet
+              </h2>
+            </div>
+          
+          
+            <div class="row justify-content-center g-4">
+           
+              <div class="col-12 col-md-6">
+                <div class="card border-0">
+                  <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20lo%20arcaya.png" class="img-fluid rounded-3 w-100" alt="clinica-loarcaya">
+                </div>
+              </div>
+          
+          
+              <div class="col-12 col-md-6">
+                <div class="card border-0">
+                  <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/Google%20ads%20peru/Software%20medico/testimonio%20renal%20mater.png" class="img-fluid rounded-3 w-100" alt="renal-mater">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container content-space-3">
+            <div class="row">
+              <div class="col-lg-6 mb-3 mb-lg-0">
+                <!-- Card -->
+                <div class="card bg-primary h-100 overflow-hidden">
+                  <div class="card-body">
+                    <div class="w-65 pe-2">
+                      <h2 class="card-title text-white">Agenda una reunión</h2>
+                      <p class="card-text text-white">Descubre como Medinet te puede ayudar con la gestión clínica y administrativa.</p>
+                      <a class="btn btn-light btn-sm btn-transition" href="../reunion">Agendar reunión<i class="bi-chevron-right small ms-1"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+      
+              <div class="col-lg-6">
+                <!-- Card -->
+                <div class="card bg-success h-100 overflow-hidden">
+                  <div class="card-body">
+                    <div class="w-65 pe-2">
+                      <h2 class="card-title text-white">Contáctanos</h2>
+                      <p class="card-text text-white">¿Necesitas resolver dudas? Déjanos tus datos y te escribimos en minutos</p>
+                      <a class="btn btn-light btn-sm btn-transition" href="../contacto">Contactar <i class="bi-chevron-right small ms-1"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          
+          <div class="bg-light">
+            <div class="container content-space-2">
+              <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+                <div class="row justify-content-lg-between">
+                  <!-- Heading -->
+                  <div class="mb-5">
+                    <span class="text-cap">Boletín Medinet</span>
+                    <h2>Entérate de las novedades</h2>
+                  </div>
+                  <!-- End Heading -->
+      
+                  <form>
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                        region: "na1",
+                        portalId: "21935835",
+                        formId: "3a5d3279-4775-4f13-a56d-22a8f843ad50"
+                      });
+                    </script>
+                  </form>
+      
+                  <p class="small">Puedes cancelar la suscripción en cualquier momento.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </main>
+  <footer class="bg-dark">
+    <div class="container pb-1 pb-lg-5">
+      <div class="row content-space-t-2 mb-9">
+        <div class="col-12 col-lg-3 mb-7 mb-lg-0">
+          <!-- Logo -->
+          <div class="mb-5">
+            <a class="navbar-brand" href="../" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo-medinet-white.svg" alt="Image Description">
+            </a>
+          </div>
+          <!-- End Logo -->
+          <ul class="list-unstyled list-py-1">
+            <li><a class="link-sm link-light"><i class="bi bi-envelope me-1"></i> contacto@medinetapp.com</a></li> <a href="mailto:contacto@medinetapp.com?subject=Consulta desde el sitio web&body=Hola, quisiera más información sobre sus servicios.">Enviar correo</a>
+
+          </ul>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="text-white mb-3"> <a href="./" class="text-white">Soluciones</a> </h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link-sm link-light" href="../soluciones/ficha-clinica-electronica">Ficha clínica</a></li>
+              <li><a class="link-sm link-light" href="../soluciones/cobranza-y-cuenta-medica">Cobranza y cuenta médica</a></li>
+              <li><a class="link-sm link-light" href="../soluciones/gestion-quirofano">Gestión de quirófano</a></li>
+              <li><a class="link-sm link-light" href="../soluciones/gestion-camas">Gestión de camas</a></li>
+              <li><a class="link-sm link-light" href="../soluciones/adquisicion-y-dispensacion">Adquisición y dispensación</a></li>
+              <li><a class="link-sm link-light" href="../soluciones/reportes">Reportes</a></li>
+              <li><a class="link-sm link-light">Reportes BI <span class="badge bg-success rounded-pill ms-1">Pronto</span></a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">Especialidades</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="../especialidades/software-para-oftalmologia">Oftalmología</a></li>
+            <li><a class="link-sm link-light" href="../especialidades/software-para-psiquiatria">Psiquiatría</a></li>
+            <li><a class="link-sm link-light" href="../especialidades/software-para-clinica-estetica">Estética</a></li>
+            <li><a class="link-sm link-light" href="../especialidades/oncologia">Oncología</a></li>
+            <li><a class="link-sm link-light" href="../especialidades/salud-ocupacional">Salud ocupacional</a></li>
+            <li><a class="link-sm link-light" href="../especialidades/software-para-bariatrica">Bariátrica</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">Metodología</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="../metodologia/implementacion">Implementación</a></li>
+            <li><a class="link-sm link-light" href="../metodologia/integraciones">Integraciones</a></li>
+            <li><a class="link-sm link-light" href="../metodologia/migracion-de-datos">Migración de datos</a></li>
+            <li><a class="link-sm link-light" href="../metodologia/seguridad">Seguridad</a></li>
+            <li><a class="link-sm link-light" href="../metodologia/soporte">Soporte</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-6 col-sm">
+          <h5 class="text-white mb-3">Empresa</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-5">
+            <li><a class="link-sm link-light" href="../empresa/nosotros">Sobre Medinet</a></li>
+            <li><a class="link-sm link-light" href="../empresa/trabajo">Trabaja con nosotros</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="row align-items-center">
+        <div class="col">
+          <p class="text-white-70 small mb-0">© Medinet. 2025. Todos los derechos reservados.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-auto">
+          <!-- Socials -->
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.facebook.com/medinetappcl">
+                <i class="bi-facebook"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.instagram.com/medinetapp/">
+                <i class="bi-instagram"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a class="btn btn-ghost-light btn-sm btn-icon" href="https://www.linkedin.com/company/medinetapp/">
+                <i class="bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- End Socials -->
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <script src="../assets/js/theme.min.js"></script>
+
+  <script src="../assets/js/aos.js"></script>
+
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller')
+    })()
+  </script>
+
+</body>
+</html>
