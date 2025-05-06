@@ -78,6 +78,11 @@
   <priority>0.90</priority>
 </url>
 <url>
+  <loc>https://medinetapp.com/soluciones/software-urgencia-hospitalaria</loc>
+  <lastmod>2023-03-02T17:37:06+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://medinetapp.com/roles/director-medico</loc>
   <lastmod>2023-03-02T17:37:06+00:00</lastmod>
   <priority>0.80</priority>
@@ -215,6 +220,16 @@
 </url>
 <url>
   <loc>https://blog.medinetapp.com/es-cl/medinet-blog/que-es-un-software-medico</loc>
+  <lastmod>2024-08-02T17:37:06+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://blog.medinetapp.com/es-cl/medinet-blog/ficha-oftalmológica</loc>
+  <lastmod>2024-08-02T17:37:06+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://blog.medinetapp.com/es-cl/medinet-blog/ficha-clinica-ejemplo</loc>
   <lastmod>2024-08-02T17:37:06+00:00</lastmod>
   <priority>0.90</priority>
 </url>
