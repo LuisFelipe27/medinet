@@ -1,5 +1,8 @@
 User-Agent: *
 Disallow: /assets/
+Disallow: /mx/historia-clinica
+Disallow: /co/historia-clinica
+Disallow: /pe/soluciones/historia-clinica
 Disallow: /Transcripcion.html
 Disallow: /Transcripcion
 Disallow: /pe/sistema-oftalmologia.html
