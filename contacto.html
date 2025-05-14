@@ -365,7 +365,18 @@
                   hbspt.forms.create({
                     region: "na1",
                     portalId: "21935835",
-                    formId: "a44a6e1c-6f94-40da-b455-3017f72a67c9"
+                    formId: "a44a6e1c-6f94-40da-b455-3017f72a67c9",
+                    onFormReady: function($form) {
+      fetch("https://ipapi.co/json/")
+        .then(response => response.json())
+        .then(data => {
+          const country = data.country_name;
+          const input = $form.find('input[name="pais_del_visitante"]');
+          if (input.length) {
+            input.val(country);
+          }
+        });
+    }
                   });
                 </script>
 
@@ -396,7 +407,7 @@
         <!-- End Col -->
     
         <div class="col-sm-auto">
-          <p class="small mb-0">© Medinet. 2023.</p>
+          <p class="small mb-0">© Medinet. 2025.</p>
         </div>
         <!-- End Col -->
       </div>
