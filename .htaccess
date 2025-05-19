@@ -1,7 +1,0 @@
-RewriteEngine On
-
-# Redirigir solicitudes de ../metodologia/ a ../metodologia/implementacion.html
-RewriteRule ^metodologia/$ /metodologia/implementacion [L,R=301]
-
-# Redirigir solicitudes de ../empresa/ a ../empresa/nosotros.html
-RewriteRule ^empresa/$ /empresa/nosotros [L,R=301]
