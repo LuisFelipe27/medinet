@@ -1238,22 +1238,11 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
 <script>
   window.addEventListener('scroll', function lazyLoadScripts() {
     const scripts = [
-      { src: 'https://js.hsforms.net/forms/v2.js', id: 'hubspot' },
-      { src: 'https://connect.facebook.net/en_US/fbevents.js', id: 'fb-pixel' },
-      { src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js', id: 'linkedin' }
-    ];
-
-    let loaded = 0;
-
-    scripts.forEach(({ src, id }) => {
-      if (!document.getElementById(id)) {
-        const s = document.createElement('script');
-        s.src = src;
-        s.async = true;
-        s.id = id;
-        s.onload = () => {
-          loaded++;
-          if (loaded === scripts.length && window.hbspt) {
+      {
+        src: 'https://js.hsforms.net/forms/v2.js',
+        id: 'hubspot',
+        onload: function () {
+          if (window.hbspt) {
             hbspt.forms.create({
               region: "na1",
               portalId: "21935835",
@@ -1261,7 +1250,34 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
               target: "#lazy-hubspot-form"
             });
           }
-        };
+        }
+      },
+      {
+        src: 'https://connect.facebook.net/en_US/fbevents.js',
+        id: 'fb-pixel',
+        onload: function () {
+          if (typeof fbq !== 'undefined') {
+            fbq('init', '1268547963741502');
+            fbq('track', 'PageView');
+          }
+        }
+      },
+      {
+        src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js',
+        id: 'linkedin'
+        // No requiere inicialización
+      }
+    ];
+
+    scripts.forEach(({ src, id, onload }) => {
+      if (!document.getElementById(id)) {
+        const s = document.createElement('script');
+        s.src = src;
+        s.async = true;
+        s.id = id;
+        if (typeof onload === 'function') {
+          s.onload = onload;
+        }
         document.body.appendChild(s);
       }
     });
@@ -1269,6 +1285,8 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
     window.removeEventListener('scroll', lazyLoadScripts);
   }, { once: true });
 </script>
+
+
 <script>
   window.addEventListener('DOMContentLoaded', () => {
     AOS.init();
