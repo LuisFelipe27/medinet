@@ -18,6 +18,7 @@
     <meta property="fb:app_id" content="" />
   
     <link rel="shortcut icon" href="../assets/svg/logos/favicon-medinet.png">
+    <link rel="alternate" hreflang="es-CL" href="https://medinetapp.com/soluciones/ficha-clinica-electronica">				
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/theme.min.css">
     <link rel="stylesheet" href="../assets/css/vendor.min.css">
@@ -1091,16 +1092,9 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
             </div>
             <!-- End Heading -->
 
-            <form>
-              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-              <script>
-                hbspt.forms.create({
-                  region: "na1",
-                  portalId: "21935835",
-                  formId: "3a5d3279-4775-4f13-a56d-22a8f843ad50"
-                });
-              </script>
-            </form>
+<!-- Formulario de HubSpot (cargado dinámicamente al hacer scroll) -->
+<div id="lazy-hubspot-form"></div>
+
 
             <p class="small">Puedes cancelar la suscripción en cualquier momento.</p>
           </div>
@@ -1224,9 +1218,46 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
     </div>
   </footer>
 
-  <script src="../assets/js/vendor.min.js"></script>
+  <script src="../assets/js/vendor.min.js" defer></script>
 
-  <script src="../assets/js/theme.min.js"></script>
+  <script src="../assets/js/theme.min.js" defer></script><!-- Lazy load de scripts de marketing -->
+<!-- Lazy load de scripts de marketing -->
+<script>
+  window.addEventListener('scroll', function lazyLoadScripts() {
+    const scripts = [
+      { src: 'https://js.hsforms.net/forms/v2.js', id: 'hubspot' },
+      { src: 'https://connect.facebook.net/en_US/fbevents.js', id: 'fb-pixel' },
+      { src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js', id: 'linkedin' }
+    ];
+
+    let loaded = 0;
+
+    scripts.forEach(({ src, id }) => {
+      if (!document.getElementById(id)) {
+        const s = document.createElement('script');
+        s.src = src;
+        s.async = true;
+        s.id = id;
+        s.onload = () => {
+          loaded++;
+          if (loaded === scripts.length && window.hbspt) {
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "21935835",
+              formId: "3a5d3279-4775-4f13-a56d-22a8f843ad50",
+              target: "#lazy-hubspot-form"
+            });
+          }
+        };
+        document.body.appendChild(s);
+      }
+    });
+
+    window.removeEventListener('scroll', lazyLoadScripts);
+  }, { once: true });
+</script>
+
+
 
   <script>
     (function() {
