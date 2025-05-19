@@ -1230,6 +1230,10 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
   <script src="../assets/js/vendor.min.js" defer></script>
 
   <script src="../assets/js/theme.min.js" defer></script><!-- Lazy load de scripts de marketing -->
+
+  <script src="../assets/js/aos.js" defer></script>
+
+
 <!-- Lazy load de scripts de marketing -->
 <script>
   window.addEventListener('scroll', function lazyLoadScripts() {
@@ -1265,7 +1269,11 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
     window.removeEventListener('scroll', lazyLoadScripts);
   }, { once: true });
 </script>
-
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+  });
+</script>
 
 
 <script>
