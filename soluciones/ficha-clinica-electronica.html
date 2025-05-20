@@ -1237,11 +1237,29 @@ style=" background: white; border-radius: 20px; padding: 40px; box-shadow: 0px 1
 <script>
   window.addEventListener('scroll', function lazyLoadScripts() {
     const scripts = [
+<<<<<<< Updated upstream
       {
         src: 'https://js.hsforms.net/forms/v2.js',
         id: 'hubspot',
         onload: function () {
           if (window.hbspt) {
+=======
+      { src: 'https://js.hsforms.net/forms/v2.js', id: 'hubspot' },
+      { src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js', id: 'linkedin' }
+    ];
+
+    let loaded = 0;
+
+    scripts.forEach(({ src, id }) => {
+      if (!document.getElementById(id)) {
+        const s = document.createElement('script');
+        s.src = src;
+        s.async = true;
+        s.id = id;
+        s.onload = () => {
+          loaded++;
+          if (loaded === scripts.length && window.hbspt) {
+>>>>>>> Stashed changes
             hbspt.forms.create({
               region: "na1",
               portalId: "21935835",
