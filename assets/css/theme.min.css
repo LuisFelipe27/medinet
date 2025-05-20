@@ -30570,6 +30570,12 @@ a:hover .text-inherit {
     background-color: white;
     z-index: 9999 !important;
   }
+  /* Optimización directa del LCP */
+p.lead.text-dark {
+  content-visibility: auto;
+  contain-intrinsic-size: 100px;
+}
+
     
 
 
