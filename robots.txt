@@ -7,3 +7,4 @@ Disallow: /pe/software-de-salud-ocupacional.html
 Disallow: /pe/software-de-salud-ocupacional
 Allow: /
 
+Sitemap: https://medinetapp.com/sitemap.xml
